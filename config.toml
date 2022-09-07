@@ -2,15 +2,12 @@
 # Set to the URL for your site
 baseurl = "https://ouspg.github.io/ShakingUpTech/"
 defaultContentLanguage = "fi"
-
-# The name of this wonderful theme ;-).
 theme = 'terminal'
 paginate = 5
 
 # Basic metadata configuration for your blog.
 title = "Shaking Up Tech 13.10.2022"
 author = "OUSPG"
-#  copyright = "Copyright © 2020, Jane Doe."
 languageCode = "fi-FI"
 
 # Generate a nice robots.txt for SEO
@@ -32,21 +29,24 @@ ignoreErrors = ["error-disable-taxonomy"]
   # opengraph structured data template.
   # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
 
+[params.logo]
+      logoHomeLink = "/ShakingUpTech"
+
 [languages]
   [languages.fi]
     languageName = "Suomi"
     title = "Shaking Up Tech 13.10.2022"
-    subtitle = "A simple, retro theme for Hugo"
+    subtitle = "Kryptoteemainen työpaja"
     owner = ""
     keywords = ""
     copyright = "Oulu University Secure Programming Group"
     menuMore = "Näytä enemmän"
     readMore = "Lue lisää"
-    readOtherPosts = "Read other posts"
+    readOtherPosts = "Lue muut artikkelit"
     newerPosts = "Uudemman artikkelit"
     olderPosts = "Vanhemmat artikkelit"
-    missingContentMessage = "Page not found..."
-    missingBackButtonLabel = "Back to home page"
+    missingContentMessage = "Sivusto ei löytynyt..."
+    missingBackButtonLabel = "Palaa etusivulle"
 
     [languages.fi.params.logo]
       logoText = "Shaking Up Tech"
