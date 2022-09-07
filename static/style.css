@@ -1,0 +1,11 @@
+.menu a {
+    /* outline: 2px solid #CCC; */
+    color: #ffa86a !important; 
+    font-weight: 600;
+    text-decoration:  none;
+    /* border: 1px solid #ffa86a; */
+    /* border-radius: 5%; */
+}
+.menu a:hover {
+    color: white !important; 
+}

@@ -54,6 +54,17 @@ ignoreErrors = ["error-disable-taxonomy"]
 
     [languages.fi.menu]
       [[languages.fi.menu.main]]
+        Weight = 1
+        identifier = "harjoitus1"
+        name = "Ensimmäinen harjoitus"
+        url = "/harjoitus1"
+      [[languages.fi.menu.main]]
+        Weight = 2
+        identifier = "harjoitus2"
+        name = "Toinen harjoitus"
+        url = "/harjoitus2"
+      [[languages.fi.menu.main]]
+        Weight = 3
         identifier = "ascii"
-        name = "ASCII taulukko"
+        name = "ASCII Taulu"
         url = "/ascii"
