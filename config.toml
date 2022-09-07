@@ -50,7 +50,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 
     [languages.fi.params.logo]
       logoText = "Shaking Up Tech"
-      logoHomeLink = "/"
+      logoHomeLink = "/ShakingUpTech"
 
     [languages.fi.menu]
       [[languages.fi.menu.main]]
