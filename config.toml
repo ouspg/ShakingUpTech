@@ -56,12 +56,12 @@ ignoreErrors = ["error-disable-taxonomy"]
       [[languages.fi.menu.main]]
         Weight = 1
         identifier = "harjoitus1"
-        name = "Ensimmäinen harjoitus"
+        name = "Täydellinen salausmenetelmä?"
         url = "/harjoitus1"
       [[languages.fi.menu.main]]
         Weight = 2
         identifier = "harjoitus2"
-        name = "Toinen harjoitus"
+        name = "Moderni salaus"
         url = "/harjoitus2"
       [[languages.fi.menu.main]]
         Weight = 3
