@@ -68,3 +68,8 @@ ignoreErrors = ["error-disable-taxonomy"]
         identifier = "ascii"
         name = "ASCII Taulu"
         url = "/ascii"
+      [[languages.fi.menu.main]]
+        Weight = 4
+        identifier = "CyberChef"
+        name = "CyberChef"
+        url = "https://gchq.github.io/CyberChef/"
