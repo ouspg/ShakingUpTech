@@ -1,3 +1,6 @@
+<!-- Extended footer section-->
+{{ partial "extended_footer.html" . }}
+
 <footer class="footer">
   <div class="footer__inner">
     {{ if $.Site.Copyright }}
@@ -19,5 +22,3 @@
   <script src="{{ "assets/languageSelector.js" | absURL }}"></script>
 {{ end }}
 
-<!-- Extended footer section-->
-{{ partial "extended_footer.html" . }}
