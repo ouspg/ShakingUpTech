@@ -2,9 +2,9 @@
 framed = true
 +++
 
-# Shaking Up Tech 13.10.2022 kryptopaja
+# Shaking up Tech 13.10.2022 kryptopaja
 
-Tervetuloa *Shaking Up Tech* tapahtumaan, ja erityisesti salausten maailmaan!
+Tervetuloa *Shaking up Tech* tapahtumaan, ja erityisesti salausten maailmaan!
 
 
 Erilaiset salakirjoitustekniikat, eli *kryptografiset* menetelmät, ovat vastuussa monenlaisen tiedon salaamisesta modernissa viestinnässä, ja muussa tiedon välittämisessä ja säilyttämisessä.

@@ -6,7 +6,7 @@ theme = 'terminal'
 paginate = 5
 
 # Basic metadata configuration for your blog.
-title = "Shaking Up Tech 13.10.2022"
+title = "Shaking up Tech 13.10.2022"
 author = "OUSPG"
 languageCode = "fi-FI"
 
@@ -43,13 +43,13 @@ ignoreErrors = ["error-disable-taxonomy"]
     menuMore = "Näytä enemmän"
     readMore = "Lue lisää"
     readOtherPosts = "Lue muut artikkelit"
-    newerPosts = "Uudemman artikkelit"
+    newerPosts = "Uudemmat artikkelit"
     olderPosts = "Vanhemmat artikkelit"
     missingContentMessage = "Sivusto ei löytynyt..."
     missingBackButtonLabel = "Palaa etusivulle"
 
     [languages.fi.params.logo]
-      logoText = "Shaking Up Tech"
+      logoText = "Shaking up Tech"
       logoHomeLink = "/ShakingUpTech"
 
     [languages.fi.menu]
