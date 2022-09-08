@@ -1,7 +1,7 @@
 # Shaking Up Tech 13.10.2022
 
 
-Kryptoteemainen workshop Shaking Up Tech tapahtumaan
+Verkkosivusto kryptoteemaiseen työpajaan Shaking Up Tech tapahtumassa.
 
 
-kerta-avainjärjestelmä ja sen riskit
+Verkkosivu löytyy: https://ouspg.github.io/ShakingUpTech/
