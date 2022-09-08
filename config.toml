@@ -66,10 +66,11 @@ ignoreErrors = ["error-disable-taxonomy"]
       [[languages.fi.menu.main]]
         Weight = 3
         identifier = "ascii"
-        name = "ASCII Taulu"
+        name = "ASCII Taulukko"
         url = "/ascii"
       [[languages.fi.menu.main]]
         Weight = 4
         identifier = "CyberChef"
         name = "CyberChef"
         url = "https://gchq.github.io/CyberChef/"
+        pre = "_blank"
