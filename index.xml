@@ -4,18 +4,25 @@ Osa 1: Täydellinen salausmenetelmä? Osa 2: Moderni salaus</description><conten
 Menetelmässä on myös muutama kriittiinen ongelma, mitä tarkastellaan käytännössä.&lt;/p>
 &lt;p>Työpaja koostuu täten kahdesta eri osasta: johdatus kerta-avain järjestelmään (one-time pad eli OTP) ja kuinka modernimmat salaukset käyttävät sen ideaa, ja miten se voi olla haavoittuvainen. Tässä tilanteessa esimerkkinä on käytetty AES-CBC salausta.&lt;/p>
 &lt;h3 id="osa-1-täydellinen-salausmenetelmäharjoitus1">&lt;a href="harjoitus1">Osa 1: Täydellinen salausmenetelmä?&lt;/a>&lt;/h3>
-&lt;h3 id="osa-2-moderni-salausharjoitus2">&lt;a href="harjoitus2">Osa 2: Moderni salaus&lt;/a>&lt;/h3></content></item><item><title>ASCII taulukko</title><link>https://ouspg.github.io/ShakingUpTech/ascii/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ouspg.github.io/ShakingUpTech/ascii/</guid><description>Seuraava taulukko on englanniksi, ja ohessa on lyhys kuvaus taulukon arvoista.
+&lt;h3 id="osa-2-moderni-salausharjoitus2">&lt;a href="harjoitus2">Osa 2: Moderni salaus&lt;/a>&lt;/h3></content></item><item><title>ASCII taulukko</title><link>https://ouspg.github.io/ShakingUpTech/ascii/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ouspg.github.io/ShakingUpTech/ascii/</guid><description>Tietokoneissa ja kryptografiassa operoidaan usein numeerisilla arvoilla, ja numeeriset arvot on lopulta käännettävä ihmiselle luettavaan muotoon. Ohessa oleva ASCII taulukko on olemassa tätä tarkoitusta varten; eri numeeriset esitystavat ja sitä vastaava merkki on esitetty yhdessä. Numerollinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merkitys joko tietokoneen ohjauksessa, tai ihmisen tulkinnalla.
+Taulukko on englanniksi, ja ohessa on lyhys kuvaus taulukon arvoista.
 Merkintä dec tarkoittaa decimal eli kymmenjärjestelmän esitystä.
-Merkintä hex tarkoittaa hexadecimal eli kuusitoistajärjestelmän esitystä.
-Merkintä bin tarkoittaa binary eli binäärijärjestelmän esitystä. Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan merkkiä arvon esittämiseksi, ja tässä taulukossa arvot esitetään kahdeksalla binääriarvolla.
-Character kuvastaa merkkiä, mitä arvo kuvastaa ASCII merkistössä. Numerollinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merkitys joko tietokoneen käskyissä, tai ihmisen tulkinnalla.</description><content>&lt;p>Seuraava taulukko on englanniksi, ja ohessa on lyhys kuvaus taulukon arvoista.&lt;/p>
+Merkintä hex tarkoittaa hexadecimal eli kuusitoistajärjestelmän esitystä.</description><content>&lt;p>Tietokoneissa ja kryptografiassa operoidaan usein numeerisilla arvoilla, ja numeeriset arvot on lopulta käännettävä ihmiselle luettavaan muotoon.
+Ohessa oleva ASCII taulukko on olemassa tätä tarkoitusta varten; eri numeeriset esitystavat ja sitä vastaava merkki on esitetty yhdessä.
+Numerollinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merkitys joko tietokoneen ohjauksessa, tai ihmisen tulkinnalla.&lt;/p>
+&lt;p>Taulukko on englanniksi, ja ohessa on lyhys kuvaus taulukon arvoista.&lt;/p>
 &lt;p>Merkintä &lt;code>dec&lt;/code> tarkoittaa &lt;code>decimal&lt;/code> eli kymmenjärjestelmän esitystä.&lt;/p>
 &lt;p>Merkintä &lt;code>hex&lt;/code> tarkoittaa &lt;code>hexadecimal&lt;/code> eli kuusitoistajärjestelmän esitystä.&lt;/p>
-&lt;p>Merkintä &lt;code>bin&lt;/code> tarkoittaa &lt;code>binary&lt;/code> eli binäärijärjestelmän esitystä.
-Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan merkkiä arvon esittämiseksi, ja tässä taulukossa arvot esitetään kahdeksalla binääriarvolla.&lt;/p>
-&lt;p>&lt;code>Character&lt;/code> kuvastaa merkkiä, mitä arvo kuvastaa ASCII merkistössä.
-Numerollinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merkitys joko tietokoneen käskyissä, tai ihmisen tulkinnalla.&lt;/p>
-&lt;p>Kryptografiassa operoidaan usein numeerisilla arvoilla, ja numeeriset arvot on lopulta käännettävä ihmiselle luettavaan muotoon, mitä varten tämä ASCII taulukko on olemassa tässä työpajassa.&lt;/p>
+&lt;p>Merkintä &lt;code>binary&lt;/code> tarkoittaa binäärijärjestelmän esitystä.
+Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan merkkiä arvon esittämiseksi, ja tässä taulukossa arvot esitetään kahdeksalla binääriarvolla.
+Alkuperäinen ASCII sisältää 128 eri merkkiä, mikä voidaan esittää seitsemällä merkillä (2⁷).
+Laajennettu ASCII sisältää 256 merkkiä, mikä voidaan esittää kahdeksalla merkillä (2⁸).&lt;/p>
+&lt;p>&lt;code>Character&lt;/code> kuvastaa merkkiä, mitä arvo kuvastaa ASCII merkistössä.&lt;/p>
+&lt;p>ASCII on yksi ensimmäisiästä merkistöistä digitaalisessa kommunikaatiossa, mutta 128 tai 256 merkkiä on varsin suppea määrä, ja tarvetta on ollut enemmälle.
+Yleisin laaja kokoelma perustuu ASCII merkistön laajentaviin Unicode merkistöihin, joista suppein esitystapa UTF-8 voi näyttää 1,112,064 eri merkkiä.
+Unicodessa on tällä hetkellä 144,697 eri merkkiä.&lt;/p>
+&lt;p>Unicode on vastuussa esimerkiksi siitä, miten hymiöt näkyvät.
+Esimerkiksi UTF-8 formaatin neljän hexaluvun sarja &lt;code>0xF0 0x9F 0xA4 0xAF&lt;/code> esittää hymiötä 🤯.&lt;/p>
 &lt;h2 id="ascii-ohjausmerkit">ASCII ohjausmerkit&lt;/h2>
 &lt;table>
 &lt;thead>
