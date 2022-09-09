@@ -15,11 +15,12 @@ Numerollinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty mer
 &lt;p>Merkintä &lt;code>hex&lt;/code> tarkoittaa &lt;code>hexadecimal&lt;/code> eli kuusitoistajärjestelmän esitystä.&lt;/p>
 &lt;p>Merkintä &lt;code>binary&lt;/code> tarkoittaa binäärijärjestelmän esitystä.
 Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan merkkiä arvon esittämiseksi, ja tässä taulukossa arvot esitetään kahdeksalla binääriarvolla.
-Alkuperäinen ASCII sisältää 128 eri merkkiä, mikä voidaan esittää seitsemällä merkillä (2⁷).
-Laajennettu ASCII sisältää 256 merkkiä, mikä voidaan esittää kahdeksalla merkillä (2⁸).&lt;/p>
+Alkuperäinen ASCII sisältää 128 eri merkkiä, mikä voidaan esittää seitsemällä binäärisellä numerolla (2⁷).
+Laajennettu ASCII sisältää 256 merkkiä, mikä voidaan esittää kahdeksalla binäärisellä numerolla (2⁸).
+Kahdeksan binäärisen luvun eli &lt;em>bitin&lt;/em> (bit) esitys paremmin tunnetaan yhtenä &lt;em>tavuna&lt;/em> (byte).&lt;/p>
 &lt;p>&lt;code>Character&lt;/code> kuvastaa merkkiä, mitä arvo vastaa ASCII merkistössä.&lt;/p>
 &lt;p>ASCII on yksi ensimmäisistä yleisistä merkistöistä digitaalisessa kommunikaatiossa, mutta 128 tai 256 merkkiä on varsin suppea määrä, ja tarvetta on ollut enemmälle.
-Yleisin laaja kokoelma perustuu ASCII merkistön laajentaviin Unicode merkistöihin, joista suppein esitystapa UTF-8 voi näyttää 1,112,064 eri merkkiä.
+Yleisin laaja kokoelma perustuu ASCII merkistön laajentaviin &lt;em>Unicode&lt;/em> merkistöihin, joista esimerkiksi UTF-8 esitystapa voi näyttää 1,112,064 eri merkkiä.
 Tällä hetkellä Unicoden uusimmassa versiossa 14.0 on 144,697 eri merkkiä.&lt;/p>
 &lt;p>Unicode on vastuussa esimerkiksi siitä, miten hymiöt näkyvät.
 Esimerkiksi UTF-8 formaatin neljän hexaluvun sarja &lt;code>0xF0 0x9F 0xA4 0xAF&lt;/code> esittää hymiötä 🤯.&lt;/p>
