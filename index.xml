@@ -17,7 +17,8 @@ Numeerinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merki
 Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan binääristä numeroa eli &lt;em>bittiä&lt;/em> (eng. bit) arvon esittämiseksi, ja tässä taulukossa arvot esitetään seitsemällä binäärinumerolla.
 Alkuperäinen ASCII sisältää 128 eri merkkiä, mikä voidaan esittää seitsemällä binäärisellä numerolla (2⁷).&lt;/p>
 &lt;p>Kahdeksan bitin esitys tunnetaan paremmin yhtenä &lt;em>tavuna&lt;/em> (eng. byte).
-ASCII merkistö saavuttaa kahdeksannen bitin ns. pariteettibitin kanssa, mitä yleensä käytetään virheellisen arvon tunnistamisessa.&lt;/p>
+ASCII merkistö saavuttaa kahdeksannen bitin ns. pariteettibitin kanssa, mitä yleensä käytetään virheellisen arvon tunnistamisessa.
+Tätä ei tarvitse huomioida tässä työpajassa.&lt;/p>
 &lt;p>&lt;code>Character&lt;/code> kuvastaa merkkiä, mitä arvo vastaa ASCII merkistössä.&lt;/p>
 &lt;p>ASCII on yksi ensimmäisistä yleisistä merkistöistä digitaalisessa kommunikaatiossa, mutta 128 merkkiä on varsin suppea määrä, ja tarvetta on ollut enemmälle.
 Yleisin laaja kokoelma perustuu ASCII merkistön laajentaviin &lt;em>Unicode&lt;/em> merkistöihin, joista esimerkiksi UTF-8 esitystapa voi näyttää 1,112,064 eri merkkiä.
