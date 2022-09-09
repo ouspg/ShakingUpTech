@@ -9,6 +9,7 @@ paginate = 5
 title = "Shaking up Tech 13.10.2022"
 author = "OUSPG"
 languageCode = "fi-FI"
+enableEmoji = true
 
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true

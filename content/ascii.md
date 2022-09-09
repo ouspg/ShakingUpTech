@@ -2,19 +2,31 @@
 title = "ASCII taulukko"
 +++
 
-Seuraava taulukko on englanniksi, ja ohessa on lyhys kuvaus taulukon arvoista.
+Tietokoneissa ja kryptografiassa operoidaan usein numeerisilla arvoilla, ja numeeriset arvot on lopulta käännettävä ihmiselle luettavaan muotoon.
+Ohessa oleva ASCII taulukko on olemassa tätä tarkoitusta varten; eri numeeriset esitystavat ja sitä vastaava merkki on esitetty yhdessä.
+Numerollinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merkitys joko tietokoneen ohjauksessa, tai ihmisen tulkinnalla.
+
+Taulukko on englanniksi, ja ohessa on lyhys kuvaus taulukon arvoista.
 
 Merkintä `dec` tarkoittaa `decimal` eli kymmenjärjestelmän esitystä.
 
 Merkintä `hex` tarkoittaa `hexadecimal` eli kuusitoistajärjestelmän esitystä.
 
-Merkintä `bin` tarkoittaa `binary` eli binäärijärjestelmän esitystä.
+Merkintä `binary` tarkoittaa binäärijärjestelmän esitystä.
 Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan merkkiä arvon esittämiseksi, ja tässä taulukossa arvot esitetään kahdeksalla binääriarvolla.
+Alkuperäinen ASCII sisältää 128 eri merkkiä, mikä voidaan esittää seitsemällä merkillä (2⁷).
+Laajennettu ASCII sisältää 256 merkkiä, mikä voidaan esittää kahdeksalla merkillä (2⁸).
 
 `Character` kuvastaa merkkiä, mitä arvo kuvastaa ASCII merkistössä. 
-Numerollinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merkitys joko tietokoneen käskyissä, tai ihmisen tulkinnalla.
 
-Kryptografiassa operoidaan usein numeerisilla arvoilla, ja numeeriset arvot on lopulta käännettävä ihmiselle luettavaan muotoon, mitä varten tämä ASCII taulukko on olemassa tässä työpajassa.
+ASCII on yksi ensimmäisiästä merkistöistä digitaalisessa kommunikaatiossa, mutta 128 tai 256 merkkiä on varsin suppea määrä, ja tarvetta on ollut enemmälle.
+Yleisin laaja kokoelma perustuu ASCII merkistön laajentaviin Unicode merkistöihin, joista suppein esitystapa UTF-8 voi näyttää 1,112,064 eri merkkiä.
+Unicodessa on tällä hetkellä 144,697 eri merkkiä.
+
+Unicode on vastuussa esimerkiksi siitä, miten hymiöt näkyvät.
+Esimerkiksi UTF-8 formaatin neljän hexaluvun sarja `0xF0 0x9F 0xA4 0xAF` esittää hymiötä &#129327;.
+
+
 
 ## ASCII ohjausmerkit
 
