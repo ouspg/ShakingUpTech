@@ -17,11 +17,11 @@ Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan merkki�
 Alkuperäinen ASCII sisältää 128 eri merkkiä, mikä voidaan esittää seitsemällä merkillä (2⁷).
 Laajennettu ASCII sisältää 256 merkkiä, mikä voidaan esittää kahdeksalla merkillä (2⁸).
 
-`Character` kuvastaa merkkiä, mitä arvo kuvastaa ASCII merkistössä. 
+`Character` kuvastaa merkkiä, mitä arvo vastaa ASCII merkistössä. 
 
-ASCII on yksi ensimmäisiästä merkistöistä digitaalisessa kommunikaatiossa, mutta 128 tai 256 merkkiä on varsin suppea määrä, ja tarvetta on ollut enemmälle.
+ASCII on yksi ensimmäisistä yleisistä merkistöistä digitaalisessa kommunikaatiossa, mutta 128 tai 256 merkkiä on varsin suppea määrä, ja tarvetta on ollut enemmälle.
 Yleisin laaja kokoelma perustuu ASCII merkistön laajentaviin Unicode merkistöihin, joista suppein esitystapa UTF-8 voi näyttää 1,112,064 eri merkkiä.
-Unicodessa on tällä hetkellä 144,697 eri merkkiä.
+Tällä hetkellä Unicoden uusimmassa versiossa 14.0 on 144,697 eri merkkiä.
 
 Unicode on vastuussa esimerkiksi siitä, miten hymiöt näkyvät.
 Esimerkiksi UTF-8 formaatin neljän hexaluvun sarja `0xF0 0x9F 0xA4 0xAF` esittää hymiötä &#129327;.
