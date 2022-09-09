@@ -47,6 +47,7 @@ ignoreErrors = ["error-disable-taxonomy"]
     olderPosts = "Vanhemmat artikkelit"
     missingContentMessage = "Sivusto ei löytynyt..."
     missingBackButtonLabel = "Palaa etusivulle"
+    favicon = "/ShakingUpTech/images/favicon.svg"
 
     [languages.fi.params.logo]
       logoText = "Shaking up Tech"

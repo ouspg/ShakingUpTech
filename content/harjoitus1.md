@@ -1,10 +1,10 @@
 +++
 title = "Täydellinen salausmenetelmä?"
 showFullContent = false 
-description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante."
+description = "Johdatus kerta-avain järjestelmään ja sen riskeihin"
 +++
 
-    01010101010101 | Alkuperäinen teksti
+    01010101010101 | Salaamaton teksti
     11101001101011 | Salausavain
     --------------
     10111100111110 | Salattu teksti
@@ -14,10 +14,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum met
 
 ## XOR salauksen periaatteet
 
-    A ⊕ 0 = A,
-    A ⊕ A = 0,
-    A ⊕ B = B ⊕ A,
-    (A ⊕ B) ⊕ C = A ⊕ (B ⊕ C),
-    (B ⊕ A) ⊕ A = B ⊕ 0 = B
-
-    Missä ⊕ määrittää eksklusiivisen disjunktion (XOR)
+```
+A ⊕ 0 = A,
+A ⊕ A = 0,
+A ⊕ B = B ⊕ A,
+(A ⊕ B) ⊕ C = A ⊕ (B ⊕ C),
+(B ⊕ A) ⊕ A = B ⊕ 0 = B
+```
+Missä `⊕` määrittää eksklusiivisen disjunktion (XOR)
