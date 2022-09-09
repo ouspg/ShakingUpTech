@@ -18,6 +18,7 @@ Alkuperäinen ASCII sisältää 128 eri merkkiä, mikä voidaan esittää seitse
 
 Kahdeksan bitin esitys tunnetaan paremmin yhtenä *tavuna* (eng. byte).
 ASCII merkistö saavuttaa kahdeksannen bitin ns. pariteettibitin kanssa, mitä yleensä käytetään virheellisen arvon tunnistamisessa.
+Tätä ei tarvitse huomioida tässä työpajassa.
 
 `Character` kuvastaa merkkiä, mitä arvo vastaa ASCII merkistössä. 
 
