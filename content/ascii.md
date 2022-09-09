@@ -2,6 +2,18 @@
 title = "ASCII taulukko"
 +++
 
+Seuraava taulukko on englanniksi, ja ohessa on lyhys kuvaus taulukon arvoista.
+
+Merkintä `dec` tarkoittaa `decimal` eli kymmenjärjestelmän esitystä.
+
+Merkintä `hex` tarkoittaa `hexadecimal` eli kuusitoistajärjestelmän esitystä.
+
+Merkintä `bin` tarkoittaa `binary` eli binäärijärjestelmän esitystä.
+Tietokonemaailmassa tyypillinen pituus on seitsemän tai kahdeksan merkkiä arvon esittämiseksi, ja tässä taulukossa arvot esitetään kahdeksalla binääriarvolla.
+
+`Character` kuvastaa merkkiä, mitä arvo kuvastaa ASCII merkistössä. 
+Numerollinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merkitys.
+
 ## ASCII ohjausmerkit
 
 |Dec|Hex|Binary|Character|Description|
