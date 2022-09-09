@@ -9,10 +9,12 @@ Merkintä `dec` tarkoittaa `decimal` eli kymmenjärjestelmän esitystä.
 Merkintä `hex` tarkoittaa `hexadecimal` eli kuusitoistajärjestelmän esitystä.
 
 Merkintä `bin` tarkoittaa `binary` eli binäärijärjestelmän esitystä.
-Tietokonemaailmassa tyypillinen pituus on seitsemän tai kahdeksan merkkiä arvon esittämiseksi, ja tässä taulukossa arvot esitetään kahdeksalla binääriarvolla.
+Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan merkkiä arvon esittämiseksi, ja tässä taulukossa arvot esitetään kahdeksalla binääriarvolla.
 
 `Character` kuvastaa merkkiä, mitä arvo kuvastaa ASCII merkistössä. 
-Numerollinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merkitys.
+Numerollinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merkitys joko tietokoneen käskyissä, tai ihmisen tulkinnalla.
+
+Kryptografiassa operoidaan usein numeerisilla arvoilla, ja numeeriset arvot on lopulta käännettävä ihmiselle luettavaan muotoon, mitä varten tämä ASCII taulukko on olemassa tässä työpajassa.
 
 ## ASCII ohjausmerkit
 
