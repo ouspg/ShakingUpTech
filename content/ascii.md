@@ -14,13 +14,14 @@ Merkintä `hex` tarkoittaa `hexadecimal` eli kuusitoistajärjestelmän esitystä
 
 Merkintä `binary` tarkoittaa binäärijärjestelmän esitystä.
 Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan merkkiä arvon esittämiseksi, ja tässä taulukossa arvot esitetään kahdeksalla binääriarvolla.
-Alkuperäinen ASCII sisältää 128 eri merkkiä, mikä voidaan esittää seitsemällä merkillä (2⁷).
-Laajennettu ASCII sisältää 256 merkkiä, mikä voidaan esittää kahdeksalla merkillä (2⁸).
+Alkuperäinen ASCII sisältää 128 eri merkkiä, mikä voidaan esittää seitsemällä binäärisellä numerolla (2⁷).
+Laajennettu ASCII sisältää 256 merkkiä, mikä voidaan esittää kahdeksalla binäärisellä numerolla (2⁸). 
+Kahdeksan binäärisen luvun eli *bitin* (bit) esitys  paremmin tunnetaan yhtenä *tavuna* (byte).
 
 `Character` kuvastaa merkkiä, mitä arvo vastaa ASCII merkistössä. 
 
 ASCII on yksi ensimmäisistä yleisistä merkistöistä digitaalisessa kommunikaatiossa, mutta 128 tai 256 merkkiä on varsin suppea määrä, ja tarvetta on ollut enemmälle.
-Yleisin laaja kokoelma perustuu ASCII merkistön laajentaviin Unicode merkistöihin, joista suppein esitystapa UTF-8 voi näyttää 1,112,064 eri merkkiä.
+Yleisin laaja kokoelma perustuu ASCII merkistön laajentaviin *Unicode* merkistöihin, joista esimerkiksi UTF-8 esitystapa voi näyttää 1,112,064 eri merkkiä.
 Tällä hetkellä Unicoden uusimmassa versiossa 14.0 on 144,697 eri merkkiä.
 
 Unicode on vastuussa esimerkiksi siitä, miten hymiöt näkyvät.
