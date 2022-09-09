@@ -20,11 +20,13 @@
           <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
         </h1>
         <div class="post-meta">
+          {{ if .Params.showthedate }}
           <span class="post-date">
             {{ .Date.Format "2006-01-02" }}
           </span>
           {{ with .Params.Author }}
             <span class="post-author">:: {{ . }}</span>
+          {{ end }}
           {{ end }}
         </div>
 

@@ -1,7 +1,7 @@
 +++
 title = "Täydellinen salausmenetelmä?"
 showFullContent = false 
-description = "Johdatus kerta-avain järjestelmään ja sen riskeihin"
+description = "Johdatus kerta-avainjärjestelmään ja sen riskeihin"
 +++
 
     01010101010101 | Salaamaton teksti
