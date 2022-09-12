@@ -2,7 +2,7 @@
 title = "ASCII taulukko"
 +++
 
-Tietokoneissa ja kryptografiassa operoidaan usein numeerisilla arvoilla, ja numeeriset arvot on lopulta käännettävä ihmiselle luettavaan muotoon.
+Tietokoneissa ja kryptografiassa operoidaan usein numeerisilla arvoilla, ja numeeriset arvot on lopulta käännettävä ihmiselle helpommin ymmärrettävään muotoon.
 Ohessa oleva ASCII taulukko on olemassa tätä tarkoitusta varten; eri numeeriset esitystavat ja sitä vastaava merkki on esitetty yhdessä.
 Numeerinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merkitys joko tietokoneen ohjauksessa, tai ihmisen tulkinnalla.
 
@@ -13,8 +13,8 @@ Merkintä `dec` tarkoittaa `decimal` eli kymmenjärjestelmän esitystä.
 Merkintä `hex` tarkoittaa `hexadecimal` eli kuusitoistajärjestelmän esitystä.
 
 Merkintä `binary` tarkoittaa binäärijärjestelmän esitystä.
-Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan binääristä numeroa eli *bittiä* (eng. bit) arvon esittämiseksi, ja tässä taulukossa arvot esitetään seitsemällä binäärinumerolla.
-Alkuperäinen ASCII sisältää 128 eri merkkiä, mikä voidaan esittää seitsemällä binäärisellä numerolla (2⁷).
+Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan binääristä numeroa eli *bittiä* (eng. bit) arvon esittämiseksi, ja tässä taulukossa arvot esitetään seitsemällä bitillä.
+Alkuperäinen ASCII sisältää 128 eri merkkiä, mitkä voidaan esittää seitsemällä bitillä (2⁷).
 
 Kahdeksan bitin esitys tunnetaan paremmin yhtenä *tavuna* (eng. byte).
 ASCII merkistö saavuttaa kahdeksannen bitin ns. pariteettibitin kanssa, mitä yleensä käytetään virheellisen arvon tunnistamisessa.
@@ -22,13 +22,14 @@ Tätä ei tarvitse huomioida tässä työpajassa.
 
 `Character` kuvastaa merkkiä, mitä arvo vastaa ASCII merkistössä. 
 
-ASCII on yksi ensimmäisistä yleisistä merkistöistä digitaalisessa kommunikaatiossa, mutta 128 merkkiä on varsin suppea määrä, ja tarvetta on ollut enemmälle.
+ASCII on yksi ensimmäisistä yleisistä merkistöistä digitaalisessa maailmassa, mutta 128 merkkiä on varsin suppea määrä, ja tarvetta on ollut enemmälle.
 Yleisin laaja kokoelma perustuu ASCII merkistön laajentaviin *Unicode* merkistöihin, joista esimerkiksi UTF-8 esitystapa voi näyttää 1,112,064 eri merkkiä.
 Tällä hetkellä Unicoden uusimmassa versiossa 14.0 on 144,697 eri merkkiä.
 
 Unicode on vastuussa esimerkiksi siitä, miten hymiöt näkyvät.
 Esimerkiksi UTF-8 formaatin neljän hexaluvun sarja `0xF0 0x9F 0xA4 0xAF` esittää hymiötä &#129327;.
 
+Viestien sisältö rajataan ASCII merkistöön tässä työpajassa.
 
 
 ## ASCII ohjausmerkit
