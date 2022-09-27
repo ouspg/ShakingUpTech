@@ -11,12 +11,12 @@ Informaatio voidaan välittää tai tallettaa luottamuksellisesti oikealle henki
 Toissijaisina tavoitteina on osoittaa informaation alkuperä ja sen eheys.
 
 
-Salauksessa keskeisiä termejä ovat salausalgoritmi (eng. *cipher*),  selkoteksti (eng. *plaintext*), salateksti (eng. *ciphertext*) ja salausavain (eng. *key*). 
-
+Salauksessa keskeisiä termejä ovat salausalgoritmi (eng. *cipher*),  selkoteksti (eng. *plaintext*), salateksti (eng. *ciphertext*) ja salausavain (eng. *cipher key* tai vain *key*). 
 Tietokonemaailmassa englanti on pakollinen kieli, ja sen takia keskeistä termeistä on esitetty myös käännös.
 
-Salaus perustuu operaatioihin, joissa 
-
+Salaus perustuu salausalgoritmiin, mikä muuttaa yleensä selkotekstin salatekstiksi salausavaimen avulla.
+Tämä on onnistuttava myös päinvastaiseen suuntaan; muuten salaus menettää tarkoituksensa.
+On oltava olemassa avain joka voi myös purkaa salauksen. Monesti se on sama kuin salaamiseen käytetty.
 
 
 
@@ -30,10 +30,13 @@ A ⊕ B = B ⊕ A,
 (A ⊕ B) ⊕ C = A ⊕ (B ⊕ C),
 (B ⊕ A) ⊕ A = B ⊕ 0 = B
 ```
-Missä `⊕` määrittää eksklusiivisen disjunktion (XOR)
+Missä `⊕` määrittää eksklusiivisen disjunktion (XOR) [^1]
 
 {{< svg "static/svg/xor_cipher.svg" >}}
 
 Testaa itse!
 
 {{< iframe "../iframe/xor.html" >}}
+
+
+[^1]: [XOR Cipher in Wikipedia 🙄](https://en.wikipedia.org/wiki/XOR_cipher) 
