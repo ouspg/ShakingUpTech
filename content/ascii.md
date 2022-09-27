@@ -2,6 +2,8 @@
 title = "ASCII taulukko"
 +++
 
+## Tietoa
+
 Tietokoneissa ja kryptografiassa operoidaan usein numeerisilla arvoilla, ja numeeriset arvot on lopulta käännettävä ihmiselle helpommin ymmärrettävään muotoon.
 Ohessa oleva ASCII taulukko on olemassa tätä tarkoitusta varten; eri numeeriset esitystavat ja sitä vastaava merkki on esitetty yhdessä.
 Numeerinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merkitys joko tietokoneen ohjauksessa, tai ihmisen tulkinnalla.

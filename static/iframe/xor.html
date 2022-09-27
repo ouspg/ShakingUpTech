@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>JavaScript Demo: XOR salaa 'Wow' sana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="../css/codemirror-5-50-2.css?v=7b31f70"
+      rel="stylesheet"
+    />
+    <link href="../css/editor-js.css?v=7b31f70" rel="stylesheet" />
+    
+  </head>
+
+  <body>
+    <section id="static"><pre><code id="static-js" data-height="shorter">a = 5;        // 00000000000000000000000000000101
+tulosta(binaariksi(a))
+b = 3;        // 00000000000000000000000000000011
+
+console.log(a ^ b); // 00000000000000000000000000000110
+// expected output: 6
+
+
+
+function binaariksi(dec) {
+  return (dec >>> 0).toString(2);
+}
+
+function tulosta(data) {
+  console.log(data);
+}
+
+</code></pre></section>
+
+    <section id="live" class="live hidden">
+      <header class="output-header full-border">
+        <h4 class="output-heading">JavaScript Demo: XOR salaa 'Wow' sana</h4>
+      </header>
+      <div id="editor" class="editor"></div>
+
+      <div class="output-container">
+        <div class="buttons-container">
+          <button id="execute" class="button run" type="button">
+            Suorita &rsaquo;
+          </button>
+          <button id="reset" type="button" class="button">Aloita alusta</button>
+        </div>
+        <div id="console" class="output"><code></code></div>
+      </div>
+    </section>
+
+    
+
+    <script src="../js/codemirror-5-50-2.js?v=7b31f70"></script>
+    <script src="../js/editor-js.js?v=7b31f70"></script>
+  </body>
+</html>

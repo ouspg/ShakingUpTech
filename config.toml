@@ -9,7 +9,7 @@ paginate = 5
 title = "Shaking up Tech 13.10.2022"
 author = "OUSPG"
 languageCode = "fi-FI"
-enableEmoji = true
+enableEmoji = false 
 
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
@@ -20,6 +20,8 @@ ignoreErrors = ["error-disable-taxonomy"]
 
 [params]
   themeColor = "orange"
+  toc = true
+  tocTitle = "Sisällysluettelo"
 
   # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
   # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
@@ -76,3 +78,11 @@ ignoreErrors = ["error-disable-taxonomy"]
         name = "CyberChef"
         url = "https://gchq.github.io/CyberChef/"
         pre = "_blank"
+
+
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2

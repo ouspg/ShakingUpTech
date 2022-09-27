@@ -1,0 +1,5 @@
+
+{{$svg := .Get 0}}
+<div class="equation">
+{{ $svg  | readFile | safeHTML }}
+</div>

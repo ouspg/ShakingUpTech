@@ -4,23 +4,24 @@ showFullContent = false
 description = "Johdatus kerta-avainjärjestelmään ja sen riskeihin"
 +++
 
-    01010101010101 | Salaamaton teksti
-    11101001101011 | Salausavain
-    --------------
-    10111100111110 | Salattu teksti
+## Johdanto
 
-* Modulolaskenta / XOR
-* Cyberchef
-* One-time pad
+Salauksen ensisijainen tavoite on tehdä selkokielisestä informaatiosta käsittämätöntä, niin että sen luottamuksellisuus voidaan säilyttää.
+Informaatio voidaan välittää tai tallettaa luottamuksellisesti oikealle henkilölle ilman, että joku muu voi ymmärtää sen tarkoituksen.
+Toissijaisina tavoitteina on osoittaa informaation alkuperä ja sen eheys.
+
+
+Salauksessa keskeisiä termejä ovat salausalgoritmi (eng. *cipher*),  selkoteksti (eng. *plaintext*), salateksti (eng. *ciphertext*) ja salausavain (eng. *key*). 
+
+Tietokonemaailmassa englanti on pakollinen kieli, ja sen takia keskeistä termeistä on esitetty myös käännös.
 
 Salaus perustuu operaatioihin, joissa 
 
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
-
 
 ## XOR salauksen periaatteet
+
 
 ```
 A ⊕ 0 = A,
@@ -30,3 +31,9 @@ A ⊕ B = B ⊕ A,
 (B ⊕ A) ⊕ A = B ⊕ 0 = B
 ```
 Missä `⊕` määrittää eksklusiivisen disjunktion (XOR)
+
+{{< svg "static/svg/xor_cipher.svg" >}}
+
+Testaa itse!
+
+{{< iframe "../iframe/xor.html" >}}

@@ -32,10 +32,12 @@
 
   {{ if (.Params.Toc | default .Site.Params.Toc) }}
     <div class="table-of-contents">
+      <!-- <aside class="hidden lg:block tableOfContentContainer" id="tableOfContentContainer"> -->
       <h2>
         {{ (.Params.TocTitle | default .Site.Params.TocTitle) | default "Table of Contents" }}
       </h2>
       {{ .TableOfContents }}
+  <!-- </aside> -->
     </div>
   {{ end }}
 
