@@ -963,21 +963,22 @@ Esimerkiksi UTF-8 formaatin neljän hexaluvun sarja &lt;code>0xF0 0x9F 0xA4 0xAF
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></content></item><item><title>Modernin salauksen huijaaminen</title><link>https://ouspg.github.io/ShakingUpTech/harjoitus2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ouspg.github.io/ShakingUpTech/harjoitus2/</guid><description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante.</description><content>&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante.&lt;/p></content></item><item><title>Täydellinen salausmenetelmä?</title><link>https://ouspg.github.io/ShakingUpTech/harjoitus1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ouspg.github.io/ShakingUpTech/harjoitus1/</guid><description>Johdanto Salauksen ensisijainen tavoite on tehdä selkokielisestä informaatiosta käsittämätöntä, niin että sen luottamuksellisuus voidaan säilyttää. Informaatio voidaan välittää tai tallettaa luottamuksellisesti oikealle henkilölle ilman, että joku muu voi ymmärtää sen tarkoituksen. Toissijaisina tavoitteina on osoittaa informaation alkuperä ja sen eheys.
-Salauksessa keskeisiä termejä ovat salausalgoritmi (eng. cipher), selkoteksti (eng. plaintext), salateksti (eng. ciphertext) ja salausavain (eng. key).
-Tietokonemaailmassa englanti on pakollinen kieli, ja sen takia keskeistä termeistä on esitetty myös käännös.</description><content>&lt;h2 id="johdanto">Johdanto&lt;/h2>
+Salauksessa keskeisiä termejä ovat salausalgoritmi (eng. cipher), selkoteksti (eng. plaintext), salateksti (eng. ciphertext) ja salausavain (eng. cipher key tai vain key). Tietokonemaailmassa englanti on pakollinen kieli, ja sen takia keskeistä termeistä on esitetty myös käännös.</description><content>&lt;h2 id="johdanto">Johdanto&lt;/h2>
 &lt;p>Salauksen ensisijainen tavoite on tehdä selkokielisestä informaatiosta käsittämätöntä, niin että sen luottamuksellisuus voidaan säilyttää.
 Informaatio voidaan välittää tai tallettaa luottamuksellisesti oikealle henkilölle ilman, että joku muu voi ymmärtää sen tarkoituksen.
 Toissijaisina tavoitteina on osoittaa informaation alkuperä ja sen eheys.&lt;/p>
-&lt;p>Salauksessa keskeisiä termejä ovat salausalgoritmi (eng. &lt;em>cipher&lt;/em>), selkoteksti (eng. &lt;em>plaintext&lt;/em>), salateksti (eng. &lt;em>ciphertext&lt;/em>) ja salausavain (eng. &lt;em>key&lt;/em>).&lt;/p>
-&lt;p>Tietokonemaailmassa englanti on pakollinen kieli, ja sen takia keskeistä termeistä on esitetty myös käännös.&lt;/p>
-&lt;p>Salaus perustuu operaatioihin, joissa&lt;/p>
+&lt;p>Salauksessa keskeisiä termejä ovat salausalgoritmi (eng. &lt;em>cipher&lt;/em>), selkoteksti (eng. &lt;em>plaintext&lt;/em>), salateksti (eng. &lt;em>ciphertext&lt;/em>) ja salausavain (eng. &lt;em>cipher key&lt;/em> tai vain &lt;em>key&lt;/em>).
+Tietokonemaailmassa englanti on pakollinen kieli, ja sen takia keskeistä termeistä on esitetty myös käännös.&lt;/p>
+&lt;p>Salaus perustuu salausalgoritmiin, mikä muuttaa yleensä selkotekstin salatekstiksi salausavaimen avulla.
+Tämä on onnistuttava myös päinvastaiseen suuntaan; muuten salaus menettää tarkoituksensa.
+On oltava olemassa avain joka voi myös purkaa salauksen. Monesti se on sama kuin salaamiseen käytetty.&lt;/p>
 &lt;h2 id="xor-salauksen-periaatteet">XOR salauksen periaatteet&lt;/h2>
 &lt;pre tabindex="0">&lt;code>A ⊕ 0 = A,
 A ⊕ A = 0,
 A ⊕ B = B ⊕ A,
 (A ⊕ B) ⊕ C = A ⊕ (B ⊕ C),
 (B ⊕ A) ⊕ A = B ⊕ 0 = B
-&lt;/code>&lt;/pre>&lt;p>Missä &lt;code>⊕&lt;/code> määrittää eksklusiivisen disjunktion (XOR)&lt;/p>
+&lt;/code>&lt;/pre>&lt;p>Missä &lt;code>⊕&lt;/code> määrittää eksklusiivisen disjunktion (XOR) &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
 &lt;div class="equation">
 &lt;?xml version="1.0" encoding="UTF-8" standalone="no"?>
 &lt;!-- Created with Inkscape (http://www.inkscape.org/) -->
@@ -1253,4 +1254,12 @@ id="tspan14880">avaimella.&lt;/tspan>&lt;/text>
 &lt;/svg>
 &lt;/div>
 &lt;p>Testaa itse!&lt;/p>
-&lt;iframe src="../iframe/xor.html" class="coding">&lt;/iframe></content></item></channel></rss>
+&lt;iframe src="../iframe/xor.html" class="coding">&lt;/iframe>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a href="https://en.wikipedia.org/wiki/XOR_cipher">XOR Cipher in Wikipedia 🙄&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></content></item></channel></rss>
