@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shaking Up Tech 13.10.2022</title><link>https://ouspg.github.io/ShakingUpTech/</link><description>Recent content on Shaking Up Tech 13.10.2022</description><generator>Hugo -- gohugo.io</generator><language>fi-FI</language><copyright>Oulu University Secure Programming Group</copyright><lastBuildDate>Fri, 09 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ouspg.github.io/ShakingUpTech/index.xml" rel="self" type="application/rss+xml"/><item><title>Työpajan kulku</title><link>https://ouspg.github.io/ShakingUpTech/posts/main/</link><pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate><guid>https://ouspg.github.io/ShakingUpTech/posts/main/</guid><description>Intro (ketä ollaan ja mistä tullaan) Kyberturvallisuudesta (mitä se on?) Salauksesta (mitä se on, missä sitä käytetään) Harjoitusten tausta, tekeminen ja läpikäyminen Harjoitukset Ensimmäisenä otetaan katsaus yhteen vahvaan, mutta lopulta varsin yksinkertaiseen menetelmään, joka toimii perustana moniin monimutkaisempiin menetelmiin. Menetelmässä on myös muutama kriittiinen ongelma, mitä tarkastellaan käytännössä.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shaking Up Tech 13.10.2022</title><link>https://ouspg.github.io/ShakingUpTech/</link><description>Recent content on Shaking Up Tech 13.10.2022</description><generator>Hugo -- gohugo.io</generator><language>fi-FI</language><copyright>Oulu University Secure Programming Group</copyright><lastBuildDate>Fri, 09 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ouspg.github.io/ShakingUpTech/index.xml" rel="self" type="application/rss+xml"/><item><title>Työpajan kulku</title><link>https://ouspg.github.io/ShakingUpTech/posts/main/</link><pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate><guid>https://ouspg.github.io/ShakingUpTech/posts/main/</guid><description>Intro (ketä ollaan ja mistä tullaan) Kyberturvallisuudesta (mitä se on?) Salauksesta (mitä se on, missä sitä käytetään) Harjoitusten tausta, tekeminen ja läpikäyminen Harjoitukset Ensimmäisenä otetaan katsaus yhteen vahvaan, jopa &amp;ldquo;täydelliseksi&amp;rdquo; kutsuttuun menetelmään, joka toimii perustana moniin monimutkaisempiin menetelmiin. Menetelmässä on myös muutama kriittiinen ongelma, mitä tarkastellaan käytännössä.
 Työpaja koostuu täten kahdesta eri osasta: johdatus &amp;ldquo;täydellisen salauksen&amp;rdquo; kerta-avain järjestelmään (one-time pad eli OTP) ja kuinka modernimmat salaukset käyttävät sen ideaa, ja mitä ovat sen heikkoudet.</description><content>&lt;ul>
 &lt;li>Intro (ketä ollaan ja mistä tullaan)&lt;/li>
 &lt;li>Kyberturvallisuudesta (mitä se on?)&lt;/li>
@@ -6,13 +6,14 @@ Työpaja koostuu täten kahdesta eri osasta: johdatus &amp;ldquo;täydellisen sa
 &lt;li>Harjoitusten tausta, tekeminen ja läpikäyminen&lt;/li>
 &lt;/ul>
 &lt;h2 id="harjoitukset">Harjoitukset&lt;/h2>
-&lt;p>Ensimmäisenä otetaan katsaus yhteen vahvaan, mutta lopulta varsin yksinkertaiseen menetelmään, joka toimii perustana moniin monimutkaisempiin menetelmiin.
+&lt;p>Ensimmäisenä otetaan katsaus yhteen vahvaan, jopa &amp;ldquo;täydelliseksi&amp;rdquo; kutsuttuun menetelmään, joka toimii perustana moniin monimutkaisempiin menetelmiin.
 Menetelmässä on myös muutama kriittiinen ongelma, mitä tarkastellaan käytännössä.&lt;/p>
-&lt;p>Työpaja koostuu täten kahdesta eri osasta: johdatus &amp;ldquo;täydellisen salauksen&amp;rdquo; kerta-avain järjestelmään (one-time pad eli OTP) ja kuinka modernimmat salaukset käyttävät sen ideaa, ja mitä ovat sen heikkoudet. Tässä tilanteessa esimerkkinä on käytetty &amp;ldquo;sotilastason&amp;rdquo; AES-CBC salausta.&lt;/p>
+&lt;p>Työpaja koostuu täten kahdesta eri osasta: johdatus &amp;ldquo;täydellisen salauksen&amp;rdquo; kerta-avain järjestelmään (one-time pad eli OTP) ja kuinka modernimmat salaukset käyttävät sen ideaa, ja mitä ovat sen heikkoudet. Tässä tilanteessa esimerkkinä on käytetty &amp;ldquo;sotilastason&amp;rdquo; AES-CBC salausta, ja kuinka sitä voi huijata.&lt;/p>
 &lt;h3 id="osa-1-täydellinen-salausmenetelmäharjoitus1">&lt;a href="harjoitus1">Osa 1: Täydellinen salausmenetelmä?&lt;/a>&lt;/h3>
-&lt;h3 id="osa-2-moderni-salausharjoitus2">&lt;a href="harjoitus2">Osa 2: Moderni salaus&lt;/a>&lt;/h3></content></item><item><title>ASCII taulukko</title><link>https://ouspg.github.io/ShakingUpTech/ascii/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ouspg.github.io/ShakingUpTech/ascii/</guid><description>Tietokoneissa ja kryptografiassa operoidaan usein numeerisilla arvoilla, ja numeeriset arvot on lopulta käännettävä ihmiselle helpommin ymmärrettävään muotoon. Ohessa oleva ASCII taulukko on olemassa tätä tarkoitusta varten; eri numeeriset esitystavat ja sitä vastaava merkki on esitetty yhdessä. Numeerinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merkitys joko tietokoneen ohjauksessa, tai ihmisen tulkinnalla.
+&lt;h3 id="osa-2-moderni-salausharjoitus2">&lt;a href="harjoitus2">Osa 2: Moderni salaus&lt;/a>&lt;/h3></content></item><item><title>ASCII taulukko</title><link>https://ouspg.github.io/ShakingUpTech/ascii/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ouspg.github.io/ShakingUpTech/ascii/</guid><description>Tietoa Tietokoneissa ja kryptografiassa operoidaan usein numeerisilla arvoilla, ja numeeriset arvot on lopulta käännettävä ihmiselle helpommin ymmärrettävään muotoon. Ohessa oleva ASCII taulukko on olemassa tätä tarkoitusta varten; eri numeeriset esitystavat ja sitä vastaava merkki on esitetty yhdessä. Numeerinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merkitys joko tietokoneen ohjauksessa, tai ihmisen tulkinnalla.
 Taulukko on englanniksi, ja ohessa on lyhys kuvaus taulukon arvoista.
-Merkintä dec tarkoittaa decimal eli kymmenjärjestelmän esitystä.</description><content>&lt;p>Tietokoneissa ja kryptografiassa operoidaan usein numeerisilla arvoilla, ja numeeriset arvot on lopulta käännettävä ihmiselle helpommin ymmärrettävään muotoon.
+Merkintä dec tarkoittaa decimal eli kymmenjärjestelmän esitystä.</description><content>&lt;h2 id="tietoa">Tietoa&lt;/h2>
+&lt;p>Tietokoneissa ja kryptografiassa operoidaan usein numeerisilla arvoilla, ja numeeriset arvot on lopulta käännettävä ihmiselle helpommin ymmärrettävään muotoon.
 Ohessa oleva ASCII taulukko on olemassa tätä tarkoitusta varten; eri numeeriset esitystavat ja sitä vastaava merkki on esitetty yhdessä.
 Numeerinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merkitys joko tietokoneen ohjauksessa, tai ihmisen tulkinnalla.&lt;/p>
 &lt;p>Taulukko on englanniksi, ja ohessa on lyhys kuvaus taulukon arvoista.&lt;/p>
@@ -961,23 +962,295 @@ Esimerkiksi UTF-8 formaatin neljän hexaluvun sarja &lt;code>0xF0 0x9F 0xA4 0xAF
 &lt;td>delete&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></content></item><item><title>Modernin salauksen huijaaminen</title><link>https://ouspg.github.io/ShakingUpTech/harjoitus2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ouspg.github.io/ShakingUpTech/harjoitus2/</guid><description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante.</description><content>&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante.&lt;/p></content></item><item><title>Täydellinen salausmenetelmä?</title><link>https://ouspg.github.io/ShakingUpTech/harjoitus1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ouspg.github.io/ShakingUpTech/harjoitus1/</guid><description>01010101010101 | Salaamaton teksti 11101001101011 | Salausavain -------------- 10111100111110 | Salattu teksti Modulolaskenta / XOR Cyberchef One-time pad Salaus perustuu operaatioihin, joissa
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante.</description><content>&lt;pre>&lt;code>01010101010101 | Salaamaton teksti
-11101001101011 | Salausavain
---------------
-10111100111110 | Salattu teksti
-&lt;/code>&lt;/pre>
-&lt;ul>
-&lt;li>Modulolaskenta / XOR&lt;/li>
-&lt;li>Cyberchef&lt;/li>
-&lt;li>One-time pad&lt;/li>
-&lt;/ul>
+&lt;/table></content></item><item><title>Modernin salauksen huijaaminen</title><link>https://ouspg.github.io/ShakingUpTech/harjoitus2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ouspg.github.io/ShakingUpTech/harjoitus2/</guid><description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante.</description><content>&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante.&lt;/p></content></item><item><title>Täydellinen salausmenetelmä?</title><link>https://ouspg.github.io/ShakingUpTech/harjoitus1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ouspg.github.io/ShakingUpTech/harjoitus1/</guid><description>Johdanto Salauksen ensisijainen tavoite on tehdä selkokielisestä informaatiosta käsittämätöntä, niin että sen luottamuksellisuus voidaan säilyttää. Informaatio voidaan välittää tai tallettaa luottamuksellisesti oikealle henkilölle ilman, että joku muu voi ymmärtää sen tarkoituksen. Toissijaisina tavoitteina on osoittaa informaation alkuperä ja sen eheys.
+Salauksessa keskeisiä termejä ovat salausalgoritmi (eng. cipher), selkoteksti (eng. plaintext), salateksti (eng. ciphertext) ja salausavain (eng. key).
+Tietokonemaailmassa englanti on pakollinen kieli, ja sen takia keskeistä termeistä on esitetty myös käännös.</description><content>&lt;h2 id="johdanto">Johdanto&lt;/h2>
+&lt;p>Salauksen ensisijainen tavoite on tehdä selkokielisestä informaatiosta käsittämätöntä, niin että sen luottamuksellisuus voidaan säilyttää.
+Informaatio voidaan välittää tai tallettaa luottamuksellisesti oikealle henkilölle ilman, että joku muu voi ymmärtää sen tarkoituksen.
+Toissijaisina tavoitteina on osoittaa informaation alkuperä ja sen eheys.&lt;/p>
+&lt;p>Salauksessa keskeisiä termejä ovat salausalgoritmi (eng. &lt;em>cipher&lt;/em>), selkoteksti (eng. &lt;em>plaintext&lt;/em>), salateksti (eng. &lt;em>ciphertext&lt;/em>) ja salausavain (eng. &lt;em>key&lt;/em>).&lt;/p>
+&lt;p>Tietokonemaailmassa englanti on pakollinen kieli, ja sen takia keskeistä termeistä on esitetty myös käännös.&lt;/p>
 &lt;p>Salaus perustuu operaatioihin, joissa&lt;/p>
-&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.&lt;/p>
 &lt;h2 id="xor-salauksen-periaatteet">XOR salauksen periaatteet&lt;/h2>
 &lt;pre tabindex="0">&lt;code>A ⊕ 0 = A,
 A ⊕ A = 0,
 A ⊕ B = B ⊕ A,
 (A ⊕ B) ⊕ C = A ⊕ (B ⊕ C),
 (B ⊕ A) ⊕ A = B ⊕ 0 = B
-&lt;/code>&lt;/pre>&lt;p>Missä &lt;code>⊕&lt;/code> määrittää eksklusiivisen disjunktion (XOR)&lt;/p></content></item></channel></rss>
+&lt;/code>&lt;/pre>&lt;p>Missä &lt;code>⊕&lt;/code> määrittää eksklusiivisen disjunktion (XOR)&lt;/p>
+&lt;div class="equation">
+&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?>
+&lt;!-- Created with Inkscape (http://www.inkscape.org/) -->
+&lt;svg
+width="152.96101mm"
+height="76.842323mm"
+viewBox="-1 -1 218.51573 109.77475"
+version="1.1"
+id="svg5"
+inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+sodipodi:docname="xor_cipher.svg"
+xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:svg="http://www.w3.org/2000/svg">
+&lt;sodipodi:namedview
+id="namedview7"
+pagecolor="#505050"
+bordercolor="#eeeeee"
+borderopacity="1"
+inkscape:showpageshadow="false"
+inkscape:pageopacity="0"
+inkscape:pagecheckerboard="0"
+inkscape:deskcolor="#505050"
+inkscape:document-units="mm"
+showgrid="false"
+inkscape:zoom="2.978965"
+inkscape:cx="335.85491"
+inkscape:cy="219.70718"
+inkscape:window-width="2560"
+inkscape:window-height="1440"
+inkscape:window-x="0"
+inkscape:window-y="0"
+inkscape:window-maximized="1"
+inkscape:current-layer="layer1" />
+&lt;defs
+id="defs2">
+&lt;marker
+style="overflow:visible"
+id="Arrow4"
+refX="0"
+refY="0"
+orient="auto-start-reverse"
+inkscape:stockid="Arrow4"
+markerWidth="5"
+markerHeight="6"
+viewBox="0 0 5 6"
+inkscape:isstock="true"
+inkscape:collect="always"
+preserveAspectRatio="xMidYMid">
+&lt;path
+style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
+id="path1741" />
+&lt;/marker>
+&lt;marker
+style="overflow:visible"
+id="Arrow4-9"
+refX="0"
+refY="0"
+orient="auto-start-reverse"
+inkscape:stockid="Arrow4"
+markerWidth="5"
+markerHeight="6"
+viewBox="0 0 5 6"
+inkscape:isstock="true"
+inkscape:collect="always"
+preserveAspectRatio="xMidYMid">
+&lt;path
+style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
+id="path1741-2" />
+&lt;/marker>
+&lt;marker
+style="overflow:visible"
+id="Arrow4-6"
+refX="0"
+refY="0"
+orient="auto-start-reverse"
+inkscape:stockid="Arrow4"
+markerWidth="5"
+markerHeight="6"
+viewBox="0 0 5 6"
+inkscape:isstock="true"
+inkscape:collect="always"
+preserveAspectRatio="xMidYMid">
+&lt;path
+style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
+id="path1741-1" />
+&lt;/marker>
+&lt;/defs>
+&lt;g
+inkscape:label="Layer 1"
+inkscape:groupmode="layer"
+id="layer1"
+transform="translate(-26.000352,-37.181262)">
+&lt;path
+style="image-rendering:auto;stroke-opacity:1;stroke-dashoffset:0;stroke-dasharray:4.31236, 1.78963;stroke-miterlimit:4;stroke-linejoin:miter;stroke-linecap:butt;stroke-width:0.539045;stroke:currentColor;fill:none;"
+d="M 181.80035,100.62228 25.000546,100.73411"
+id="path521" />
+&lt;text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.26;stroke-dasharray:none"
+x="24.589525"
+y="94.512642"
+id="text1985-3"
+transform="scale(0.98163701,1.0187065)">&lt;tspan
+sodipodi:role="line"
+id="tspan1983-6"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code';stroke-width:0.26;stroke-dasharray:none"
+x="24.589525"
+y="94.512642">11000010 01101011 10110100&lt;/tspan>&lt;/text>
+&lt;text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.259724"
+x="24.589525"
+y="110.34954"
+id="text1985-3-7"
+transform="scale(0.98163701,1.0187065)">&lt;tspan
+sodipodi:role="line"
+id="tspan1983-6-5"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code';stroke-width:0.259724"
+x="24.589525"
+y="110.34954">10010101 00000100 11000011&lt;/tspan>&lt;/text>
+&lt;text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.25917"
+x="24.92305"
+y="83.032951"
+id="text1985"
+transform="scale(0.97954188,1.0208854)">&lt;tspan
+sodipodi:role="line"
+id="tspan1983"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code';stroke-width:0.25917"
+x="24.92305"
+y="83.032951">01010111 01101111 01110111&lt;/tspan>&lt;/text>
+&lt;text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.264583"
+x="186.2032"
+y="84.123177"
+id="text5048">&lt;tspan
+sodipodi:role="line"
+id="tspan5046"
+style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold';stroke-width:0.264583"
+x="186.2032"
+y="84.123177">Selkoteksti&lt;/tspan>&lt;/text>
+&lt;text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.264583"
+x="186.2032"
+y="95.653175"
+id="text5048-3">&lt;tspan
+sodipodi:role="line"
+id="tspan5046-5"
+style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold';stroke-width:0.264583"
+x="186.2032"
+y="95.653175">Salausavain &lt;/tspan>&lt;/text>
+&lt;text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.264583"
+x="186.2032"
+y="111.78617"
+id="text5048-6">&lt;tspan
+sodipodi:role="line"
+id="tspan5046-2"
+style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold';stroke-width:0.264583"
+x="186.2032"
+y="111.78617">Salateksti&lt;/tspan>&lt;/text>
+&lt;text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.264583"
+x="52.522385"
+y="44.197433"
+id="text7359">&lt;tspan
+sodipodi:role="line"
+id="tspan7357"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.264583"
+x="52.522385"
+y="44.197433">XOR salaus sanalle &amp;quot;Wow&amp;quot;&lt;/tspan>&lt;/text>
+&lt;rect
+style="paint-order:markers fill stroke;stroke-opacity:1;stroke-dashoffset:0.270527;stroke-dasharray:0.772935, 0.386468;stroke-miterlimit:4;stroke-linejoin:round;stroke-width:0.386468;stroke:currentColor;fill-opacity:0.0104001;fill:#000000;"
+id="rect14458"
+width="6.3229599"
+height="37.959446"
+x="133.49324"
+y="75.693237" />
+&lt;rect
+style="paint-order:markers fill stroke;stroke-opacity:1;stroke-dashoffset:0.270527;stroke-dasharray:0.772935, 0.386468;stroke-miterlimit:4;stroke-linejoin:round;stroke-width:0.386468;stroke:currentColor;fill-opacity:0.0104001;fill:#000000;"
+id="rect14458-3"
+width="6.3229599"
+height="37.959446"
+x="60.693233"
+y="76.064262" />
+&lt;path
+style="fill:currentColor;stroke:#000000;stroke-width:0.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow4)"
+d="m 138.64758,117.68849 14.30227,19.15972 0.55858,-0.41697"
+id="path14525" />
+&lt;path
+style="marker-start:url(#Arrow4-9);stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;stroke-width:0.8;stroke:#000000;fill:currentColor;"
+d="m 163.24034,117.68849 14.30227,19.15972 0.55858,-0.41697"
+id="path14525-2" />
+&lt;rect
+style="paint-order:markers fill stroke;stroke-opacity:1;stroke-dashoffset:0.270527;stroke-dasharray:0.772935, 0.386468;stroke-miterlimit:4;stroke-linejoin:round;stroke-width:0.386468;stroke:currentColor;fill-opacity:0.0104001;fill:#000000;"
+id="rect14458-8"
+width="6.3229599"
+height="37.959446"
+x="157.89528"
+y="75.693237" />
+&lt;text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.65288px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:currentColor;stroke-width:0.290806"
+x="206.84404"
+y="100.91367"
+id="text14645"
+transform="scale(0.6987548,1.4311172)">&lt;tspan
+sodipodi:role="line"
+style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.65288px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.290806"
+x="206.84404"
+y="100.91367"
+id="tspan14651">1 != 0 -&amp;gt; 1 &lt;/tspan>&lt;/text>
+&lt;text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.65288px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:currentColor;stroke-width:0.290806"
+x="252.76894"
+y="100.73193"
+id="text14645-9"
+transform="scale(0.6987548,1.4311172)">&lt;tspan
+sodipodi:role="line"
+style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.65288px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.290806"
+x="252.76894"
+y="100.73193"
+id="tspan14651-7">0 == 0 -&amp;gt; 0 &lt;/tspan>&lt;/text>
+&lt;path
+style="fill:currentColor;stroke:#000000;stroke-width:0.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow4-6)"
+d="m 66.642577,117.76863 14.30227,19.15972 0.55858,-0.41697"
+id="path14525-29" />
+&lt;text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.65288px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:currentColor;stroke-width:0.290806"
+x="105.22701"
+y="100.73193"
+id="text14645-3"
+transform="scale(0.6987548,1.4311172)">&lt;tspan
+sodipodi:role="line"
+style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.65288px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.290806"
+x="105.22701"
+y="100.73193"
+id="tspan14651-1">1 == 1 -&amp;gt; 0 &lt;/tspan>&lt;/text>
+&lt;text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:currentColor;stroke-width:0.264583"
+x="61.397202"
+y="52.79422"
+id="text14876">&lt;tspan
+sodipodi:role="line"
+id="tspan14874"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.264583"
+x="61.397202"
+y="52.79422">Kirjaimet ovat esitetty kahdeksan bitin ryhmissä. &lt;/tspan>&lt;tspan
+sodipodi:role="line"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.264583"
+x="61.397202"
+y="58.085884"
+id="tspan14878">XOR operaatio tehty satunnaisella saman pituisella&lt;/tspan>&lt;tspan
+sodipodi:role="line"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.264583"
+x="61.397202"
+y="63.377544"
+id="tspan14880">avaimella.&lt;/tspan>&lt;/text>
+&lt;/g>
+&lt;/svg>
+&lt;/div>
+&lt;p>Testaa itse!&lt;/p>
+&lt;iframe src="../iframe/xor.html" class="coding">&lt;/iframe></content></item></channel></rss>
