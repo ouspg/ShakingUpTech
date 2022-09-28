@@ -972,7 +972,8 @@ Toissijaisina tavoitteina on osoittaa informaation alkuperä ja sen eheys.&lt;/p
 Tietokonemaailmassa englanti on pakollinen kieli, ja sen takia keskeistä termeistä on esitetty myös käännös.&lt;/p>
 &lt;p>Salaus perustuu salausalgoritmiin, mikä muuttaa yleensä selkotekstin salatekstiksi salausavaimen avulla.
 Tämä on onnistuttava myös päinvastaiseen suuntaan; muuten salaus menettää tarkoituksensa.
-On oltava olemassa avain joka voi myös purkaa salauksen. Monesti se on sama kuin salaamiseen käytetty.&lt;/p>
+On oltava olemassa avain joka voi myös purkaa salauksen. Monesti se on sama kuin salaamiseen käytetty, mutta ei aina.&lt;/p>
+&lt;h2 id="one-time-pad-ja-xor-salaus">One-time pad ja XOR salaus&lt;/h2>
 &lt;h2 id="xor-salauksen-periaatteet">XOR salauksen periaatteet&lt;/h2>
 &lt;pre tabindex="0">&lt;code>A ⊕ 0 = A,
 A ⊕ A = 0,
