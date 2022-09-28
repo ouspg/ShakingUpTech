@@ -962,7 +962,9 @@ Esimerkiksi UTF-8 formaatin neljän hexaluvun sarja &lt;code>0xF0 0x9F 0xA4 0xAF
 &lt;td>delete&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></content></item><item><title>Modernin salauksen huijaaminen</title><link>https://ouspg.github.io/ShakingUpTech/harjoitus2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ouspg.github.io/ShakingUpTech/harjoitus2/</guid><description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante.</description><content>&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante.&lt;/p></content></item><item><title>Täydellinen salausmenetelmä?</title><link>https://ouspg.github.io/ShakingUpTech/harjoitus1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ouspg.github.io/ShakingUpTech/harjoitus1/</guid><description>Johdanto Salauksen ensisijainen tavoite on tehdä selkokielisestä informaatiosta käsittämätöntä, niin että sen luottamuksellisuus voidaan säilyttää. Informaatio voidaan välittää tai tallettaa luottamuksellisesti oikealle henkilölle ilman, että joku muu voi ymmärtää sen tarkoituksen. Toissijaisina tavoitteina on osoittaa informaation alkuperä ja sen eheys.
+&lt;/table></content></item><item><title>Modernin salauksen huijaaminen</title><link>https://ouspg.github.io/ShakingUpTech/harjoitus2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ouspg.github.io/ShakingUpTech/harjoitus2/</guid><description>Advanced Encryption Standard (AES)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante.</description><content>&lt;p>Advanced Encryption Standard (AES)&lt;/p>
+&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante.&lt;/p></content></item><item><title>Täydellinen salausmenetelmä?</title><link>https://ouspg.github.io/ShakingUpTech/harjoitus1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ouspg.github.io/ShakingUpTech/harjoitus1/</guid><description>Johdanto Salauksen ensisijainen tavoite on tehdä selkokielisestä informaatiosta käsittämätöntä, niin että sen luottamuksellisuus voidaan säilyttää. Informaatio voidaan välittää tai tallettaa luottamuksellisesti oikealle henkilölle ilman, että joku muu voi ymmärtää sen tarkoituksen. Toissijaisina tavoitteina on osoittaa informaation alkuperä ja sen eheys.
 Salauksessa keskeisiä termejä ovat salausalgoritmi (eng. cipher), selkoteksti (eng. plaintext), salateksti (eng. ciphertext) ja salausavain (eng. cipher key tai vain key). Tietokonemaailmassa englanti on pakollinen kieli, ja sen takia keskeistä termeistä on esitetty myös käännös.</description><content>&lt;h2 id="johdanto">Johdanto&lt;/h2>
 &lt;p>Salauksen ensisijainen tavoite on tehdä selkokielisestä informaatiosta käsittämätöntä, niin että sen luottamuksellisuus voidaan säilyttää.
 Informaatio voidaan välittää tai tallettaa luottamuksellisesti oikealle henkilölle ilman, että joku muu voi ymmärtää sen tarkoituksen.
@@ -1175,11 +1177,11 @@ height="37.959446"
 x="60.693233"
 y="76.064262" />
 &lt;path
-style="fill:currentColor;stroke:#000000;stroke-width:0.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow4)"
+style="marker-start:url(#Arrow4);stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;stroke-width:0.8;stroke:currentColor;fill:currentColor;"
 d="m 138.64758,117.68849 14.30227,19.15972 0.55858,-0.41697"
 id="path14525" />
 &lt;path
-style="marker-start:url(#Arrow4-9);stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;stroke-width:0.8;stroke:#000000;fill:currentColor;"
+style="marker-start:url(#Arrow4-9);stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;stroke-width:0.8;stroke:currentColor;fill:currentColor;"
 d="m 163.24034,117.68849 14.30227,19.15972 0.55858,-0.41697"
 id="path14525-2" />
 &lt;rect
@@ -1214,7 +1216,7 @@ x="252.76894"
 y="100.73193"
 id="tspan14651-7">0 == 0 -&amp;gt; 0 &lt;/tspan>&lt;/text>
 &lt;path
-style="fill:currentColor;stroke:#000000;stroke-width:0.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow4-6)"
+style="marker-start:url(#Arrow4-6);stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;stroke-width:0.9;stroke:currentColor;fill:currentColor;"
 d="m 66.642577,117.76863 14.30227,19.15972 0.55858,-0.41697"
 id="path14525-29" />
 &lt;text
