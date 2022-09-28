@@ -16,7 +16,9 @@ Tietokonemaailmassa englanti on pakollinen kieli, ja sen takia keskeistä termei
 
 Salaus perustuu salausalgoritmiin, mikä muuttaa yleensä selkotekstin salatekstiksi salausavaimen avulla.
 Tämä on onnistuttava myös päinvastaiseen suuntaan; muuten salaus menettää tarkoituksensa.
-On oltava olemassa avain joka voi myös purkaa salauksen. Monesti se on sama kuin salaamiseen käytetty.
+On oltava olemassa avain joka voi myös purkaa salauksen. Monesti se on sama kuin salaamiseen käytetty, mutta ei aina.
+
+## One-time pad ja XOR salaus
 
 
 
