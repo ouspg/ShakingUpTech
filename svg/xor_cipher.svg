@@ -2,8 +2,6 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="152.96101mm"
-   height="76.842323mm"
    viewBox="-1 -1 218.51573 109.77475"
    version="1.1"
    id="svg5"
@@ -24,53 +22,17 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.978965"
-     inkscape:cx="335.85491"
-     inkscape:cy="219.70718"
-     inkscape:window-width="2560"
-     inkscape:window-height="1440"
+     inkscape:zoom="11.91586"
+     inkscape:cx="116.23164"
+     inkscape:cy="73.893113"
+     inkscape:window-width="2556"
+     inkscape:window-height="1412"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
      id="defs2">
-    <marker
-       style="overflow:visible"
-       id="Arrow4"
-       refX="0"
-       refY="0"
-       orient="auto-start-reverse"
-       inkscape:stockid="Arrow4"
-       markerWidth="5"
-       markerHeight="6"
-       viewBox="0 0 5 6"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
-         d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
-         id="path1741" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="Arrow4-9"
-       refX="0"
-       refY="0"
-       orient="auto-start-reverse"
-       inkscape:stockid="Arrow4"
-       markerWidth="5"
-       markerHeight="6"
-       viewBox="0 0 5 6"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
-         d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
-         id="path1741-2" />
-    </marker>
     <marker
        style="overflow:visible"
        id="Arrow4-6"
@@ -88,6 +50,42 @@
          style="fill:context-stroke;fill-rule:evenodd;stroke:none"
          d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
          id="path1741-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow4-6-3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow4"
+       markerWidth="5"
+       markerHeight="6"
+       viewBox="0 0 5 6"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
+         id="path1741-1-6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow4-6-5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow4"
+       markerWidth="5"
+       markerHeight="6"
+       viewBox="0 0 5 6"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
+         id="path1741-1-3" />
     </marker>
   </defs>
   <g
@@ -170,13 +168,13 @@
          y="111.78617">Salateksti</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code weight=450';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="52.522385"
        y="44.197433"
        id="text7359"><tspan
          sodipodi:role="line"
          id="tspan7357"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Medium';stroke-width:0.264583"
          x="52.522385"
          y="44.197433">XOR salaus sanalle &quot;Wow&quot;</tspan></text>
     <rect
@@ -193,14 +191,6 @@
        height="37.959446"
        x="60.693233"
        y="76.064262" />
-    <path
-       style="marker-start:url(#Arrow4);stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;stroke-width:0.8;stroke:currentColor;fill:currentColor;"
-       d="m 138.64758,117.68849 14.30227,19.15972 0.55858,-0.41697"
-       id="path14525" />
-    <path
-       style="marker-start:url(#Arrow4-9);stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;stroke-width:0.8;stroke:currentColor;fill:currentColor;"
-       d="m 163.24034,117.68849 14.30227,19.15972 0.55858,-0.41697"
-       id="path14525-2" />
     <rect
        style="paint-order:markers fill stroke;stroke-opacity:1;stroke-dashoffset:0.270527;stroke-dasharray:0.772935, 0.386468;stroke-miterlimit:4;stroke-linejoin:round;stroke-width:0.386468;stroke:currentColor;fill-opacity:0.0104001;fill:#000000;"
        id="rect14458-8"
@@ -210,44 +200,52 @@
        y="75.693237" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.65288px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:currentColor;stroke-width:0.290806"
-       x="206.84404"
-       y="100.91367"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:6.7764px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:currentColor;stroke-width:0.423526"
+       x="131.54485"
+       y="110.69997"
        id="text14645"
-       transform="scale(0.6987548,1.4311172)"><tspan
+       transform="scale(0.83290577,1.200616)"><tspan
          sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.65288px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.290806"
-         x="206.84404"
-         y="100.91367"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:6.7764px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.423526"
+         x="131.54485"
+         y="110.69997"
          id="tspan14651">1 != 0 -&gt; 1 </tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.65288px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:currentColor;stroke-width:0.290806"
-       x="252.76894"
-       y="100.73193"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:7.37399px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:currentColor;stroke-width:0.460876"
+       x="214.68362"
+       y="102.16692"
        id="text14645-9"
-       transform="scale(0.6987548,1.4311172)"><tspan
+       transform="scale(0.76394497,1.3089948)"><tspan
          sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.65288px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.290806"
-         x="252.76894"
-         y="100.73193"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:7.37399px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.460876"
+         x="214.68362"
+         y="102.16692"
          id="tspan14651-7">0 == 0 -&gt; 0 </tspan></text>
     <path
-       style="marker-start:url(#Arrow4-6);stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;stroke-width:0.9;stroke:currentColor;fill:currentColor;"
-       d="m 66.642577,117.76863 14.30227,19.15972 0.55858,-0.41697"
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.412288;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow4-6)"
+       d="m 64.589474,115.8275 6.154042,9.34437 0.240348,-0.20336"
        id="path14525-29" />
+    <path
+       style="fill:currentColor;stroke:currentColor;stroke-width:0.412288;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow4-6-3)"
+       d="m 160.96624,115.8275 6.15404,9.34437 0.24035,-0.20336"
+       id="path14525-29-7" />
+    <path
+       style="marker:currentColor;marker-start:url(#Arrow4-6-5);stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;stroke-width:0.412288;stroke:currentColor;fill:currentColor;"
+       d="m 136.38935,115.8275 6.15404,9.34437 0.24035,-0.20336"
+       id="path14525-29-5" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.65288px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:currentColor;stroke-width:0.290806"
-       x="105.22701"
-       y="100.73193"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:7.38105px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:currentColor;stroke-width:0.461316"
+       x="58.179672"
+       y="102.26462"
        id="text14645-3"
-       transform="scale(0.6987548,1.4311172)"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:4.65288px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.290806"
-         x="105.22701"
-         y="100.73193"
-         id="tspan14651-1">1 == 1 -&gt; 0 </tspan></text>
+       transform="scale(0.76467542,1.3077444)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:7.38105px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.461316"
+         x="58.179672"
+         y="102.26462"
+         id="tspan14651-1"
+         sodipodi:role="line">1 == 1 -&gt; 0 </tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:currentColor;stroke-width:0.264583"
