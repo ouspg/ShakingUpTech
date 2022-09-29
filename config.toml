@@ -1,6 +1,6 @@
 # Base URL used when generating links to your pages
 # Set to the URL for your site
-baseurl = "https://ouspg.github.io/ShakingUpTech/"
+baseurl = "https://shakinguptech.ouspg.org/"
 defaultContentLanguage = "fi"
 theme = ["terminal"]
 paginate = 5

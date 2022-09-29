@@ -8,11 +8,11 @@ Advanced Encryption Standard (AES) on symmetrinen lohkosalausmenetelmä, jota k�
 
 AESin etu aiemmin esitettyyn one-time pad -salaukseen on se, että siinä voidaan käyttää lyhyttä avainta (yleensä 128 tai 256 bittiä) salaamaan mielivaltaisen suuria määriä dataa. 
 
-Kuitenkaan niin AES kuin muutkaan lohkosalausmenetelmät eivät ole immuuneja heikkouksille. Lohkosalaajia käytetään erilaisissa *moodeissa*, jotka kertovat miten viestin lohkoja syötetään itse lohkosalaajaan. Tässä esimerkissä tarkastelemme AES-CBC -moodia. Seuraavassa kuvassa näemme lohkosalauksen logiikan:
+Kuitenkaan niin AES kuin muutkaan lohkosalausmenetelmät eivät ole immuuneja heikkouksille. Lohkosalaajia käytetään erilaisissa *moodeissa*, jotka kertovat miten viestin lohkoja syötetään itse lohkosalaajaan. Tässä esimerkissä tarkastelemme AES-CBC -moodia. Seuraavassa kuvassa näemme CBC moodin lohkosalauksen logiikan:
 
 {{< svg "static/svg/CBC_encryption.svg" >}}
 
-Vastaavasti, lohkosalauksen purkaminen:
+Vastaavasti, CBC moodin purkaminen:
 
 {{< svg "static/svg/CBC_decryption.svg" >}}
 
