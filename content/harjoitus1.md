@@ -24,8 +24,9 @@ On oltava olemassa avain joka voi myös purkaa salauksen. Monesti se on sama kui
 Kerta-avainjärjestelmä eli one-time pad (OTP) on yksi yksinkertaisimmista ja samalla vahvimmista salausmenetelmistä.
 Menetelmä kykenee takaamaan täydellisen luottamuksellisuuden, jos tietyt ehdot täyttyvät.
 **Se ei kuitenkaan kykene takaamaan tiedon alkuperää tai eheyttä.**
+Täydellinen luottamus tarkoittaa, että mahdollinen vastustaja ei voi oppia salatekstistä yhtään mitään, vaikka hänellä olisi rajoittamattomat resurssit.
 
-OTP perustuu *modulaariseen lisäykseen*, jossa satunnaista ja samanpituista salausavainta kuin selkoteksti, käytetään tietyn vakion modulon laskentaan.
+OTP perustuu *modulaariseen lisäykseen*, jossa satunnaista ja vähintään samanpituista salausavainta kuin selkoteksti, käytetään tietyn vakion modulon laskentaan.
 Selkoteksti ja avain yleensä koostuvat arvoista, jotka ovat pienempiä kuin modulus.
 
 <!-- `$ C = K + P \pmod M $`
@@ -53,13 +54,17 @@ $$`
 >  * Avainta ei saa uudelleenkäyttää
 >  * Avain täytyy pitää salassa
 
+Näillä ehdoilla on nurja puolensa; avainten hallinta on monimutkaista, sillä avain pitää aina toimittaa informaation vastaanottajalle salassa, ja avaimen on oltava vähintään yhtä pitkä kuin salattava informaatio.
+Lisäksi uusi avain tarvitaan aina uutta viestiä varten.
+Jatkuvaan informaation välittämiseen tämä voi olla mahdoton ratkaisu.
 
+Vielä ei tarvi ymmärtää salauksen täyttä mekanismia, siihen otetaan seuraavaksi parempi katsaus.
 Yksinkertaisin tapaus OTP:stä käyttää modulus arvoa 2, ja se tunnetaan paremmin XOR salauksena.
 
 ## XOR salauksen periaatteet
 
 XOR (exclusive or) salauksessa selkotekstin ja avaimen merkit voivat saada joko arvot 1 tai 0. 
-Tässä yksinkertaisimmassa tapauksessa ei modulolaskentaan tarvi kiinnittää huomiota, kun on olemassa vain kahta mahdollista arvoa.
+Tässä yksinkertaisimmassa tapauksessa ei modulolaskentaan tarvitse kiinnittää huomiota, kun on olemassa vain kaksi mahdollista arvoa.
 Seuraavat laskusäännöt pätevät XOR operaatioissa:
 
 `$$
@@ -74,16 +79,33 @@ $$`
 
 Missä `$⊕$` määrittää eksklusiivisen disjunktion (XOR) [^1]
 
-Seuraava esimerkki sisältää XOR salauksen sanalle `Wow`. 
+Seuraava esimerkki sisältää XOR salauksen sanalle `Wow`.
+Koska arvot voivat vaihdella vain nollasta ykköseen, on keksittävä esitystapa, miten kirjamia ja siten ymmärrettävää informaatiota voidaan esittää vain näillä kahdella arvolla.
+Tietokonemaailmassa ratkaisu on ns. merkistö, ja yksi yleisimmistä on ASCII.
+Voit lukea ASCII merkistöstä [täältä lisää.](/ascii)
+
+Allaolevassa esimerkissä ylimmän rivin yksi lohko kuvastaa yhtä kirjainta, jonka binäärinen esitysmuoto on poimittu ASCII taulusta.
+Toisen rivin arvot ovat satunnaisia, ja viimeinen rivi esittää salateksiä, joka on XOR laskennalla saavutettu.
+Tekemällä XOR laskennan uudestaan samalla salausavaimella, voidaan saada selkoteksti takaisin salatekstistä.
 
 {{< svg "static/svg/xor_cipher.svg" >}}
 
 ### Testaa itse!
 
+Monet operaatioista voi laskea ihan käsin paperilla, mutta on olemassa työkaluja jotka voivat huomattavasti helpottaa asiaa.
+
 Allaolevalla laatikolla voit hieman kokeilla XOR laskentaa ja binäärimuunnoksia JavaScript ohjelmointikielellä.
+
+Saatko saman salatekstin jos muunnat kuvan jokaisen salausavainlohko desimaaliluvuiksi ja käytät XOR operaatiota jokaiseen `Wow` sanan vastaavaan kirjaimeen?
 
 {{< iframe "../iframe/xor.html" >}}
 
 ## Harjoitus
+
+OTP salauksessa oli edellä mainitut ehdot, millä täydellinen salaus saavutetaan.
+Kuinka käy, jos ehtoja ei noudateta?
+
+Otetaan esimerkkitapaus
+
 
 [^1]: [XOR Cipher in Wikipedia 🙄](https://en.wikipedia.org/wiki/XOR_cipher) 
