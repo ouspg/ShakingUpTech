@@ -44,7 +44,7 @@
       <path
          inkscape:connector-curvature="0"
          id="path11423"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
          style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
          transform="matrix(-0.4,0,0,-0.4,-4,0)" />
     </marker>
@@ -57,13 +57,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284271"
-     inkscape:cx="76.54431"
-     inkscape:cy="137.70905"
+     inkscape:cx="242.36085"
+     inkscape:cy="162.81134"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="true"
-     inkscape:window-width="2556"
-     inkscape:window-height="1412"
+     inkscape:window-width="2560"
+     inkscape:window-height="1440"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -98,7 +98,7 @@
      style="display:inline">
     <text
        xml:space="preserve"
-       style="fill-opacity:1;text-anchor:middle;writing-mode:lr-tb;word-spacing:0px;letter-spacing:0px;text-align:center;-inkscape-font-specification:'DejaVu Sans';font-family:'DejaVu Sans';line-height:0%;font-stretch:normal;font-weight:normal;font-variant:normal;font-style:normal;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill-opacity:1;text-anchor:middle;writing-mode:lr-tb;word-spacing:0px;letter-spacing:0px;text-align:center;-inkscape-font-specification:'DejaVu Sans';font-family:'DejaVu Sans';line-height:0%;font-stretch:normal;font-weight:normal;font-variant:normal;font-style:normal;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
        x="310.73828"
        y="226"
        id="text3188"><tspan
@@ -106,7 +106,7 @@
          id="tspan3190"
          x="310.73828"
          y="226"
-         style="font-size:16px;line-height:1.25;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0">Cipher Block Chaining (CBC) moodin salaus</tspan></text>
+         style="font-size:16px;line-height:1.25;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0">Cipher Block Chaining (CBC) moodin salaus</tspan></text>
     <g
        id="g3514"
        transform="translate(20,20)">
@@ -114,13 +114,13 @@
          id="text3216"
          y="102.97363"
          x="138.22754"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill-opacity:1;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill-opacity:1;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
          xml:space="preserve"><tspan
            id="tspan3220"
            y="102.97363"
            x="138.22754"
            sodipodi:role="line"
-           style="font-weight:normal;font-size:12px;line-height:1.25;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0">lohkosalaus</tspan></text>
+           style="font-weight:normal;font-size:12px;line-height:1.25;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0">lohkosalaus</tspan></text>
       <rect
          y="80.5"
          x="89.5"
@@ -226,7 +226,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill-opacity:1;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill-opacity:1;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
        x="43.643028"
        y="121.62598"
        id="text3562"><tspan
@@ -234,7 +234,7 @@
          id="tspan3564"
          x="43.643028"
          y="121.62598"
-         style="font-size:12px;line-height:1.25;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0">Avain</tspan></text>
+         style="font-size:12px;line-height:1.25;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0">Avain</tspan></text>
     <g
        id="g3496-2-8"
        transform="translate(18,117)">
@@ -332,7 +332,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill-opacity:1;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill-opacity:1;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
        x="158.30957"
        y="190.5"
        id="text3566-6"><tspan
@@ -340,7 +340,7 @@
          id="tspan3568-9"
          x="158.30957"
          y="190.5"
-         style="font-size:12px;line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0">Salateksti</tspan></text>
+         style="font-size:12px;line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0">Salateksti</tspan></text>
     <path
        style="fill:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
        d="m 158.5,49.5 v 47"
@@ -361,7 +361,7 @@
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill-opacity:1;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill-opacity:1;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
        x="158.05762"
        y="27.5"
        id="text3520-1-3"><tspan
@@ -369,7 +369,7 @@
          x="158.05762"
          y="27.5"
          id="tspan3528-0-6"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0">Selkoteksti</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0">Selkoteksti</tspan></text>
     <g
        transform="translate(20,-54)"
        style="display:inline"
@@ -395,13 +395,13 @@
          id="text3216-6"
          y="102.97363"
          x="137.96094"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill-opacity:1;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill-opacity:1;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
          xml:space="preserve"><tspan
            id="tspan3220-5"
            y="102.97363"
            x="137.96094"
            sodipodi:role="line"
-           style="font-weight:normal;font-size:12px;line-height:1.25;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0">lohkosalaus</tspan></text>
+           style="font-weight:normal;font-size:12px;line-height:1.25;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0">lohkosalaus</tspan></text>
       <rect
          y="80.5"
          x="89.5"
@@ -508,7 +508,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill-opacity:1;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill-opacity:1;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
        x="227.64304"
        y="121.62598"
        id="text3562-2"><tspan
@@ -516,7 +516,7 @@
          id="tspan3564-9"
          x="227.64304"
          y="121.62598"
-         style="font-size:12px;line-height:1.25;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0">Avain</tspan></text>
+         style="font-size:12px;line-height:1.25;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0">Avain</tspan></text>
     <g
        style="display:inline"
        id="g3496-2-8-8"
@@ -615,7 +615,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill-opacity:1;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill-opacity:1;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
        x="342.30957"
        y="190.5"
        id="text3566-6-5"><tspan
@@ -623,7 +623,7 @@
          id="tspan3568-9-0"
          x="342.30957"
          y="190.5"
-         style="font-size:12px;line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0">Salateksti</tspan></text>
+         style="font-size:12px;line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0">Salateksti</tspan></text>
     <path
        style="display:inline;fill:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
        d="m 342.5,49.499997 v 47"
@@ -644,7 +644,7 @@
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill-opacity:1;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill-opacity:1;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
        x="342.05762"
        y="27.499996"
        id="text3520-1-3-0"><tspan
@@ -652,7 +652,7 @@
          x="342.05762"
          y="27.499996"
          id="tspan3528-0-6-3"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0">Selkoteksti</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0">Selkoteksti</tspan></text>
     <g
        transform="translate(204,-54)"
        style="display:inline"
@@ -678,13 +678,13 @@
          id="text3216-6-1"
          y="102.97363"
          x="137.96094"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill-opacity:1;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill-opacity:1;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
          xml:space="preserve"><tspan
            id="tspan3220-5-6"
            y="102.97363"
            x="137.96094"
            sodipodi:role="line"
-           style="font-weight:normal;font-size:12px;line-height:1.25;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0">lohkosalaus</tspan></text>
+           style="font-weight:normal;font-size:12px;line-height:1.25;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0">lohkosalaus</tspan></text>
       <rect
          y="80.5"
          x="89.5"
@@ -791,7 +791,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill-opacity:1;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill-opacity:1;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
        x="411.64304"
        y="121.62598"
        id="text3562-2-1"><tspan
@@ -799,7 +799,7 @@
          id="tspan3564-9-3"
          x="411.64304"
          y="121.62598"
-         style="font-size:12px;line-height:1.25;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0">Avain</tspan></text>
+         style="font-size:12px;line-height:1.25;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0">Avain</tspan></text>
     <g
        style="display:inline"
        id="g3496-2-8-8-9"
@@ -898,7 +898,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill-opacity:1;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill-opacity:1;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
        x="526.30957"
        y="190.5"
        id="text3566-6-5-5"><tspan
@@ -906,7 +906,7 @@
          id="tspan3568-9-0-1"
          x="526.30957"
          y="190.5"
-         style="font-size:12px;line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0">Salateksti</tspan></text>
+         style="font-size:12px;line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0">Salateksti</tspan></text>
     <path
        style="display:inline;fill:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
        d="m 526.5,49.499998 v 47"
@@ -927,7 +927,7 @@
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill-opacity:1;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill-opacity:1;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
        x="526.05762"
        y="27.499996"
        id="text3520-1-3-0-4"><tspan
@@ -935,7 +935,7 @@
          x="526.05762"
          y="27.499996"
          id="tspan3528-0-6-3-4"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0">Selkoteksti</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0">Selkoteksti</tspan></text>
     <g
        transform="translate(388,-54)"
        style="display:inline"
@@ -1051,7 +1051,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill-opacity:1;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'DejaVu Sans';-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill-opacity:1;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
        x="4.8222656"
        y="65.25"
        id="text11634"><tspan
@@ -1059,7 +1059,7 @@
          id="tspan11636"
          x="4.8222656"
          y="65.25"
-         style="font-size:12px;line-height:1.25;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0">Alustusvektori (IV)</tspan></text>
+         style="font-size:12px;line-height:1.25;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0">Alustusvektori (IV)</tspan></text>
     <path
        style="fill:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker11421)"
        d="m 114.5,79.5 h 34"
@@ -1080,14 +1080,14 @@
        sodipodi:nodetypes="cccc" />
     <text
        xml:space="preserve"
-       style="font-size:5.8589px;line-height:1.25;font-family:sans-serif;stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0"
+       style="font-size:5.8589px;line-height:1.25;font-family:sans-serif;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0"
        x="519.82312"
-       y="232.56244"
+       y="234.64037"
        id="text2087"><tspan
          sodipodi:role="line"
          id="tspan2085"
          x="519.82312"
-         y="232.56244"
-         style="stroke-width:0.37795276;stroke-dasharray:none;stroke-dashoffset:0">Public Domain License</tspan></text>
+         y="234.64037"
+         style="stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0">Public Domain License</tspan></text>
   </g>
 </svg>

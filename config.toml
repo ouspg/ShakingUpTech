@@ -2,7 +2,7 @@
 # Set to the URL for your site
 baseurl = "https://ouspg.github.io/ShakingUpTech/"
 defaultContentLanguage = "fi"
-theme = 'terminal'
+theme = ["terminal"]
 paginate = 5
 
 # Basic metadata configuration for your blog.
@@ -20,6 +20,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 
 [params]
   themeColor = "orange"
+  fullWidthTheme = false
   toc = true
   tocTitle = "Sisällysluettelo"
 
