@@ -3212,8 +3212,9 @@ On oltava olemassa avain joka voi myös purkaa salauksen. Monesti se on sama kui
 &lt;h2 id="one-time-pad">One-time pad&lt;/h2>
 &lt;p>Kerta-avainjärjestelmä eli one-time pad (OTP) on yksi yksinkertaisimmista ja samalla vahvimmista salausmenetelmistä.
 Menetelmä kykenee takaamaan täydellisen luottamuksellisuuden, jos tietyt ehdot täyttyvät.
-&lt;strong>Se ei kuitenkaan kykene takaamaan tiedon alkuperää tai eheyttä.&lt;/strong>&lt;/p>
-&lt;p>OTP perustuu &lt;em>modulaariseen lisäykseen&lt;/em>, jossa satunnaista ja samanpituista salausavainta kuin selkoteksti, käytetään tietyn vakion modulon laskentaan.
+&lt;strong>Se ei kuitenkaan kykene takaamaan tiedon alkuperää tai eheyttä.&lt;/strong>
+Täydellinen luottamus tarkoittaa, että mahdollinen vastustaja ei voi oppia salatekstistä yhtään mitään, vaikka hänellä olisi rajoittamattomat resurssit.&lt;/p>
+&lt;p>OTP perustuu &lt;em>modulaariseen lisäykseen&lt;/em>, jossa satunnaista ja vähintään samanpituista salausavainta kuin selkoteksti, käytetään tietyn vakion modulon laskentaan.
 Selkoteksti ja avain yleensä koostuvat arvoista, jotka ovat pienempiä kuin modulus.&lt;/p>
 &lt;!-- raw HTML omitted -->
 &lt;!-- raw HTML omitted -->
@@ -3229,14 +3230,24 @@ Selkoteksti ja avain yleensä koostuvat arvoista, jotka ovat pienempiä kuin mod
 &lt;li>Avain täytyy pitää salassa&lt;/li>
 &lt;/ul>
 &lt;/blockquote>
-&lt;p>Yksinkertaisin tapaus OTP:stä käyttää modulus arvoa 2, ja se tunnetaan paremmin XOR salauksena.&lt;/p>
+&lt;p>Näillä ehdoilla on nurja puolensa; avainten hallinta on monimutkaista, sillä avain pitää aina toimittaa informaation vastaanottajalle salassa, ja avaimen on oltava vähintään yhtä pitkä kuin salattava informaatio.
+Lisäksi uusi avain tarvitaan aina uutta viestiä varten.
+Jatkuvaan informaation välittämiseen tämä voi olla mahdoton ratkaisu.&lt;/p>
+&lt;p>Vielä ei tarvi ymmärtää salauksen täyttä mekanismia, siihen otetaan seuraavaksi parempi katsaus.
+Yksinkertaisin tapaus OTP:stä käyttää modulus arvoa 2, ja se tunnetaan paremmin XOR salauksena.&lt;/p>
 &lt;h2 id="xor-salauksen-periaatteet">XOR salauksen periaatteet&lt;/h2>
 &lt;p>XOR (exclusive or) salauksessa selkotekstin ja avaimen merkit voivat saada joko arvot 1 tai 0.
-Tässä yksinkertaisimmassa tapauksessa ei modulolaskentaan tarvi kiinnittää huomiota, kun on olemassa vain kahta mahdollista arvoa.
+Tässä yksinkertaisimmassa tapauksessa ei modulolaskentaan tarvitse kiinnittää huomiota, kun on olemassa vain kaksi mahdollista arvoa.
 Seuraavat laskusäännöt pätevät XOR operaatioissa:&lt;/p>
 &lt;p>&lt;code>$$ \begin{align} &amp;amp; A ⊕ 0 = A,\\ &amp;amp; A ⊕ A = 0,\\ &amp;amp; A ⊕ B = B ⊕ A,\\ &amp;amp; (A ⊕ B) ⊕ C = A ⊕ (B ⊕ C),\\ &amp;amp; (B ⊕ A) ⊕ A = B ⊕ 0 = B\\ \end{align} $$&lt;/code>&lt;/p>
 &lt;p>Missä &lt;code>$⊕$&lt;/code> määrittää eksklusiivisen disjunktion (XOR) &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
-&lt;p>Seuraava esimerkki sisältää XOR salauksen sanalle &lt;code>Wow&lt;/code>.&lt;/p>
+&lt;p>Seuraava esimerkki sisältää XOR salauksen sanalle &lt;code>Wow&lt;/code>.
+Koska arvot voivat vaihdella vain nollasta ykköseen, on keksittävä esitystapa, miten kirjamia ja siten ymmärrettävää informaatiota voidaan esittää vain näillä kahdella arvolla.
+Tietokonemaailmassa ratkaisu on ns. merkistö, ja yksi yleisimmistä on ASCII.
+Voit lukea ASCII merkistöstä &lt;a href="https://shakinguptech.ouspg.org/ascii">täältä lisää.&lt;/a>&lt;/p>
+&lt;p>Allaolevassa esimerkissä ylimmän rivin yksi lohko kuvastaa yhtä kirjainta, jonka binäärinen esitysmuoto on poimittu ASCII taulusta.
+Toisen rivin arvot ovat satunnaisia, ja viimeinen rivi esittää salateksiä, joka on XOR laskennalla saavutettu.
+Tekemällä XOR laskennan uudestaan samalla salausavaimella, voidaan saada selkoteksti takaisin salatekstistä.&lt;/p>
 &lt;div class="equation">
 &lt;?xml version="1.0" encoding="UTF-8" standalone="no"?>
 &lt;!-- Created with Inkscape (http://www.inkscape.org/) -->
@@ -3510,9 +3521,14 @@ id="tspan14880">avaimella.&lt;/tspan>&lt;/text>
 &lt;/svg>
 &lt;/div>
 &lt;h3 id="testaa-itse">Testaa itse!&lt;/h3>
+&lt;p>Monet operaatioista voi laskea ihan käsin paperilla, mutta on olemassa työkaluja jotka voivat huomattavasti helpottaa asiaa.&lt;/p>
 &lt;p>Allaolevalla laatikolla voit hieman kokeilla XOR laskentaa ja binäärimuunnoksia JavaScript ohjelmointikielellä.&lt;/p>
+&lt;p>Saatko saman salatekstin jos muunnat kuvan jokaisen salausavainlohko desimaaliluvuiksi ja käytät XOR operaatiota jokaiseen &lt;code>Wow&lt;/code> sanan vastaavaan kirjaimeen?&lt;/p>
 &lt;iframe src="../iframe/xor.html" class="coding">&lt;/iframe>
 &lt;h2 id="harjoitus">Harjoitus&lt;/h2>
+&lt;p>OTP salauksessa oli edellä mainitut ehdot, millä täydellinen salaus saavutetaan.
+Kuinka käy, jos ehtoja ei noudateta?&lt;/p>
+&lt;p>Otetaan esimerkkitapaus&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
