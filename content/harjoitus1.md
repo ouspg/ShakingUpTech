@@ -101,14 +101,37 @@ Saatko saman salatekstin jos muunnat kuvan jokaisen salausavainlohko desimaalilu
 
 ## Harjoitus
 
-OTP salauksessa oli edellä mainitut ehdot, millä täydellinen salaus saavutetaan.
-Kuinka käy, jos ehtoja ei noudateta?
+OTP salauksessa oli edellä mainitut ehdot, millä täydellinen salaus saavutetaan, ja mitä rajoituksia salauksella on.
+Salaus ei ennen kaikkea pysty varmentamaan tiedon eheyttä tai alkuperää.
 
-Otetaan esimerkkitapaus.
+Varmennuksen ongelmallisuudesta otetaan esimerkkitapaus.
+
+Tiedät, että erään viestin selkoteksti on `Hei, Alice!`. 
+Viestin XOR salattu (huom. *ei ASCII!*) muoto näkyy seuraavasta taulukosta:
+
+<!-- | |H|e|i|,| |A|l|i|c|e|!|
+|-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+Binääri|10111011|00000010|10010011|10110000|11100001|01000000|10011111|00001110|10011001|11111001|11100000| -->
+
+|Merkki|Salattu binäärimuoto| Salattu hexadesimaali|
+|:-:|:--------:|:--:|
+| H | 10111011 | bb |
+| e | 00000010 | 02 |
+| i | 10010011 | 93 |
+| , | 10110000 | b0 |
+|   | 11100001 | e1 |
+| A | 01000000 | 40 |
+| l | 10011111 | 9f |
+| i | 00001110 | 0e |
+| c | 10011001 | 99 |
+| e | 11111001 | f9 |
+| ! | 11100000 | e0 |
+
+Jos tiivistetään tämä esitysmuoto, `Hei, Alice!` on salattuna `bb0293b0e1409f0e99f9e0`
 
 
+Jos käytetään samaa salausavainta, mikä on selkotekstin `Hei, Eve...` salateksti?
 
-
-
+Mikä on salausavain?
 
 [^1]: [XOR Cipher in Wikipedia 🙄](https://en.wikipedia.org/wiki/XOR_cipher) 
