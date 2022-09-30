@@ -28,6 +28,7 @@ Täydellinen luottamus tarkoittaa, että mahdollinen vastustaja ei voi oppia sal
 
 OTP perustuu *modulaariseen lisäykseen*, jossa satunnaista ja vähintään samanpituista salausavainta kuin selkoteksti, käytetään tietyn vakion modulon laskentaan yhdessä selkotekstin kanssa.
 Selkoteksti ja avain yleensä koostuvat arvoista, jotka ovat pienempiä kuin modulus.
+Selkoteksti ja avain saa siis lopulta aina numeerisen muodon.
 
 <!-- MathJax support, using LaTeX commands -->
 
@@ -63,6 +64,7 @@ Yksinkertaisin tapaus OTP:stä käyttää modulus arvoa 2, ja se tunnetaan parem
 XOR (exclusive or) salauksessa selkotekstin ja avaimen merkit voivat saada joko arvot 1 tai 0. 
 Tässä yksinkertaisimmassa tapauksessa ei modulolaskentaan tarvitse kiinnittää huomiota, kun on olemassa vain kaksi mahdollista arvoa.
 Seuraavat laskusäännöt pätevät XOR operaatioissa:
+
 
 `$$
 \begin{align}
@@ -102,7 +104,11 @@ Saatko saman salatekstin jos muunnat kuvan jokaisen salausavainlohko desimaalilu
 OTP salauksessa oli edellä mainitut ehdot, millä täydellinen salaus saavutetaan.
 Kuinka käy, jos ehtoja ei noudateta?
 
-Otetaan esimerkkitapaus
+Otetaan esimerkkitapaus.
+
+
+
+
 
 
 [^1]: [XOR Cipher in Wikipedia 🙄](https://en.wikipedia.org/wiki/XOR_cipher) 

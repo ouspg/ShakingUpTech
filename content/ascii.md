@@ -15,6 +15,7 @@ Merkintä `dec` tarkoittaa `decimal` eli kymmenjärjestelmän esitystä.
 Merkintä `hex` tarkoittaa `hexadecimal` eli kuusitoistajärjestelmän esitystä.
 
 Merkintä `binary` tarkoittaa binäärijärjestelmän esitystä.
+
 Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan binääristä numeroa eli *bittiä* (eng. bit) arvon esittämiseksi, ja tässä taulukossa arvot esitetään seitsemällä bitillä.
 Alkuperäinen ASCII sisältää 128 eri merkkiä, mitkä voidaan esittää seitsemällä bitillä (2⁷).
 
