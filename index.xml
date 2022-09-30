@@ -3524,9 +3524,82 @@ id="tspan14880">avaimella.&lt;/tspan>&lt;/text>
 &lt;p>Saatko saman salatekstin jos muunnat kuvan jokaisen salausavainlohko desimaaliluvuiksi ja käytät XOR operaatiota jokaiseen &lt;code>Wow&lt;/code> sanan vastaavaan kirjaimeen?&lt;/p>
 &lt;iframe src="../iframe/xor.html" class="coding">&lt;/iframe>
 &lt;h2 id="harjoitus">Harjoitus&lt;/h2>
-&lt;p>OTP salauksessa oli edellä mainitut ehdot, millä täydellinen salaus saavutetaan.
-Kuinka käy, jos ehtoja ei noudateta?&lt;/p>
-&lt;p>Otetaan esimerkkitapaus.&lt;/p>
+&lt;p>OTP salauksessa oli edellä mainitut ehdot, millä täydellinen salaus saavutetaan, ja mitä rajoituksia salauksella on.
+Salaus ei ennen kaikkea pysty varmentamaan tiedon eheyttä tai alkuperää.&lt;/p>
+&lt;p>Varmennuksen ongelmallisuudesta otetaan esimerkkitapaus.&lt;/p>
+&lt;p>Tiedät, että erään viestin selkoteksti on &lt;code>Hei, Alice!&lt;/code>.
+Viestin XOR salattu (huom. &lt;em>ei ASCII!&lt;/em>) muoto näkyy seuraavasta taulukosta:&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">Merkki&lt;/th>
+&lt;th style="text-align:center">Salattu binäärimuoto&lt;/th>
+&lt;th style="text-align:center">Salattu hexadesimaali&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">H&lt;/td>
+&lt;td style="text-align:center">10111011&lt;/td>
+&lt;td style="text-align:center">bb&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">e&lt;/td>
+&lt;td style="text-align:center">00000010&lt;/td>
+&lt;td style="text-align:center">02&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">i&lt;/td>
+&lt;td style="text-align:center">10010011&lt;/td>
+&lt;td style="text-align:center">93&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">,&lt;/td>
+&lt;td style="text-align:center">10110000&lt;/td>
+&lt;td style="text-align:center">b0&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;/td>
+&lt;td style="text-align:center">11100001&lt;/td>
+&lt;td style="text-align:center">e1&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">A&lt;/td>
+&lt;td style="text-align:center">01000000&lt;/td>
+&lt;td style="text-align:center">40&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">l&lt;/td>
+&lt;td style="text-align:center">10011111&lt;/td>
+&lt;td style="text-align:center">9f&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">i&lt;/td>
+&lt;td style="text-align:center">00001110&lt;/td>
+&lt;td style="text-align:center">0e&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">c&lt;/td>
+&lt;td style="text-align:center">10011001&lt;/td>
+&lt;td style="text-align:center">99&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">e&lt;/td>
+&lt;td style="text-align:center">11111001&lt;/td>
+&lt;td style="text-align:center">f9&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">!&lt;/td>
+&lt;td style="text-align:center">11100000&lt;/td>
+&lt;td style="text-align:center">e0&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Jos tiivistetään tämä esitysmuoto, &lt;code>Hei, Alice!&lt;/code> on salattuna &lt;code>bb0293b0e1409f0e99f9e0&lt;/code>&lt;/p>
+&lt;p>Jos käytetään samaa salausavainta, mikä on selkotekstin &lt;code>Hei, Eve...&lt;/code> salateksti?&lt;/p>
+&lt;p>Mikä on salausavain?&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
