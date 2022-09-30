@@ -28,7 +28,7 @@ Täydellinen luottamus tarkoittaa, että mahdollinen vastustaja ei voi oppia sal
 
 OTP perustuu *modulaariseen lisäykseen*, jossa satunnaista ja vähintään samanpituista salausavainta kuin selkoteksti, käytetään tietyn vakion modulon laskentaan yhdessä selkotekstin kanssa.
 Selkoteksti ja avain yleensä koostuvat arvoista, jotka ovat pienempiä kuin modulus.
-Selkoteksti ja avain saa siis lopulta aina numeerisen muodon.
+Selkoteksti ja avain saavat siis lopulta aina numeerisen muodon.
 
 <!-- MathJax support, using LaTeX commands -->
 
@@ -56,12 +56,12 @@ Näillä ehdoilla on nurja puolensa; avainten hallinta on monimutkaista, sillä 
 Lisäksi uusi avain tarvitaan aina uutta viestiä varten.
 Jatkuvaan informaation välittämiseen tämä voi olla mahdoton ratkaisu.
 
-Vielä ei tarvi ymmärtää salauksen täyttä mekanismia, siihen otetaan seuraavaksi parempi katsaus.
-Yksinkertaisin tapaus OTP:stä käyttää modulus arvoa 2, ja se tunnetaan paremmin XOR salauksena.
+Yksinkertaisin tapaus OTP:stä käyttää modulus arvoa 2, ja se tunnetaan paremmin XOR (bitwsise exclusive or) salauksena tietotekniikassa.
+Tästä voi saada paremman idean salauksen toimintatavasta.
 
 ## XOR salauksen periaatteet
 
-XOR (exclusive or) salauksessa selkotekstin ja avaimen merkit voivat saada joko arvot 1 tai 0. 
+XOR salauksessa selkotekstin ja avaimen merkit voivat saada joko arvot 1 tai 0. 
 Tässä yksinkertaisimmassa tapauksessa ei modulolaskentaan tarvitse kiinnittää huomiota, kun on olemassa vain kaksi mahdollista arvoa.
 Seuraavat laskusäännöt pätevät XOR operaatioissa:
 
@@ -99,13 +99,22 @@ Saatko saman salatekstin jos muunnat kuvan jokaisen salausavainlohkon desimaalil
 
 {{< iframe "../iframe/xor.html" >}}
 
+{{< details "Lisätietoa koodauksesta">}}
+
+Collapsed text
+{{< /details >}}
+
 ## Harjoitus
 
-OTP salauksessa oli edellä mainitut ehdot, millä täydellinen salaus saavutetaan, ja mitä muita rajoituksia salauksella on.
-Salaus ei ennen kaikkea pysty varmentamaan tiedon eheyttä tai alkuperää.
+OTP salauksessa oli rajoitteita, millä täydellinen salaus saavutetaan.
+Lisäksi salaus ei pystynyt varmentamaan tiedon eheyttä tai alkuperää.
+Salauksella on myös muita ongelmia eräissä tilanteissa, joista seuraava viistoaa myös eheyden ja alkuperän todentamista.
 
-Salauksen rajoitteista otetaan esimerkkitapaus.
-Tässä tilanteessa käytämme niin kutsuttua "tunnetun selkotekstin hyökkäystä" (eng. *known-plaintext attack (KPA)*) kryptoanalyysissa.
+
+Salauksen yhdestä rajoitteesta otetaan esimerkkitapaus.
+Tässä tilanteessa käytämme kryptoanalyysissa niin kutsuttua "tunnetun selkotekstin hyökkäystä" (eng. *known-plaintext attack (KPA)*), mille OTP on haavoittuvainen.
+Käytännössä osoitamme, että voimme saada avaimen tietoomme, jos tiedämme selkotekstin ja salatekstin.
+Lisäksi voimme tehdä haluamimme salatekstejä pelkästään tietämällä nämä kaksi asiaa.
 
 Tiedät, että erään viestin selkoteksti on `Hei, Alice!`. 
 Viestin XOR salattu (huom. *ei ASCII!*) muoto näkyy seuraavasta taulukosta:
@@ -114,25 +123,25 @@ Viestin XOR salattu (huom. *ei ASCII!*) muoto näkyy seuraavasta taulukosta:
 |-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 Binääri|10111011|00000010|10010011|10110000|11100001|01000000|10011111|00001110|10011001|11111001|11100000| -->
 
-|Merkki|Salattu binäärimuoto| Salattu hexadesimaali|
+|Merkki|XOR salattu binäärimuoto| XOR salattu heksadesimaalimuoto|
 |:-:|:--------:|:--:|
 | H | 10111011 | bb |
 | e | 00000010 | 02 |
 | i | 10010011 | 93 |
 | , | 10110000 | b0 |
 |   | 11100001 | e1 |
-| A | 01000000 | 40 |
-| l | 10011111 | 9f |
-| i | 00001110 | 0e |
-| c | 10011001 | 99 |
-| e | 11111001 | f9 |
-| ! | 11100000 | e0 |
+| A | 01011010 | 5a |
+| l | 10100000 | a0 |
+| i | 01111101 | 7d |
+| c | 01111000 | 78 |
+| e | 00011101 | 1d |
+| ! | 10111011 | bb |  
 
-Jos tiivistetään tämä esitysmuoto, `Hei, Alice!` on salattuna `bb0293b0e1409f0e99f9e0`
+Jos tiivistetään tämä esitysmuoto, `Hei, Alice!` on salattuna `bb0293b0e15aa07d781dbb`
 
 
 
-Tietämällä selkotekstin ja sen salatekstin, voimme muodostaa mielivaltaisia salatekstejä, jotka päätyvät haluttuun selkotekstiin, kun salaus puretaan.
+Yritämme osoittaa, että tietämällä selkotekstin ja sen salatekstin, voimme muodostaa mielivaltaisia salatekstejä, jotka päätyvät haluttuun selkotekstiin, kun salaus puretaan.
 Tämä voidaan päätellä XOR salauksen periaatteiden mukaan.
 
 Jos käytetään samaa salausavainta, mikä on selkotekstin `Hei, Eve...` salateksti?
