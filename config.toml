@@ -39,7 +39,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 [languages]
   [languages.fi]
     languageName = "Suomi"
-    title = "Shaking Up Tech 13.10.2022"
+    title = "Shaking Up Tech 2022"
     subtitle = "Kryptoteemainen työpaja"
     owner = ""
     keywords = ""
@@ -77,8 +77,8 @@ ignoreErrors = ["error-disable-taxonomy"]
         Weight = 4
         identifier = "CyberChef"
         name = "CyberChef"
-        url = "https://gchq.github.io/CyberChef/"
-        pre = "_blank"
+        url = "/cyberchef"
+        # pre = "_blank"
 
 
 

@@ -106,7 +106,7 @@ Collapsed text
 
 ## Harjoitus
 
-OTP salauksessa oli rajoitteita, millä täydellinen salaus saavutetaan.
+OTP salauksessa oli ehtoja, ennen kuin täydellinen salaus saavutetaan.
 Lisäksi salaus ei pystynyt varmentamaan tiedon eheyttä tai alkuperää.
 Salauksella on myös muita ongelmia eräissä tilanteissa, joista seuraava viistoaa myös eheyden ja alkuperän todentamista.
 
@@ -114,7 +114,9 @@ Salauksella on myös muita ongelmia eräissä tilanteissa, joista seuraava viist
 Salauksen yhdestä rajoitteesta otetaan esimerkkitapaus.
 Tässä tilanteessa käytämme kryptoanalyysissa niin kutsuttua "tunnetun selkotekstin hyökkäystä" (eng. *known-plaintext attack (KPA)*), mille OTP on haavoittuvainen.
 Käytännössä osoitamme, että voimme saada avaimen tietoomme, jos tiedämme selkotekstin ja salatekstin.
-Lisäksi voimme tehdä haluamimme salatekstejä pelkästään tietämällä nämä kaksi asiaa.
+Osittain tästä syystä, samaa avainta ei saa käyttää uudestaan.
+Lisäksi voimme tehdä haluamimme salatekstejä pelkästään tietämällä nämä kaksi asiaa, kunhan ne eivät ole alkuperäistä pidempiä.
+
 
 Tiedät, että erään viestin selkoteksti on `Hei, Alice!`. 
 Viestin XOR salattu (huom. *ei ASCII!*) muoto näkyy seuraavasta taulukosta:
@@ -141,8 +143,8 @@ Jos tiivistetään tämä esitysmuoto, `Hei, Alice!` on salattuna `bb0293b0e15aa
 
 
 
-Yritämme osoittaa, että tietämällä selkotekstin ja sen salatekstin, voimme muodostaa mielivaltaisia salatekstejä, jotka päätyvät haluttuun selkotekstiin, kun salaus puretaan.
-Tämä voidaan päätellä XOR salauksen periaatteiden mukaan.
+Yritämme osoittaa, että tietämällä selkotekstin ja sen salatekstin, voimme muodostaa salatekstejä, jotka päätyvät haluttuun selkotekstiin, kun salaus puretaan. Ainoana rajoitteena on se, että pituus ei olla pidempi kuin alkuperäinen selkoteksti.
+Se, että miksi tämä on mahdollista,<> voidaan päätellä XOR salauksen periaatteiden mukaan.
 
 Jos käytetään samaa salausavainta, mikä on selkotekstin `Hei, Eve...` salateksti?
 
