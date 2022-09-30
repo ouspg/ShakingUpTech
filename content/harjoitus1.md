@@ -26,13 +26,10 @@ Menetelmä kykenee takaamaan täydellisen luottamuksellisuuden, jos tietyt ehdot
 **Se ei kuitenkaan kykene takaamaan tiedon alkuperää tai eheyttä.**
 Täydellinen luottamus tarkoittaa, että mahdollinen vastustaja ei voi oppia salatekstistä yhtään mitään, vaikka hänellä olisi rajoittamattomat resurssit.
 
-OTP perustuu *modulaariseen lisäykseen*, jossa satunnaista ja vähintään samanpituista salausavainta kuin selkoteksti, käytetään tietyn vakion modulon laskentaan.
+OTP perustuu *modulaariseen lisäykseen*, jossa satunnaista ja vähintään samanpituista salausavainta kuin selkoteksti, käytetään tietyn vakion modulon laskentaan yhdessä selkotekstin kanssa.
 Selkoteksti ja avain yleensä koostuvat arvoista, jotka ovat pienempiä kuin modulus.
 
-<!-- `$ C = K + P \pmod M $`
-`$ P = C - K \pmod M $, missä K` -->
-<!-- &            \text{, missä K on key}\\ -->
-<!-- &\text{, P plaintext,}\\&\text{C ciphertext ja M modulus} -->
+<!-- MathJax support, using LaTeX commands -->
 
 `$$
 \begin{align} 
