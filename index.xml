@@ -3521,12 +3521,13 @@ id="tspan14880">avaimella.&lt;/tspan>&lt;/text>
 &lt;h3 id="testaa-itse">Testaa itse!&lt;/h3>
 &lt;p>Monet operaatioista voi laskea ihan käsin paperilla, mutta on olemassa työkaluja jotka voivat huomattavasti helpottaa asiaa.&lt;/p>
 &lt;p>Allaolevalla laatikolla voit hieman kokeilla XOR laskentaa ja binäärimuunnoksia JavaScript ohjelmointikielellä.&lt;/p>
-&lt;p>Saatko saman salatekstin jos muunnat kuvan jokaisen salausavainlohko desimaaliluvuiksi ja käytät XOR operaatiota jokaiseen &lt;code>Wow&lt;/code> sanan vastaavaan kirjaimeen?&lt;/p>
+&lt;p>Saatko saman salatekstin jos muunnat kuvan jokaisen salausavainlohkon desimaaliluvuiksi ja käytät XOR operaatiota jokaiseen &lt;code>Wow&lt;/code> sanan vastaavaan kirjaimeen?&lt;/p>
 &lt;iframe src="../iframe/xor.html" class="coding">&lt;/iframe>
 &lt;h2 id="harjoitus">Harjoitus&lt;/h2>
-&lt;p>OTP salauksessa oli edellä mainitut ehdot, millä täydellinen salaus saavutetaan, ja mitä rajoituksia salauksella on.
+&lt;p>OTP salauksessa oli edellä mainitut ehdot, millä täydellinen salaus saavutetaan, ja mitä muita rajoituksia salauksella on.
 Salaus ei ennen kaikkea pysty varmentamaan tiedon eheyttä tai alkuperää.&lt;/p>
-&lt;p>Varmennuksen ongelmallisuudesta otetaan esimerkkitapaus.&lt;/p>
+&lt;p>Salauksen rajoitteista otetaan esimerkkitapaus.
+Tässä tilanteessa käytämme niin kutsuttua &amp;ldquo;tunnetun selkotekstin hyökkäystä&amp;rdquo; (eng. &lt;em>known-plaintext attack (KPA)&lt;/em>) kryptoanalyysissa.&lt;/p>
 &lt;p>Tiedät, että erään viestin selkoteksti on &lt;code>Hei, Alice!&lt;/code>.
 Viestin XOR salattu (huom. &lt;em>ei ASCII!&lt;/em>) muoto näkyy seuraavasta taulukosta:&lt;/p>
 &lt;!-- raw HTML omitted -->
@@ -3598,8 +3599,10 @@ Viestin XOR salattu (huom. &lt;em>ei ASCII!&lt;/em>) muoto näkyy seuraavasta ta
 &lt;/tbody>
 &lt;/table>
 &lt;p>Jos tiivistetään tämä esitysmuoto, &lt;code>Hei, Alice!&lt;/code> on salattuna &lt;code>bb0293b0e1409f0e99f9e0&lt;/code>&lt;/p>
+&lt;p>Tietämällä selkotekstin ja sen salatekstin, voimme muodostaa mielivaltaisia salatekstejä, jotka päätyvät haluttuun selkotekstiin, kun salaus puretaan.
+Tämä voidaan päätellä XOR salauksen periaatteiden mukaan.&lt;/p>
 &lt;p>Jos käytetään samaa salausavainta, mikä on selkotekstin &lt;code>Hei, Eve...&lt;/code> salateksti?&lt;/p>
-&lt;p>Mikä on salausavain?&lt;/p>
+&lt;p>Entä mikä on salausavain?&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
