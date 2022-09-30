@@ -3214,11 +3214,8 @@ On oltava olemassa avain joka voi myös purkaa salauksen. Monesti se on sama kui
 Menetelmä kykenee takaamaan täydellisen luottamuksellisuuden, jos tietyt ehdot täyttyvät.
 &lt;strong>Se ei kuitenkaan kykene takaamaan tiedon alkuperää tai eheyttä.&lt;/strong>
 Täydellinen luottamus tarkoittaa, että mahdollinen vastustaja ei voi oppia salatekstistä yhtään mitään, vaikka hänellä olisi rajoittamattomat resurssit.&lt;/p>
-&lt;p>OTP perustuu &lt;em>modulaariseen lisäykseen&lt;/em>, jossa satunnaista ja vähintään samanpituista salausavainta kuin selkoteksti, käytetään tietyn vakion modulon laskentaan.
+&lt;p>OTP perustuu &lt;em>modulaariseen lisäykseen&lt;/em>, jossa satunnaista ja vähintään samanpituista salausavainta kuin selkoteksti, käytetään tietyn vakion modulon laskentaan yhdessä selkotekstin kanssa.
 Selkoteksti ja avain yleensä koostuvat arvoista, jotka ovat pienempiä kuin modulus.&lt;/p>
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
 &lt;!-- raw HTML omitted -->
 &lt;p>&lt;code>$$ \begin{align} C = (K + P) \bmod M\\ P = (C - K) \bmod M\\\\ &amp;amp; \text{...kun } \begin{cases} \text{K : avain}\\ \text{P : selkoteksti}\\ \text{C : salateksti}\\ \text{M : modulus} \end{cases} \end{align}\\ $$&lt;/code>&lt;/p>
 &lt;blockquote>
