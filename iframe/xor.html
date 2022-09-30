@@ -30,6 +30,10 @@ function tulosta(data) {
   console.log(data);
 }
 
+function hexBinaariksi(data){
+  return (parseInt(data, 16).toString(2)).padStart(8, '0');
+}
+
 function binaariksi(data) {
   if (typeof data === "string") {
     let binaari = "";

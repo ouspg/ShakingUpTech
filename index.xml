@@ -962,6 +962,47 @@ Esimerkiksi UTF-8 formaatin neljän hexaluvun sarja &lt;code>0xF0 0x9F 0xA4 0xAF
 &lt;td>delete&lt;/td>
 &lt;/tr>
 &lt;/tbody>
+&lt;/table></content></item><item><title>CyberChef: The Cyber Swiss Army Knife</title><link>https://shakinguptech.ouspg.org/cyberchef/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shakinguptech.ouspg.org/cyberchef/</guid><description>CyberChef on selainpohjainen ohjelma, joka tarjoaa paljon eri työkaluja, mitä monet tietoturva-ammattilaiset voivat käyttää jopa päivittäin. Sen avulla voi tehdä monenlaisia erilaisia &amp;ldquo;kyberoperaatioita&amp;rdquo;.
+Tässä työpajassa kokeillaan muutamaa, jotka voivat helpottaa huomattavasti datan käsittelyä, muunnoksia ja salausta.
+CyberChefillä luodaan niin sanottuja reseptejä yhdistämällä eri operaatioita, jotka näkyvät vasemmassa reunassa. Oikeassa yläreunassa on sisään menevä data, eli &amp;ldquo;ainesosa&amp;rdquo; ja oikeassa alareunassa on ulostuleva data, eli lopputulos.
+Oheinen taulukko näyttää mahdolliset hyödylliset operaatiot tähän työpajaan liittyen.</description><content>&lt;p>
+&lt;a href="https://gchq.github.io/CyberChef" target="_blank">CyberChef&lt;/a>
+on selainpohjainen ohjelma, joka tarjoaa paljon eri työkaluja, mitä monet tietoturva-ammattilaiset voivat käyttää jopa päivittäin.
+Sen avulla voi tehdä monenlaisia erilaisia &amp;ldquo;kyberoperaatioita&amp;rdquo;.&lt;/p>
+&lt;p>Tässä työpajassa kokeillaan muutamaa, jotka voivat helpottaa huomattavasti datan käsittelyä, muunnoksia ja salausta.&lt;/p>
+&lt;p>CyberChefillä luodaan niin sanottuja reseptejä yhdistämällä eri operaatioita, jotka näkyvät vasemmassa reunassa.
+Oikeassa yläreunassa on sisään menevä data, eli &amp;ldquo;ainesosa&amp;rdquo; ja oikeassa alareunassa on ulostuleva data, eli lopputulos.&lt;/p>
+&lt;p>Oheinen taulukko näyttää mahdolliset hyödylliset operaatiot tähän työpajaan liittyen.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Nimi&lt;/th>
+&lt;th>Kategoria&lt;/th>
+&lt;th>Kuvaus&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>From/To Hex&lt;/td>
+&lt;td>Data format&lt;/td>
+&lt;td>Ota/anna dataa heksadesimaaliformaatissa&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>From/To Binary&lt;/td>
+&lt;td>Data format&lt;/td>
+&lt;td>Ota/anna dataa binäärinumeroformaatissa&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>XOR&lt;/td>
+&lt;td>Encryption/Encoding&lt;/td>
+&lt;td>Tekee XOR operaation tulevan datan ja avaimen välillä&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>AES Encrypt/Decrypt&lt;/td>
+&lt;td>Encryption/Encoding&lt;/td>
+&lt;td>Salaa tai purkaa tulevan datan AES algoritmilla avainta käyttäen&lt;/td>
+&lt;/tr>
+&lt;/tbody>
 &lt;/table></content></item><item><title>Modernin salauksen huijaaminen</title><link>https://shakinguptech.ouspg.org/harjoitus2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shakinguptech.ouspg.org/harjoitus2/</guid><description>Advanced Encryption Standard (AES) Advanced Encryption Standard (AES) on symmetrinen lohkosalausmenetelmä, jota käytetään useissa yhteyksissä salaamaan (ja myös varmentamaan) tietoja. Symmetrinen salaus tarkoittaa, että sekä salaaminen ja purkaminen tapahtuu samalla (salaisella) avaimella. Lohkosalausmenetelmä tarkoittaa, että salaus tapahtuu pilkkomalla viesti osiin (lohkoihin) ja tämän jälkeen salaamalla viesti lohko kerrallaan.
 AESin etu aiemmin esitettyyn one-time pad -salaukseen on se, että siinä voidaan käyttää lyhyttä avainta (yleensä 128 tai 256 bittiä) salaamaan mielivaltaisen suuria määriä dataa.</description><content>&lt;h2 id="advanced-encryption-standard-aes">Advanced Encryption Standard (AES)&lt;/h2>
 &lt;p>Advanced Encryption Standard (AES) on symmetrinen lohkosalausmenetelmä, jota käytetään useissa yhteyksissä salaamaan (ja myös varmentamaan) tietoja. &lt;em>Symmetrinen&lt;/em> salaus tarkoittaa, että sekä salaaminen ja purkaminen tapahtuu samalla (salaisella) avaimella. &lt;em>Lohkosalausmenetelmä&lt;/em> tarkoittaa, että salaus tapahtuu pilkkomalla viesti osiin (lohkoihin) ja tämän jälkeen salaamalla viesti lohko kerrallaan.&lt;/p>
@@ -3216,7 +3257,7 @@ Menetelmä kykenee takaamaan täydellisen luottamuksellisuuden, jos tietyt ehdot
 Täydellinen luottamus tarkoittaa, että mahdollinen vastustaja ei voi oppia salatekstistä yhtään mitään, vaikka hänellä olisi rajoittamattomat resurssit.&lt;/p>
 &lt;p>OTP perustuu &lt;em>modulaariseen lisäykseen&lt;/em>, jossa satunnaista ja vähintään samanpituista salausavainta kuin selkoteksti, käytetään tietyn vakion modulon laskentaan yhdessä selkotekstin kanssa.
 Selkoteksti ja avain yleensä koostuvat arvoista, jotka ovat pienempiä kuin modulus.
-Selkoteksti ja avain saa siis lopulta aina numeerisen muodon.&lt;/p>
+Selkoteksti ja avain saavat siis lopulta aina numeerisen muodon.&lt;/p>
 &lt;!-- raw HTML omitted -->
 &lt;p>&lt;code>$$ \begin{align} C = (K + P) \bmod M\\ P = (C - K) \bmod M\\\\ &amp;amp; \text{...kun } \begin{cases} \text{K : avain}\\ \text{P : selkoteksti}\\ \text{C : salateksti}\\ \text{M : modulus} \end{cases} \end{align}\\ $$&lt;/code>&lt;/p>
 &lt;blockquote>
@@ -3231,10 +3272,10 @@ Selkoteksti ja avain saa siis lopulta aina numeerisen muodon.&lt;/p>
 &lt;p>Näillä ehdoilla on nurja puolensa; avainten hallinta on monimutkaista, sillä avain pitää aina toimittaa informaation vastaanottajalle salassa, ja avaimen on oltava vähintään yhtä pitkä kuin salattava informaatio.
 Lisäksi uusi avain tarvitaan aina uutta viestiä varten.
 Jatkuvaan informaation välittämiseen tämä voi olla mahdoton ratkaisu.&lt;/p>
-&lt;p>Vielä ei tarvi ymmärtää salauksen täyttä mekanismia, siihen otetaan seuraavaksi parempi katsaus.
-Yksinkertaisin tapaus OTP:stä käyttää modulus arvoa 2, ja se tunnetaan paremmin XOR salauksena.&lt;/p>
+&lt;p>Yksinkertaisin tapaus OTP:stä käyttää modulus arvoa 2, ja se tunnetaan paremmin XOR (bitwsise exclusive or) salauksena tietotekniikassa.
+Tästä voi saada paremman idean salauksen toimintatavasta.&lt;/p>
 &lt;h2 id="xor-salauksen-periaatteet">XOR salauksen periaatteet&lt;/h2>
-&lt;p>XOR (exclusive or) salauksessa selkotekstin ja avaimen merkit voivat saada joko arvot 1 tai 0.
+&lt;p>XOR salauksessa selkotekstin ja avaimen merkit voivat saada joko arvot 1 tai 0.
 Tässä yksinkertaisimmassa tapauksessa ei modulolaskentaan tarvitse kiinnittää huomiota, kun on olemassa vain kaksi mahdollista arvoa.
 Seuraavat laskusäännöt pätevät XOR operaatioissa:&lt;/p>
 &lt;p>&lt;code>$$ \begin{align} &amp;amp; A ⊕ 0 = A,\\ &amp;amp; A ⊕ A = 0,\\ &amp;amp; A ⊕ B = B ⊕ A,\\ &amp;amp; (A ⊕ B) ⊕ C = A ⊕ (B ⊕ C),\\ &amp;amp; (B ⊕ A) ⊕ A = B ⊕ 0 = B\\ \end{align} $$&lt;/code>&lt;/p>
@@ -3523,11 +3564,19 @@ id="tspan14880">avaimella.&lt;/tspan>&lt;/text>
 &lt;p>Allaolevalla laatikolla voit hieman kokeilla XOR laskentaa ja binäärimuunnoksia JavaScript ohjelmointikielellä.&lt;/p>
 &lt;p>Saatko saman salatekstin jos muunnat kuvan jokaisen salausavainlohkon desimaaliluvuiksi ja käytät XOR operaatiota jokaiseen &lt;code>Wow&lt;/code> sanan vastaavaan kirjaimeen?&lt;/p>
 &lt;iframe src="../iframe/xor.html" class="coding">&lt;/iframe>
+&lt;details>
+&lt;summary>Lisätietoa koodauksesta&lt;/summary>
+&lt;br>
+Collapsed text
+&lt;/details>
 &lt;h2 id="harjoitus">Harjoitus&lt;/h2>
-&lt;p>OTP salauksessa oli edellä mainitut ehdot, millä täydellinen salaus saavutetaan, ja mitä muita rajoituksia salauksella on.
-Salaus ei ennen kaikkea pysty varmentamaan tiedon eheyttä tai alkuperää.&lt;/p>
-&lt;p>Salauksen rajoitteista otetaan esimerkkitapaus.
-Tässä tilanteessa käytämme niin kutsuttua &amp;ldquo;tunnetun selkotekstin hyökkäystä&amp;rdquo; (eng. &lt;em>known-plaintext attack (KPA)&lt;/em>) kryptoanalyysissa.&lt;/p>
+&lt;p>OTP salauksessa oli rajoitteita, millä täydellinen salaus saavutetaan.
+Lisäksi salaus ei pystynyt varmentamaan tiedon eheyttä tai alkuperää.
+Salauksella on myös muita ongelmia eräissä tilanteissa, joista seuraava viistoaa myös eheyden ja alkuperän todentamista.&lt;/p>
+&lt;p>Salauksen yhdestä rajoitteesta otetaan esimerkkitapaus.
+Tässä tilanteessa käytämme kryptoanalyysissa niin kutsuttua &amp;ldquo;tunnetun selkotekstin hyökkäystä&amp;rdquo; (eng. &lt;em>known-plaintext attack (KPA)&lt;/em>), mille OTP on haavoittuvainen.
+Käytännössä osoitamme, että voimme saada avaimen tietoomme, jos tiedämme selkotekstin ja salatekstin.
+Lisäksi voimme tehdä haluamimme salatekstejä pelkästään tietämällä nämä kaksi asiaa.&lt;/p>
 &lt;p>Tiedät, että erään viestin selkoteksti on &lt;code>Hei, Alice!&lt;/code>.
 Viestin XOR salattu (huom. &lt;em>ei ASCII!&lt;/em>) muoto näkyy seuraavasta taulukosta:&lt;/p>
 &lt;!-- raw HTML omitted -->
@@ -3536,8 +3585,8 @@ Viestin XOR salattu (huom. &lt;em>ei ASCII!&lt;/em>) muoto näkyy seuraavasta ta
 &lt;thead>
 &lt;tr>
 &lt;th style="text-align:center">Merkki&lt;/th>
-&lt;th style="text-align:center">Salattu binäärimuoto&lt;/th>
-&lt;th style="text-align:center">Salattu hexadesimaali&lt;/th>
+&lt;th style="text-align:center">XOR salattu binäärimuoto&lt;/th>
+&lt;th style="text-align:center">XOR salattu heksadesimaalimuoto&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
@@ -3568,38 +3617,38 @@ Viestin XOR salattu (huom. &lt;em>ei ASCII!&lt;/em>) muoto näkyy seuraavasta ta
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:center">A&lt;/td>
-&lt;td style="text-align:center">01000000&lt;/td>
-&lt;td style="text-align:center">40&lt;/td>
+&lt;td style="text-align:center">01011010&lt;/td>
+&lt;td style="text-align:center">5a&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:center">l&lt;/td>
-&lt;td style="text-align:center">10011111&lt;/td>
-&lt;td style="text-align:center">9f&lt;/td>
+&lt;td style="text-align:center">10100000&lt;/td>
+&lt;td style="text-align:center">a0&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:center">i&lt;/td>
-&lt;td style="text-align:center">00001110&lt;/td>
-&lt;td style="text-align:center">0e&lt;/td>
+&lt;td style="text-align:center">01111101&lt;/td>
+&lt;td style="text-align:center">7d&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:center">c&lt;/td>
-&lt;td style="text-align:center">10011001&lt;/td>
-&lt;td style="text-align:center">99&lt;/td>
+&lt;td style="text-align:center">01111000&lt;/td>
+&lt;td style="text-align:center">78&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:center">e&lt;/td>
-&lt;td style="text-align:center">11111001&lt;/td>
-&lt;td style="text-align:center">f9&lt;/td>
+&lt;td style="text-align:center">00011101&lt;/td>
+&lt;td style="text-align:center">1d&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:center">!&lt;/td>
-&lt;td style="text-align:center">11100000&lt;/td>
-&lt;td style="text-align:center">e0&lt;/td>
+&lt;td style="text-align:center">10111011&lt;/td>
+&lt;td style="text-align:center">bb&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>Jos tiivistetään tämä esitysmuoto, &lt;code>Hei, Alice!&lt;/code> on salattuna &lt;code>bb0293b0e1409f0e99f9e0&lt;/code>&lt;/p>
-&lt;p>Tietämällä selkotekstin ja sen salatekstin, voimme muodostaa mielivaltaisia salatekstejä, jotka päätyvät haluttuun selkotekstiin, kun salaus puretaan.
+&lt;p>Jos tiivistetään tämä esitysmuoto, &lt;code>Hei, Alice!&lt;/code> on salattuna &lt;code>bb0293b0e15aa07d781dbb&lt;/code>&lt;/p>
+&lt;p>Yritämme osoittaa, että tietämällä selkotekstin ja sen salatekstin, voimme muodostaa mielivaltaisia salatekstejä, jotka päätyvät haluttuun selkotekstiin, kun salaus puretaan.
 Tämä voidaan päätellä XOR salauksen periaatteiden mukaan.&lt;/p>
 &lt;p>Jos käytetään samaa salausavainta, mikä on selkotekstin &lt;code>Hei, Eve...&lt;/code> salateksti?&lt;/p>
 &lt;p>Entä mikä on salausavain?&lt;/p>
