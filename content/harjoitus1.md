@@ -95,16 +95,17 @@ Monet operaatioista voi laskea ihan käsin paperilla, mutta on olemassa työkalu
 
 Allaolevalla laatikolla voit hieman kokeilla XOR laskentaa ja binäärimuunnoksia JavaScript ohjelmointikielellä.
 
-Saatko saman salatekstin jos muunnat kuvan jokaisen salausavainlohko desimaaliluvuiksi ja käytät XOR operaatiota jokaiseen `Wow` sanan vastaavaan kirjaimeen?
+Saatko saman salatekstin jos muunnat kuvan jokaisen salausavainlohkon desimaaliluvuiksi ja käytät XOR operaatiota jokaiseen `Wow` sanan vastaavaan kirjaimeen?
 
 {{< iframe "../iframe/xor.html" >}}
 
 ## Harjoitus
 
-OTP salauksessa oli edellä mainitut ehdot, millä täydellinen salaus saavutetaan, ja mitä rajoituksia salauksella on.
+OTP salauksessa oli edellä mainitut ehdot, millä täydellinen salaus saavutetaan, ja mitä muita rajoituksia salauksella on.
 Salaus ei ennen kaikkea pysty varmentamaan tiedon eheyttä tai alkuperää.
 
-Varmennuksen ongelmallisuudesta otetaan esimerkkitapaus.
+Salauksen rajoitteista otetaan esimerkkitapaus.
+Tässä tilanteessa käytämme niin kutsuttua "tunnetun selkotekstin hyökkäystä" (eng. *known-plaintext attack (KPA)*) kryptoanalyysissa.
 
 Tiedät, että erään viestin selkoteksti on `Hei, Alice!`. 
 Viestin XOR salattu (huom. *ei ASCII!*) muoto näkyy seuraavasta taulukosta:
@@ -130,8 +131,12 @@ Binääri|10111011|00000010|10010011|10110000|11100001|01000000|10011111|0000111
 Jos tiivistetään tämä esitysmuoto, `Hei, Alice!` on salattuna `bb0293b0e1409f0e99f9e0`
 
 
+
+Tietämällä selkotekstin ja sen salatekstin, voimme muodostaa mielivaltaisia salatekstejä, jotka päätyvät haluttuun selkotekstiin, kun salaus puretaan.
+Tämä voidaan päätellä XOR salauksen periaatteiden mukaan.
+
 Jos käytetään samaa salausavainta, mikä on selkotekstin `Hei, Eve...` salateksti?
 
-Mikä on salausavain?
+Entä mikä on salausavain?
 
 [^1]: [XOR Cipher in Wikipedia 🙄](https://en.wikipedia.org/wiki/XOR_cipher) 
