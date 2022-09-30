@@ -19,8 +19,8 @@ Numeerinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merki
 &lt;p>Taulukko on englanniksi, ja ohessa on lyhys kuvaus taulukon arvoista.&lt;/p>
 &lt;p>Merkintä &lt;code>dec&lt;/code> tarkoittaa &lt;code>decimal&lt;/code> eli kymmenjärjestelmän esitystä.&lt;/p>
 &lt;p>Merkintä &lt;code>hex&lt;/code> tarkoittaa &lt;code>hexadecimal&lt;/code> eli kuusitoistajärjestelmän esitystä.&lt;/p>
-&lt;p>Merkintä &lt;code>binary&lt;/code> tarkoittaa binäärijärjestelmän esitystä.
-Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan binääristä numeroa eli &lt;em>bittiä&lt;/em> (eng. bit) arvon esittämiseksi, ja tässä taulukossa arvot esitetään seitsemällä bitillä.
+&lt;p>Merkintä &lt;code>binary&lt;/code> tarkoittaa binäärijärjestelmän esitystä.&lt;/p>
+&lt;p>Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan binääristä numeroa eli &lt;em>bittiä&lt;/em> (eng. bit) arvon esittämiseksi, ja tässä taulukossa arvot esitetään seitsemällä bitillä.
 Alkuperäinen ASCII sisältää 128 eri merkkiä, mitkä voidaan esittää seitsemällä bitillä (2⁷).&lt;/p>
 &lt;p>Kahdeksan bitin esitys tunnetaan paremmin yhtenä &lt;em>tavuna&lt;/em> (eng. byte).
 ASCII merkistö saavuttaa kahdeksannen bitin ns. pariteettibitin kanssa, mitä yleensä käytetään virheellisen arvon tunnistamisessa.
@@ -3215,7 +3215,8 @@ Menetelmä kykenee takaamaan täydellisen luottamuksellisuuden, jos tietyt ehdot
 &lt;strong>Se ei kuitenkaan kykene takaamaan tiedon alkuperää tai eheyttä.&lt;/strong>
 Täydellinen luottamus tarkoittaa, että mahdollinen vastustaja ei voi oppia salatekstistä yhtään mitään, vaikka hänellä olisi rajoittamattomat resurssit.&lt;/p>
 &lt;p>OTP perustuu &lt;em>modulaariseen lisäykseen&lt;/em>, jossa satunnaista ja vähintään samanpituista salausavainta kuin selkoteksti, käytetään tietyn vakion modulon laskentaan yhdessä selkotekstin kanssa.
-Selkoteksti ja avain yleensä koostuvat arvoista, jotka ovat pienempiä kuin modulus.&lt;/p>
+Selkoteksti ja avain yleensä koostuvat arvoista, jotka ovat pienempiä kuin modulus.
+Selkoteksti ja avain saa siis lopulta aina numeerisen muodon.&lt;/p>
 &lt;!-- raw HTML omitted -->
 &lt;p>&lt;code>$$ \begin{align} C = (K + P) \bmod M\\ P = (C - K) \bmod M\\\\ &amp;amp; \text{...kun } \begin{cases} \text{K : avain}\\ \text{P : selkoteksti}\\ \text{C : salateksti}\\ \text{M : modulus} \end{cases} \end{align}\\ $$&lt;/code>&lt;/p>
 &lt;blockquote>
@@ -3525,7 +3526,7 @@ id="tspan14880">avaimella.&lt;/tspan>&lt;/text>
 &lt;h2 id="harjoitus">Harjoitus&lt;/h2>
 &lt;p>OTP salauksessa oli edellä mainitut ehdot, millä täydellinen salaus saavutetaan.
 Kuinka käy, jos ehtoja ei noudateta?&lt;/p>
-&lt;p>Otetaan esimerkkitapaus&lt;/p>
+&lt;p>Otetaan esimerkkitapaus.&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
