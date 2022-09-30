@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shaking Up Tech 13.10.2022</title><link>https://shakinguptech.ouspg.org/</link><description>Recent content on Shaking Up Tech 13.10.2022</description><generator>Hugo -- gohugo.io</generator><language>fi-FI</language><copyright>Oulu University Secure Programming Group</copyright><lastBuildDate>Fri, 09 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://shakinguptech.ouspg.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Työpajan kulku</title><link>https://shakinguptech.ouspg.org/posts/main/</link><pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate><guid>https://shakinguptech.ouspg.org/posts/main/</guid><description>Intro (ketä ollaan ja mistä tullaan) Kyberturvallisuudesta (mitä se on?) Salauksesta (mitä se on, missä sitä käytetään) Harjoitusten tausta, tekeminen ja läpikäyminen Harjoitukset Ensimmäisenä otetaan katsaus yhteen vahvaan, jopa &amp;ldquo;täydelliseksi&amp;rdquo; kutsuttuun menetelmään, joka toimii perustana moniin monimutkaisempiin menetelmiin. Menetelmässä on myös muutama kriittiinen ongelma, mitä tarkastellaan käytännössä.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shaking Up Tech 2022</title><link>https://shakinguptech.ouspg.org/</link><description>Recent content on Shaking Up Tech 2022</description><generator>Hugo -- gohugo.io</generator><language>fi-FI</language><copyright>Oulu University Secure Programming Group</copyright><lastBuildDate>Fri, 09 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://shakinguptech.ouspg.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Työpajan kulku</title><link>https://shakinguptech.ouspg.org/posts/main/</link><pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate><guid>https://shakinguptech.ouspg.org/posts/main/</guid><description>Intro (ketä ollaan ja mistä tullaan) Kyberturvallisuudesta (mitä se on?) Salauksesta (mitä se on, missä sitä käytetään) Harjoitusten tausta, tekeminen ja läpikäyminen Harjoitukset Ensimmäisenä otetaan katsaus yhteen vahvaan, jopa &amp;ldquo;täydelliseksi&amp;rdquo; kutsuttuun menetelmään, joka toimii perustana moniin monimutkaisempiin menetelmiin. Menetelmässä on myös muutama kriittiinen ongelma, mitä tarkastellaan käytännössä.
 Työpaja koostuu täten kahdesta eri osasta: johdatus &amp;ldquo;täydellisen salauksen&amp;rdquo; kerta-avainjärjestelmään (one-time pad eli OTP) ja kuinka modernimmat salaukset käyttävät sen ideaa, ja mitä ovat sen heikkoudet.</description><content>&lt;ul>
 &lt;li>Intro (ketä ollaan ja mistä tullaan)&lt;/li>
 &lt;li>Kyberturvallisuudesta (mitä se on?)&lt;/li>
@@ -962,16 +962,16 @@ Esimerkiksi UTF-8 formaatin neljän hexaluvun sarja &lt;code>0xF0 0x9F 0xA4 0xAF
 &lt;td>delete&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></content></item><item><title>CyberChef: The Cyber Swiss Army Knife</title><link>https://shakinguptech.ouspg.org/cyberchef/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shakinguptech.ouspg.org/cyberchef/</guid><description>CyberChef on selainpohjainen ohjelma, joka tarjoaa paljon eri työkaluja, mitä monet tietoturva-ammattilaiset voivat käyttää jopa päivittäin. Sen avulla voi tehdä monenlaisia erilaisia &amp;ldquo;kyberoperaatioita&amp;rdquo;.
+&lt;/table></content></item><item><title>CyberChef: The Cyber Swiss Army Knife</title><link>https://shakinguptech.ouspg.org/cyberchef/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shakinguptech.ouspg.org/cyberchef/</guid><description>CyberChef on suosittu selainpohjainen ohjelma, joka tarjoaa paljon eri työkaluja, mitä monet tietoturva-ammattilaiset voivat käyttää jopa päivittäin. Sen avulla voi tehdä monenlaisia erilaisia &amp;ldquo;kyberoperaatioita&amp;rdquo;.
 Tässä työpajassa kokeillaan muutamaa, jotka voivat helpottaa huomattavasti datan käsittelyä, muunnoksia ja salausta.
-CyberChefillä luodaan niin sanottuja reseptejä yhdistämällä eri operaatioita, jotka näkyvät vasemmassa reunassa. Oikeassa yläreunassa on sisään menevä data, eli &amp;ldquo;ainesosa&amp;rdquo; ja oikeassa alareunassa on ulostuleva data, eli lopputulos.
-Oheinen taulukko näyttää mahdolliset hyödylliset operaatiot tähän työpajaan liittyen.</description><content>&lt;p>
+CyberChefillä luodaan niin sanottuja reseptejä yhdistämällä eri operaatioita, jotka näkyvät vasemmassa reunassa. Operaatiot on jaettuna eri kategorioihin. Oikeassa yläreunassa on syötettävä data, eli &amp;ldquo;ainesosa&amp;rdquo; ja oikeassa alareunassa on lähtevä data, eli lopputulos.</description><content>&lt;p>
 &lt;a href="https://gchq.github.io/CyberChef" target="_blank">CyberChef&lt;/a>
-on selainpohjainen ohjelma, joka tarjoaa paljon eri työkaluja, mitä monet tietoturva-ammattilaiset voivat käyttää jopa päivittäin.
+on suosittu selainpohjainen ohjelma, joka tarjoaa paljon eri työkaluja, mitä monet tietoturva-ammattilaiset voivat käyttää jopa päivittäin.
 Sen avulla voi tehdä monenlaisia erilaisia &amp;ldquo;kyberoperaatioita&amp;rdquo;.&lt;/p>
 &lt;p>Tässä työpajassa kokeillaan muutamaa, jotka voivat helpottaa huomattavasti datan käsittelyä, muunnoksia ja salausta.&lt;/p>
 &lt;p>CyberChefillä luodaan niin sanottuja reseptejä yhdistämällä eri operaatioita, jotka näkyvät vasemmassa reunassa.
-Oikeassa yläreunassa on sisään menevä data, eli &amp;ldquo;ainesosa&amp;rdquo; ja oikeassa alareunassa on ulostuleva data, eli lopputulos.&lt;/p>
+Operaatiot on jaettuna eri kategorioihin.
+Oikeassa yläreunassa on syötettävä data, eli &amp;ldquo;ainesosa&amp;rdquo; ja oikeassa alareunassa on lähtevä data, eli lopputulos.&lt;/p>
 &lt;p>Oheinen taulukko näyttää mahdolliset hyödylliset operaatiot tähän työpajaan liittyen.&lt;/p>
 &lt;table>
 &lt;thead>
@@ -985,22 +985,22 @@ Oikeassa yläreunassa on sisään menevä data, eli &amp;ldquo;ainesosa&amp;rdqu
 &lt;tr>
 &lt;td>From/To Hex&lt;/td>
 &lt;td>Data format&lt;/td>
-&lt;td>Ota/anna dataa heksadesimaaliformaatissa&lt;/td>
+&lt;td>Ota/tuota dataa heksadesimaaliformaatissa&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>From/To Binary&lt;/td>
 &lt;td>Data format&lt;/td>
-&lt;td>Ota/anna dataa binäärinumeroformaatissa&lt;/td>
+&lt;td>Ota/tuota dataa binäärinumeroformaatissa&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>XOR&lt;/td>
 &lt;td>Encryption/Encoding&lt;/td>
-&lt;td>Tekee XOR operaation tulevan datan ja avaimen välillä&lt;/td>
+&lt;td>Tekee XOR operaation syötetyn datan ja avaimen välillä&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>AES Encrypt/Decrypt&lt;/td>
 &lt;td>Encryption/Encoding&lt;/td>
-&lt;td>Salaa tai purkaa tulevan datan AES algoritmilla avainta käyttäen&lt;/td>
+&lt;td>Salaa tai purkaa syötetyn datan AES algoritmilla määriteltyä avainta käyttäen&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></content></item><item><title>Modernin salauksen huijaaminen</title><link>https://shakinguptech.ouspg.org/harjoitus2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shakinguptech.ouspg.org/harjoitus2/</guid><description>Advanced Encryption Standard (AES) Advanced Encryption Standard (AES) on symmetrinen lohkosalausmenetelmä, jota käytetään useissa yhteyksissä salaamaan (ja myös varmentamaan) tietoja. Symmetrinen salaus tarkoittaa, että sekä salaaminen ja purkaminen tapahtuu samalla (salaisella) avaimella. Lohkosalausmenetelmä tarkoittaa, että salaus tapahtuu pilkkomalla viesti osiin (lohkoihin) ja tämän jälkeen salaamalla viesti lohko kerrallaan.
@@ -3570,13 +3570,14 @@ id="tspan14880">avaimella.&lt;/tspan>&lt;/text>
 Collapsed text
 &lt;/details>
 &lt;h2 id="harjoitus">Harjoitus&lt;/h2>
-&lt;p>OTP salauksessa oli rajoitteita, millä täydellinen salaus saavutetaan.
+&lt;p>OTP salauksessa oli ehtoja, ennen kuin täydellinen salaus saavutetaan.
 Lisäksi salaus ei pystynyt varmentamaan tiedon eheyttä tai alkuperää.
 Salauksella on myös muita ongelmia eräissä tilanteissa, joista seuraava viistoaa myös eheyden ja alkuperän todentamista.&lt;/p>
 &lt;p>Salauksen yhdestä rajoitteesta otetaan esimerkkitapaus.
 Tässä tilanteessa käytämme kryptoanalyysissa niin kutsuttua &amp;ldquo;tunnetun selkotekstin hyökkäystä&amp;rdquo; (eng. &lt;em>known-plaintext attack (KPA)&lt;/em>), mille OTP on haavoittuvainen.
 Käytännössä osoitamme, että voimme saada avaimen tietoomme, jos tiedämme selkotekstin ja salatekstin.
-Lisäksi voimme tehdä haluamimme salatekstejä pelkästään tietämällä nämä kaksi asiaa.&lt;/p>
+Osittain tästä syystä, samaa avainta ei saa käyttää uudestaan.
+Lisäksi voimme tehdä haluamimme salatekstejä pelkästään tietämällä nämä kaksi asiaa, kunhan ne eivät ole alkuperäistä pidempiä.&lt;/p>
 &lt;p>Tiedät, että erään viestin selkoteksti on &lt;code>Hei, Alice!&lt;/code>.
 Viestin XOR salattu (huom. &lt;em>ei ASCII!&lt;/em>) muoto näkyy seuraavasta taulukosta:&lt;/p>
 &lt;!-- raw HTML omitted -->
@@ -3648,8 +3649,8 @@ Viestin XOR salattu (huom. &lt;em>ei ASCII!&lt;/em>) muoto näkyy seuraavasta ta
 &lt;/tbody>
 &lt;/table>
 &lt;p>Jos tiivistetään tämä esitysmuoto, &lt;code>Hei, Alice!&lt;/code> on salattuna &lt;code>bb0293b0e15aa07d781dbb&lt;/code>&lt;/p>
-&lt;p>Yritämme osoittaa, että tietämällä selkotekstin ja sen salatekstin, voimme muodostaa mielivaltaisia salatekstejä, jotka päätyvät haluttuun selkotekstiin, kun salaus puretaan.
-Tämä voidaan päätellä XOR salauksen periaatteiden mukaan.&lt;/p>
+&lt;p>Yritämme osoittaa, että tietämällä selkotekstin ja sen salatekstin, voimme muodostaa salatekstejä, jotka päätyvät haluttuun selkotekstiin, kun salaus puretaan. Ainoana rajoitteena on se, että pituus ei olla pidempi kuin alkuperäinen selkoteksti.
+Se, että miksi tämä on mahdollista,&amp;lt;&amp;gt; voidaan päätellä XOR salauksen periaatteiden mukaan.&lt;/p>
 &lt;p>Jos käytetään samaa salausavainta, mikä on selkotekstin &lt;code>Hei, Eve...&lt;/code> salateksti?&lt;/p>
 &lt;p>Entä mikä on salausavain?&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
