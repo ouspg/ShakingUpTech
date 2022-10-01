@@ -1000,7 +1000,7 @@ Oikeassa yläreunassa on syötettävä data, eli &amp;ldquo;ainesosa&amp;rdquo; 
 &lt;tr>
 &lt;td>AES Encrypt/Decrypt&lt;/td>
 &lt;td>Encryption/Encoding&lt;/td>
-&lt;td>Salaa tai purkaa syötetyn datan AES algoritmilla määriteltyä avainta käyttäen&lt;/td>
+&lt;td>Salaa tai purkaa syötetyn datan AES algoritmilla määriteltyä avainta ja IV: käyttäen&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></content></item><item><title>Modernin salauksen huijaaminen</title><link>https://shakinguptech.ouspg.org/harjoitus2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shakinguptech.ouspg.org/harjoitus2/</guid><description>Advanced Encryption Standard (AES) Advanced Encryption Standard (AES) on symmetrinen lohkosalausmenetelmä, jota käytetään useissa yhteyksissä salaamaan (ja myös varmentamaan) tietoja. Symmetrinen salaus tarkoittaa, että sekä salaaminen ja purkaminen tapahtuu samalla (salaisella) avaimella. Lohkosalausmenetelmä tarkoittaa, että salaus tapahtuu pilkkomalla viesti osiin (lohkoihin) ja tämän jälkeen salaamalla viesti lohko kerrallaan.
@@ -3569,7 +3569,7 @@ id="tspan14880">avaimella.&lt;/tspan>&lt;/text>
 &lt;br>
 Collapsed text
 &lt;/details>
-&lt;h2 id="harjoitus">Harjoitus&lt;/h2>
+&lt;h2 id="tehtävä">Tehtävä&lt;/h2>
 &lt;p>OTP salauksessa oli ehtoja, ennen kuin täydellinen salaus saavutetaan.
 Lisäksi salaus ei pystynyt varmentamaan tiedon eheyttä tai alkuperää.
 Salauksella on myös muita ongelmia eräissä tilanteissa, joista seuraava viistoaa myös eheyden ja alkuperän todentamista.&lt;/p>
@@ -3577,7 +3577,7 @@ Salauksella on myös muita ongelmia eräissä tilanteissa, joista seuraava viist
 Tässä tilanteessa käytämme kryptoanalyysissa niin kutsuttua &amp;ldquo;tunnetun selkotekstin hyökkäystä&amp;rdquo; (eng. &lt;em>known-plaintext attack (KPA)&lt;/em>), mille OTP on haavoittuvainen.
 Käytännössä osoitamme, että voimme saada avaimen tietoomme, jos tiedämme selkotekstin ja salatekstin.
 Osittain tästä syystä, samaa avainta ei saa käyttää uudestaan.
-Lisäksi voimme tehdä haluamimme salatekstejä pelkästään tietämällä nämä kaksi asiaa, kunhan ne eivät ole alkuperäistä pidempiä.&lt;/p>
+Lisäksi voimme tehdä haluamimme salatekstejä pelkästään tietämällä nämä kaksi asiaa, kunhan purkautuvat yhtä pitkään selkotekstiin kuin alkuperäinen. Muuten jää kiinni muokkauksesta!&lt;/p>
 &lt;p>Tiedät, että erään viestin selkoteksti on &lt;code>Hei, Alice!&lt;/code>.
 Viestin XOR salattu (huom. &lt;em>ei ASCII!&lt;/em>) muoto näkyy seuraavasta taulukosta:&lt;/p>
 &lt;!-- raw HTML omitted -->
@@ -3586,8 +3586,8 @@ Viestin XOR salattu (huom. &lt;em>ei ASCII!&lt;/em>) muoto näkyy seuraavasta ta
 &lt;thead>
 &lt;tr>
 &lt;th style="text-align:center">Merkki&lt;/th>
-&lt;th style="text-align:center">XOR salattu binäärimuoto&lt;/th>
-&lt;th style="text-align:center">XOR salattu heksadesimaalimuoto&lt;/th>
+&lt;th style="text-align:center">XOR salattu (bin)&lt;/th>
+&lt;th style="text-align:center">XOR salattu (hex)&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
@@ -3648,11 +3648,13 @@ Viestin XOR salattu (huom. &lt;em>ei ASCII!&lt;/em>) muoto näkyy seuraavasta ta
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>Jos tiivistetään tämä esitysmuoto, &lt;code>Hei, Alice!&lt;/code> on salattuna &lt;code>bb0293b0e15aa07d781dbb&lt;/code>&lt;/p>
+&lt;p>Jos tiivistetään tämä heksadesimaalinen esitysmuoto, &lt;code>Hei, Alice!&lt;/code> on salattuna &lt;code>bb0293b0e15aa07d781dbb&lt;/code>&lt;/p>
 &lt;p>Yritämme osoittaa, että tietämällä selkotekstin ja sen salatekstin, voimme muodostaa salatekstejä, jotka päätyvät haluttuun selkotekstiin, kun salaus puretaan. Ainoana rajoitteena on se, että pituus ei olla pidempi kuin alkuperäinen selkoteksti.
-Se, että miksi tämä on mahdollista,&amp;lt;&amp;gt; voidaan päätellä XOR salauksen periaatteiden mukaan.&lt;/p>
+Se, että miksi tämä on mahdollista, voidaan päätellä XOR salauksen periaatteiden mukaan.&lt;/p>
 &lt;p>Jos käytetään samaa salausavainta, mikä on selkotekstin &lt;code>Hei, Eve...&lt;/code> salateksti?&lt;/p>
 &lt;p>Entä mikä on salausavain?&lt;/p>
+&lt;p>Tämän tehtävän voi tehdä joko ylläolevalla JavaScript laatikolla, tai ns. &lt;strong>CyberChef&lt;/strong> ohjelmalla, mistä voi lukea lisää &lt;a href="https://shakinguptech.ouspg.org/cyberchef">täältä.&lt;/a>&lt;/p>
+&lt;p>Tehtävän voi tehdä myös kynällä ja paperilla, käyttäen annettua &lt;a href="https://shakinguptech.ouspg.org/ascii">ASCII taulukkoa hyväksi.&lt;/a>&lt;/p>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
