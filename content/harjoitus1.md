@@ -104,7 +104,7 @@ Saatko saman salatekstin jos muunnat kuvan jokaisen salausavainlohkon desimaalil
 Collapsed text
 {{< /details >}}
 
-## Harjoitus
+## Tehtävä
 
 OTP salauksessa oli ehtoja, ennen kuin täydellinen salaus saavutetaan.
 Lisäksi salaus ei pystynyt varmentamaan tiedon eheyttä tai alkuperää.
@@ -115,7 +115,7 @@ Salauksen yhdestä rajoitteesta otetaan esimerkkitapaus.
 Tässä tilanteessa käytämme kryptoanalyysissa niin kutsuttua "tunnetun selkotekstin hyökkäystä" (eng. *known-plaintext attack (KPA)*), mille OTP on haavoittuvainen.
 Käytännössä osoitamme, että voimme saada avaimen tietoomme, jos tiedämme selkotekstin ja salatekstin.
 Osittain tästä syystä, samaa avainta ei saa käyttää uudestaan.
-Lisäksi voimme tehdä haluamimme salatekstejä pelkästään tietämällä nämä kaksi asiaa, kunhan ne eivät ole alkuperäistä pidempiä.
+Lisäksi voimme tehdä haluamimme salatekstejä pelkästään tietämällä nämä kaksi asiaa, kunhan purkautuvat yhtä pitkään selkotekstiin kuin alkuperäinen. Muuten jää kiinni muokkauksesta!
 
 
 Tiedät, että erään viestin selkoteksti on `Hei, Alice!`. 
@@ -125,7 +125,7 @@ Viestin XOR salattu (huom. *ei ASCII!*) muoto näkyy seuraavasta taulukosta:
 |-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 Binääri|10111011|00000010|10010011|10110000|11100001|01000000|10011111|00001110|10011001|11111001|11100000| -->
 
-|Merkki|XOR salattu binäärimuoto| XOR salattu heksadesimaalimuoto|
+|Merkki|XOR salattu (bin)| XOR salattu (hex)|
 |:-:|:--------:|:--:|
 | H | 10111011 | bb |
 | e | 00000010 | 02 |
@@ -139,15 +139,19 @@ Binääri|10111011|00000010|10010011|10110000|11100001|01000000|10011111|0000111
 | e | 00011101 | 1d |
 | ! | 10111011 | bb |  
 
-Jos tiivistetään tämä esitysmuoto, `Hei, Alice!` on salattuna `bb0293b0e15aa07d781dbb`
+Jos tiivistetään tämä heksadesimaalinen esitysmuoto, `Hei, Alice!` on salattuna `bb0293b0e15aa07d781dbb`
 
 
 
 Yritämme osoittaa, että tietämällä selkotekstin ja sen salatekstin, voimme muodostaa salatekstejä, jotka päätyvät haluttuun selkotekstiin, kun salaus puretaan. Ainoana rajoitteena on se, että pituus ei olla pidempi kuin alkuperäinen selkoteksti.
-Se, että miksi tämä on mahdollista,<> voidaan päätellä XOR salauksen periaatteiden mukaan.
+Se, että miksi tämä on mahdollista, voidaan päätellä XOR salauksen periaatteiden mukaan.
 
 Jos käytetään samaa salausavainta, mikä on selkotekstin `Hei, Eve...` salateksti?
 
 Entä mikä on salausavain?
+
+Tämän tehtävän voi tehdä joko ylläolevalla JavaScript laatikolla, tai ns. **CyberChef** ohjelmalla, mistä voi lukea lisää [täältä.](/cyberchef)
+
+Tehtävän voi tehdä myös kynällä ja paperilla, käyttäen annettua [ASCII taulukkoa hyväksi.](/ascii)
 
 [^1]: [XOR Cipher in Wikipedia 🙄](https://en.wikipedia.org/wiki/XOR_cipher) 
