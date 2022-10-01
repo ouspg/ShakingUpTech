@@ -25,4 +25,4 @@ Oheinen taulukko näyttää mahdolliset hyödylliset operaatiot tähän työpaja
 | From/To Hex         | Data format         | Ota/tuota dataa heksadesimaaliformaatissa                         |
 | From/To Binary      | Data format         | Ota/tuota dataa binäärinumeroformaatissa                          |
 | XOR                 | Encryption/Encoding | Tekee XOR operaation syötetyn datan ja avaimen välillä            |
-| AES Encrypt/Decrypt | Encryption/Encoding | Salaa tai purkaa syötetyn datan AES algoritmilla määriteltyä avainta ja IV: käyttäen |
+| AES Encrypt/Decrypt | Encryption/Encoding | Salaa tai purkaa syötetyn datan AES algoritmilla määriteltyä avainta ja IV:tä käyttäen |

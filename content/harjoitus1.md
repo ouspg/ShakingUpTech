@@ -115,7 +115,7 @@ Salauksen yhdestä rajoitteesta otetaan esimerkkitapaus.
 Tässä tilanteessa käytämme kryptoanalyysissa niin kutsuttua "tunnetun selkotekstin hyökkäystä" (eng. *known-plaintext attack (KPA)*), mille OTP on haavoittuvainen.
 Käytännössä osoitamme, että voimme saada avaimen tietoomme, jos tiedämme selkotekstin ja salatekstin.
 Osittain tästä syystä, samaa avainta ei saa käyttää uudestaan.
-Lisäksi voimme tehdä haluamimme salatekstejä pelkästään tietämällä nämä kaksi asiaa, kunhan purkautuvat yhtä pitkään selkotekstiin kuin alkuperäinen. Muuten jää kiinni muokkauksesta!
+Lisäksi voimme tehdä haluamimme salatekstejä pelkästään tietämällä nämä kaksi asiaa, kunhan ne purkautuvat yhtä pitkään selkotekstiin kuin alkuperäinen. Muuten jää kiinni muokkauksesta!
 
 
 Tiedät, että erään viestin selkoteksti on `Hei, Alice!`. 
@@ -125,7 +125,7 @@ Viestin XOR salattu (huom. *ei ASCII!*) muoto näkyy seuraavasta taulukosta:
 |-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 Binääri|10111011|00000010|10010011|10110000|11100001|01000000|10011111|00001110|10011001|11111001|11100000| -->
 
-|Merkki|XOR salattu (bin)| XOR salattu (hex)|
+|Merkki|XOR salattu (binääri)| XOR salattu (heksa)|
 |:-:|:--------:|:--:|
 | H | 10111011 | bb |
 | e | 00000010 | 02 |
@@ -143,7 +143,7 @@ Jos tiivistetään tämä heksadesimaalinen esitysmuoto, `Hei, Alice!` on salatt
 
 
 
-Yritämme osoittaa, että tietämällä selkotekstin ja sen salatekstin, voimme muodostaa salatekstejä, jotka päätyvät haluttuun selkotekstiin, kun salaus puretaan. Ainoana rajoitteena on se, että pituus ei olla pidempi kuin alkuperäinen selkoteksti.
+Yritämme osoittaa, että tietämällä selkotekstin ja sen salatekstin, voimme muodostaa salatekstejä, jotka päätyvät haluttuun selkotekstiin, kun salaus puretaan. Ainoana rajoitteena on se, että pituus ei voi olla pidempi kuin alkuperäinen selkoteksti.
 Se, että miksi tämä on mahdollista, voidaan päätellä XOR salauksen periaatteiden mukaan.
 
 Jos käytetään samaa salausavainta, mikä on selkotekstin `Hei, Eve...` salateksti?
