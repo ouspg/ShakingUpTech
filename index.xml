@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shaking Up Tech 2022</title><link>https://shakinguptech.ouspg.org/</link><description>Recent content on Shaking Up Tech 2022</description><generator>Hugo -- gohugo.io</generator><language>fi-FI</language><copyright>Oulu University Secure Programming Group</copyright><lastBuildDate>Fri, 09 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://shakinguptech.ouspg.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Työpajan kulku</title><link>https://shakinguptech.ouspg.org/posts/main/</link><pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate><guid>https://shakinguptech.ouspg.org/posts/main/</guid><description>Intro (ketä ollaan ja mistä tullaan) Kyberturvallisuudesta (mitä se on?) Salauksesta (mitä se on, missä sitä käytetään) Harjoitusten tausta, tekeminen ja läpikäyminen Harjoitukset Ensimmäisenä otetaan katsaus yhteen vahvaan, jopa &amp;ldquo;täydelliseksi&amp;rdquo; kutsuttuun menetelmään, joka toimii perustana moniin monimutkaisempiin menetelmiin. Menetelmässä on myös muutama kriittiinen ongelma, mitä tarkastellaan käytännössä.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shaking Up Tech 2022</title><link>https://shakinguptech.ouspg.org/</link><description>Recent content on Shaking Up Tech 2022</description><generator>Hugo -- gohugo.io</generator><language>fi-FI</language><copyright>Oulu University Secure Programming Group (OUSPG)</copyright><lastBuildDate>Fri, 09 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://shakinguptech.ouspg.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Työpajan kulku</title><link>https://shakinguptech.ouspg.org/posts/main/</link><pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate><guid>https://shakinguptech.ouspg.org/posts/main/</guid><description>Intro (ketä ollaan ja mistä tullaan) Kyberturvallisuudesta (mitä se on?) Salauksesta (mitä se on, missä sitä käytetään) Harjoitusten tausta, tekeminen ja läpikäyminen Harjoitukset Ensimmäisenä otetaan katsaus yhteen vahvaan, jopa &amp;ldquo;täydelliseksi&amp;rdquo; kutsuttuun menetelmään, joka toimii perustana moniin monimutkaisempiin menetelmiin. Menetelmässä on myös muutama kriittiinen ongelma, mitä tarkastellaan käytännössä.
 Työpaja koostuu täten kahdesta eri osasta: johdatus &amp;ldquo;täydellisen salauksen&amp;rdquo; kerta-avainjärjestelmään (one-time pad eli OTP) ja kuinka modernimmat salaukset käyttävät sen ideaa, ja mitä ovat sen heikkoudet.</description><content>&lt;ul>
 &lt;li>Intro (ketä ollaan ja mistä tullaan)&lt;/li>
 &lt;li>Kyberturvallisuudesta (mitä se on?)&lt;/li>
@@ -1000,7 +1000,7 @@ Oikeassa yläreunassa on syötettävä data, eli &amp;ldquo;ainesosa&amp;rdquo; 
 &lt;tr>
 &lt;td>AES Encrypt/Decrypt&lt;/td>
 &lt;td>Encryption/Encoding&lt;/td>
-&lt;td>Salaa tai purkaa syötetyn datan AES algoritmilla määriteltyä avainta ja IV: käyttäen&lt;/td>
+&lt;td>Salaa tai purkaa syötetyn datan AES algoritmilla määriteltyä avainta ja IV:tä käyttäen&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></content></item><item><title>Modernin salauksen huijaaminen</title><link>https://shakinguptech.ouspg.org/harjoitus2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shakinguptech.ouspg.org/harjoitus2/</guid><description>Advanced Encryption Standard (AES) Advanced Encryption Standard (AES) on symmetrinen lohkosalausmenetelmä, jota käytetään useissa yhteyksissä salaamaan (ja myös varmentamaan) tietoja. Symmetrinen salaus tarkoittaa, että sekä salaaminen ja purkaminen tapahtuu samalla (salaisella) avaimella. Lohkosalausmenetelmä tarkoittaa, että salaus tapahtuu pilkkomalla viesti osiin (lohkoihin) ja tämän jälkeen salaamalla viesti lohko kerrallaan.
@@ -3577,7 +3577,7 @@ Salauksella on myös muita ongelmia eräissä tilanteissa, joista seuraava viist
 Tässä tilanteessa käytämme kryptoanalyysissa niin kutsuttua &amp;ldquo;tunnetun selkotekstin hyökkäystä&amp;rdquo; (eng. &lt;em>known-plaintext attack (KPA)&lt;/em>), mille OTP on haavoittuvainen.
 Käytännössä osoitamme, että voimme saada avaimen tietoomme, jos tiedämme selkotekstin ja salatekstin.
 Osittain tästä syystä, samaa avainta ei saa käyttää uudestaan.
-Lisäksi voimme tehdä haluamimme salatekstejä pelkästään tietämällä nämä kaksi asiaa, kunhan purkautuvat yhtä pitkään selkotekstiin kuin alkuperäinen. Muuten jää kiinni muokkauksesta!&lt;/p>
+Lisäksi voimme tehdä haluamimme salatekstejä pelkästään tietämällä nämä kaksi asiaa, kunhan ne purkautuvat yhtä pitkään selkotekstiin kuin alkuperäinen. Muuten jää kiinni muokkauksesta!&lt;/p>
 &lt;p>Tiedät, että erään viestin selkoteksti on &lt;code>Hei, Alice!&lt;/code>.
 Viestin XOR salattu (huom. &lt;em>ei ASCII!&lt;/em>) muoto näkyy seuraavasta taulukosta:&lt;/p>
 &lt;!-- raw HTML omitted -->
@@ -3586,8 +3586,8 @@ Viestin XOR salattu (huom. &lt;em>ei ASCII!&lt;/em>) muoto näkyy seuraavasta ta
 &lt;thead>
 &lt;tr>
 &lt;th style="text-align:center">Merkki&lt;/th>
-&lt;th style="text-align:center">XOR salattu (bin)&lt;/th>
-&lt;th style="text-align:center">XOR salattu (hex)&lt;/th>
+&lt;th style="text-align:center">XOR salattu (binääri)&lt;/th>
+&lt;th style="text-align:center">XOR salattu (heksa)&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
@@ -3649,7 +3649,7 @@ Viestin XOR salattu (huom. &lt;em>ei ASCII!&lt;/em>) muoto näkyy seuraavasta ta
 &lt;/tbody>
 &lt;/table>
 &lt;p>Jos tiivistetään tämä heksadesimaalinen esitysmuoto, &lt;code>Hei, Alice!&lt;/code> on salattuna &lt;code>bb0293b0e15aa07d781dbb&lt;/code>&lt;/p>
-&lt;p>Yritämme osoittaa, että tietämällä selkotekstin ja sen salatekstin, voimme muodostaa salatekstejä, jotka päätyvät haluttuun selkotekstiin, kun salaus puretaan. Ainoana rajoitteena on se, että pituus ei olla pidempi kuin alkuperäinen selkoteksti.
+&lt;p>Yritämme osoittaa, että tietämällä selkotekstin ja sen salatekstin, voimme muodostaa salatekstejä, jotka päätyvät haluttuun selkotekstiin, kun salaus puretaan. Ainoana rajoitteena on se, että pituus ei voi olla pidempi kuin alkuperäinen selkoteksti.
 Se, että miksi tämä on mahdollista, voidaan päätellä XOR salauksen periaatteiden mukaan.&lt;/p>
 &lt;p>Jos käytetään samaa salausavainta, mikä on selkotekstin &lt;code>Hei, Eve...&lt;/code> salateksti?&lt;/p>
 &lt;p>Entä mikä on salausavain?&lt;/p>
