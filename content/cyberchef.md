@@ -26,3 +26,14 @@ Oheinen taulukko näyttää mahdolliset hyödylliset operaatiot tähän työpaja
 | From/To Binary      | Data format         | Ota/tuota dataa binäärinumeroformaatissa                          |
 | XOR                 | Encryption/Encoding | Tekee XOR operaation syötetyn datan ja avaimen välillä            |
 | AES Encrypt/Decrypt | Encryption/Encoding | Salaa tai purkaa syötetyn datan AES algoritmilla määriteltyä avainta ja IV:tä käyttäen |
+
+
+Voit harjoitella CyberChefin käyttöä vaikka seuraavalla heksadesimaaliluvulla:
+
+`5368616b696e67205570205465636821`
+
+Jos valitset CyberChef:istä raahamalla "From Hex" metodin reseptiksi, konversio (mahdollisesti) luettavaksi tekstiksi pitäisi tapahtua automaattisesti, kun heksaluku on laitettu `input` osioon.
+
+Painamalla 🚫 kieltomerkkiä, operaatiota ei sisällytetä reseptiin, ja kokonaisuutta voi helposti hallita, vaikka valmiiksi laittaisikin useamman operaation jonoon.
+
+Käyttämällä &#9208; taukomerkkiä, voi katsoa reseptin tuottamaa lähtötuloa siinä vaiheessa.

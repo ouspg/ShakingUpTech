@@ -6,13 +6,13 @@ description = "Johdatus kerta-avainjärjestelmään ja sen riskeihin"
 
 ## Johdanto
 
-Salauksen ensisijainen tavoite on tehdä selkokielisestä informaatiosta käsittämätöntä, niin että sen *luottamuksellisuus* (eng. *confidentiality*) voidaan säilyttää.
+Salauksen ensisijainen tavoite on tehdä selkokielisestä informaatiosta käsittämätöntä, niin että sen *luottamuksellisuus* (engl. *confidentiality*) voidaan säilyttää.
 Informaatio voidaan välittää tai tallettaa luottamuksellisesti oikealle henkilölle ilman, että joku muu voi ymmärtää sen tarkoituksen.
-Toissijaisina tavoitteina on osoittaa informaation alkuperä (eng. *authenticity*) ja sen eheys (eng. *integrity*).
+Toissijaisina tavoitteina on osoittaa informaation alkuperä (engl. *authenticity*) ja sen eheys (engl. *integrity*).
 Alkuperän ja eheyden osoittamisesta käytetään yleensä termiä *varmentaminen*.
 
 
-Salauksessa keskeisiä termejä ovat salausalgoritmi (eng. *cipher*),  selkoteksti (eng. *plaintext*), salateksti (eng. *ciphertext*) ja salausavain (eng. *cipher key* tai vain *key*). 
+Salauksessa keskeisiä termejä ovat salausalgoritmi (engl. *cipher*),  selkoteksti (engl. *plaintext*), salateksti (engl. *ciphertext*) ja salausavain (engl. *cipher key* tai vain *key*). 
 Tietokonemaailmassa englanti on keskeinen kieli, ja sen takia termeistä on esitetty myös käännös.
 
 Salaus perustuu salausalgoritmiin, mikä muuttaa yleensä selkotekstin salatekstiksi salausavaimen avulla.
@@ -45,7 +45,7 @@ Selkoteksti ja avain saavat siis lopulta aina numeerisen muodon.
 \end{align}\\
 $$`
 
-> OTP on murtumaton, jos seuraavat ehdot täyttyvät:
+> OTP on murtumaton, jos seuraavat ehdot täyttyvät [^3]:
 >
 >  * Avain täytyy olla vähintään yhtä pitkä kuin selkoteksti
 >  * Avain täytyy olla satunnainen
@@ -112,7 +112,7 @@ Salauksella on myös muita ongelmia eräissä tilanteissa, joista seuraava viist
 
 
 Salauksen yhdestä rajoitteesta otetaan esimerkkitapaus.
-Tässä tilanteessa käytämme kryptoanalyysissa niin kutsuttua "tunnetun selkotekstin hyökkäystä" (eng. *known-plaintext attack (KPA)*), mille OTP on haavoittuvainen.
+Tässä tilanteessa käytämme kryptoanalyysissa niin kutsuttua "tunnetun selkotekstin hyökkäystä" (engl. *known-plaintext attack (KPA)[^2]*), mille OTP on haavoittuvainen.
 Käytännössä osoitamme, että voimme saada avaimen tietoomme, jos tiedämme selkotekstin ja salatekstin.
 Osittain tästä syystä, samaa avainta ei saa käyttää uudestaan.
 Lisäksi voimme tehdä haluamiamme salatekstejä pelkästään tietämällä nämä kaksi asiaa, kunhan ne purkautuvat yhtä pitkään selkotekstiin kuin alkuperäinen. Muuten jää kiinni muokkauksesta!
@@ -154,4 +154,9 @@ Tämän tehtävän voi tehdä joko ylläolevalla JavaScript laatikolla, tai ns. 
 
 Tehtävän voi tehdä myös kynällä ja paperilla, käyttäen annettua [ASCII taulukkoa hyväksi.](/ascii)
 
-[^1]: [XOR Cipher in Wikipedia 🙄](https://en.wikipedia.org/wiki/XOR_cipher) 
+
+> Englanninkielinen Wikipedia kuvaa keskeiset asiat kryptografiasta hyvin, vaikka suorana viittauksena sitä ei olisikaan suositeltavaa käyttää.
+
+[^1]: [XOR Cipher in Wikipedia](https://en.wikipedia.org/wiki/XOR_cipher) 
+[^2]: [Known-plaintext attack in Wikipedia](https://en.wikipedia.org/wiki/Known-plaintext_attack) 
+[^3]: [One-time pad in Wikipedia](https://en.wikipedia.org/wiki/One-time_pad) 

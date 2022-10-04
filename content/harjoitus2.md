@@ -4,14 +4,14 @@ title = "Modernin salauksen huijaaminen"
 
 ## Advanced Encryption Standard (AES)
 
-Advanced Encryption Standard (AES) on symmetrinen lohkosalausmenetelmä (eng. *symmetric block encryption method*), jota käytetään useissa yhteyksissä salaamaan (ja myös varmentamaan) tietoja. *Symmetrinen* salaus tarkoittaa, että sekä salaaminen ja purkaminen tapahtuu samalla (salaisella) avaimella. *Lohkosalausmenetelmä* tarkoittaa, että salaus tapahtuu pilkkomalla viesti osiin (lohkoihin) ja tämän jälkeen salaamalla viesti lohko kerrallaan.
+Advanced Encryption Standard (AES) on symmetrinen lohkosalausmenetelmä [^1][^3] (engl. *symmetric block encryption method*), jota käytetään useissa yhteyksissä salaamaan (ja myös varmentamaan) tietoja. *Symmetrinen* salaus tarkoittaa, että sekä salaaminen ja purkaminen tapahtuu samalla (salaisella) avaimella. *Lohkosalausmenetelmä* tarkoittaa, että salaus tapahtuu pilkkomalla viesti osiin (lohkoihin) ja tämän jälkeen salaamalla viesti lohko kerrallaan.
 
-AESin etu aiemmin esitettyyn one-time pad -salaukseen on se, että siinä voidaan käyttää lyhyttä avainta (yleensä 128 tai 256 bittiä) salaamaan mielivaltaisen suuria määriä dataa. 
+AES:in etu aiemmin esitettyyn one-time pad -salaukseen on se, että siinä voidaan käyttää lyhyttä avainta (yleensä 128 tai 256 bittiä) salaamaan mielivaltaisen suuria määriä dataa. 
 
 Yhtenä erityishuomiona on se, että viestin koko täytyy olla jaollinen AES lohkon koolla, mikä on 128 bittiä. 
 AES-CBC käyttää aina 128 bitin lohkokokoa avaimen koosta riippumatta.
 Käytännössä tämä tarkoittaa sitä, että yhteen lohkoon mahtuu viesti tai määrä dataa, jonka pituus on maksimissaan 16 tavua, eli yleensä 16 eri merkkiä. 
-Aina tämä ei toteudu, niin joudutaan käyttämään ns. täydennysdataa (eng. *padding*) täyttämään viimeinen vajaa lohko. 
+Aina tämä ei toteudu, niin joudutaan käyttämään ns. täydennysdataa (engl. *padding*) täyttämään viimeinen vajaa lohko [^2]. 
 Täydennyslohkon menetelmiin ei perehdytä tässä sen tarkemmin.
 
 Kuitenkaan niin AES kuin muutkaan lohkosalausmenetelmät eivät ole immuuneja heikkouksille. Lohkosalaajia käytetään erilaisissa *moodeissa*, jotka kertovat miten viestin lohkoja syötetään itse lohkosalaajaan. Tässä esimerkissä tarkastelemme AES-CBC -moodia. Seuraavassa kuvassa näemme CBC moodin lohkosalauksen logiikan:
@@ -22,7 +22,7 @@ Vastaavasti, CBC moodin purkaminen:
 
 {{< svg "static/svg/CBC_decryption.svg" >}}
 
-CBC-moodissa selkokielinen viestilohko ja edeltävän lohkon salateksti yhdistetään XORaamalla ne yhteen ennen kuin käytetään lohkosalainta salaamaan näin saatu lohko. Koska ensimmäistä viestilohkoa varten ei ole vielä salattu yhtään aiempaa lohkoa, on CBC-moodissa määritelty ns. alustusvektori (IV), joka täyttää tämän roolin. Tämän IV:n **EI TARVITSE OLLA** salainen eli se voidaan lähettää selkokielisenä yhdessä salatun viestin kanssa.
+CBC-moodissa selkokielinen viestilohko ja edeltävän lohkon salateksti yhdistetään XOR:aamalla ne yhteen ennen kuin käytetään lohkosalainta salaamaan näin saatu lohko. Koska ensimmäistä viestilohkoa varten ei ole vielä salattu yhtään aiempaa lohkoa, on CBC-moodissa määritelty ns. alustusvektori (IV), joka täyttää tämän roolin. Tämän IV:n **EI TARVITSE OLLA** salainen eli se voidaan lähettää selkokielisenä yhdessä salatun viestin kanssa.
 
 
 ## Tehtävä 
@@ -37,7 +37,7 @@ Esimerkissä käytämme viestiä, joka mahtuu yhdelle lohkolle.
 
 ---
 
-Alice yrittää lähettää salattua viestiä pankille, jossa täsmennetään eräs rahasiirto.
+Alice yrittää lähettää salattua viestiä pankille, jossa täsmennetään eräs rahansiirto.
 Tiedämme, että viesti on seuraavaa muotoa:
 
 `Bob saa X euroa`
@@ -51,22 +51,23 @@ Salateksti on seuraava heksadesimaalimuodossa:
 
 `40cb78f90920b8d21229333b76c3ed99`
 
-Eve haluaa muuttaa viestin muotoon `Eve saa X euroa`.
+Eve haluaa muuttaa viestin muotoon `Eve saa X euroa`, ennen kuin välittää sen oikealle vastaanottajalle.
 
 Kuinka tämä onnistuu?
 
-
 ---
 
-##### Lisätietoa ja vinkkejä
+### Lisätietoa ja vinkkejä
 
-Koska alkuperäinen viesti on 15 merkkiä, tarkoittaa se että yksi merkki puuttuu, ennen kuin lohko täyttyy.
+Koska alkuperäinen viesti on 15 merkkiä, tarkoittaa se sitä, että yksi merkki puuttuu ennen kuin yksi lohko täyttyy.
 Täydennysdataa käytetään täyttämään puuttuva merkki, ja näin tuotettu lähtödata on lopulta 128 bittiä pitkä.
-Siihen ei erityisemmin tarvitse kinnittää huomiota, mutta se selittää salatekstin vaihtuvan pituuden; salatekstin pituus on lopulta 128 bittiä, vaika alkuperäinen selkoteksti on vain 120 bittiä (15 merkkiä). 
+Se selittää salatekstin vaihtuvan pituuden; salatekstin pituus on lopulta 128 bittiä, vaika alkuperäinen selkoteksti on vain 120 bittiä (15 merkkiä). 
 
 Seuraavat kysymykset voivat auttaa ongelman ratkaisemisessa:
 
   * Kuinka alkuperäinen teksti poikkeaa halutusta tekstistä bittitasolla?
+  * Mikä on XOR operaation rooli AES-CBC moodin purkamisessa ja sen yhteys alustusvektoriin?
+  * Onko selkotekstissä täydennysdataa hetkeä ennen salausta? (Kyllä on, huomioi se selkotekstin ja alustusvektorin osalta, kun teet muunnoksia!)
 
 
 
@@ -74,8 +75,13 @@ Tehtävän ratkaisuun on käytettävä CyberChef työkalua, mistä voit lukea li
 
 XOR operaatio, heksalukumuunnokset ja AES algoritmin käyttö ovat hyödyllisiä tähän tehtävään littyen.
 
+Salausavain (256 bittiä) tarkimistamista varten on `b6c0140d8cfe2a901fd8b2ac569fac096afc875ddae033e17cdbcbe316cd705f`.
 
-Salausavain (256 bittiä) testitarkoituksiin on `b6c0140d8cfe2a901fd8b2ac569fac096afc875ddae033e17cdbcbe316cd705f`.
+>  Käytettäessä XOR operaatiota CyberChef:issä, on tärkeää että merkkijonot ovat yhtä pitkiä!
 
 
+[^1]: [AES in Wikipedia](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) 
 
+[^2]: [Padding in Wikipedia](https://en.wikipedia.org/wiki/Padding_(cryptography)) 
+
+[^3]: [Block cipher mode of operation in Wikipedia](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation) 
