@@ -1003,10 +1003,15 @@ Oikeassa yläreunassa on syötettävä data, eli &amp;ldquo;ainesosa&amp;rdquo; 
 &lt;td>Salaa tai purkaa syötetyn datan AES algoritmilla määriteltyä avainta ja IV:tä käyttäen&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></content></item><item><title>Modernin salauksen huijaaminen</title><link>https://shakinguptech.ouspg.org/harjoitus2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shakinguptech.ouspg.org/harjoitus2/</guid><description>Advanced Encryption Standard (AES) Advanced Encryption Standard (AES) on symmetrinen lohkosalausmenetelmä, jota käytetään useissa yhteyksissä salaamaan (ja myös varmentamaan) tietoja. Symmetrinen salaus tarkoittaa, että sekä salaaminen ja purkaminen tapahtuu samalla (salaisella) avaimella. Lohkosalausmenetelmä tarkoittaa, että salaus tapahtuu pilkkomalla viesti osiin (lohkoihin) ja tämän jälkeen salaamalla viesti lohko kerrallaan.
+&lt;/table></content></item><item><title>Modernin salauksen huijaaminen</title><link>https://shakinguptech.ouspg.org/harjoitus2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shakinguptech.ouspg.org/harjoitus2/</guid><description>Advanced Encryption Standard (AES) Advanced Encryption Standard (AES) on symmetrinen lohkosalausmenetelmä (eng. symmetric block encryption method), jota käytetään useissa yhteyksissä salaamaan (ja myös varmentamaan) tietoja. Symmetrinen salaus tarkoittaa, että sekä salaaminen ja purkaminen tapahtuu samalla (salaisella) avaimella. Lohkosalausmenetelmä tarkoittaa, että salaus tapahtuu pilkkomalla viesti osiin (lohkoihin) ja tämän jälkeen salaamalla viesti lohko kerrallaan.
 AESin etu aiemmin esitettyyn one-time pad -salaukseen on se, että siinä voidaan käyttää lyhyttä avainta (yleensä 128 tai 256 bittiä) salaamaan mielivaltaisen suuria määriä dataa.</description><content>&lt;h2 id="advanced-encryption-standard-aes">Advanced Encryption Standard (AES)&lt;/h2>
-&lt;p>Advanced Encryption Standard (AES) on symmetrinen lohkosalausmenetelmä, jota käytetään useissa yhteyksissä salaamaan (ja myös varmentamaan) tietoja. &lt;em>Symmetrinen&lt;/em> salaus tarkoittaa, että sekä salaaminen ja purkaminen tapahtuu samalla (salaisella) avaimella. &lt;em>Lohkosalausmenetelmä&lt;/em> tarkoittaa, että salaus tapahtuu pilkkomalla viesti osiin (lohkoihin) ja tämän jälkeen salaamalla viesti lohko kerrallaan.&lt;/p>
+&lt;p>Advanced Encryption Standard (AES) on symmetrinen lohkosalausmenetelmä (eng. &lt;em>symmetric block encryption method&lt;/em>), jota käytetään useissa yhteyksissä salaamaan (ja myös varmentamaan) tietoja. &lt;em>Symmetrinen&lt;/em> salaus tarkoittaa, että sekä salaaminen ja purkaminen tapahtuu samalla (salaisella) avaimella. &lt;em>Lohkosalausmenetelmä&lt;/em> tarkoittaa, että salaus tapahtuu pilkkomalla viesti osiin (lohkoihin) ja tämän jälkeen salaamalla viesti lohko kerrallaan.&lt;/p>
 &lt;p>AESin etu aiemmin esitettyyn one-time pad -salaukseen on se, että siinä voidaan käyttää lyhyttä avainta (yleensä 128 tai 256 bittiä) salaamaan mielivaltaisen suuria määriä dataa.&lt;/p>
+&lt;p>Yhtenä erityishuomiona on se, että viestin koko täytyy olla jaollinen AES lohkon koolla, mikä on 128 bittiä.
+AES-CBC käyttää aina 128 bitin lohkokokoa avaimen koosta riippumatta.
+Käytännössä tämä tarkoittaa sitä, että yhteen lohkoon mahtuu viesti tai määrä dataa, jonka pituus on maksimissaan 16 tavua, eli yleensä 16 eri merkkiä.
+Aina tämä ei toteudu, niin joudutaan käyttämään ns. täydennysdataa (eng. &lt;em>padding&lt;/em>) täyttämään viimeinen vajaa lohko.
+Täydennyslohkon menetelmiin ei perehdytä tässä sen tarkemmin.&lt;/p>
 &lt;p>Kuitenkaan niin AES kuin muutkaan lohkosalausmenetelmät eivät ole immuuneja heikkouksille. Lohkosalaajia käytetään erilaisissa &lt;em>moodeissa&lt;/em>, jotka kertovat miten viestin lohkoja syötetään itse lohkosalaajaan. Tässä esimerkissä tarkastelemme AES-CBC -moodia. Seuraavassa kuvassa näemme CBC moodin lohkosalauksen logiikan:&lt;/p>
 &lt;div class="equation">
 &lt;?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -3237,9 +3242,37 @@ style="stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0">Public Domain
 &lt;/svg>
 &lt;/div>
 &lt;p>CBC-moodissa selkokielinen viestilohko ja edeltävän lohkon salateksti yhdistetään XORaamalla ne yhteen ennen kuin käytetään lohkosalainta salaamaan näin saatu lohko. Koska ensimmäistä viestilohkoa varten ei ole vielä salattu yhtään aiempaa lohkoa, on CBC-moodissa määritelty ns. alustusvektori (IV), joka täyttää tämän roolin. Tämän IV:n &lt;strong>EI TARVITSE OLLA&lt;/strong> salainen eli se voidaan lähettää selkokielisenä yhdessä salatun viestin kanssa.&lt;/p>
-&lt;p>Tässä harjoituksessa hyödynnämme edellisen tehtävän oppeja ja teemme samanlaisen muokkauksen AES-CBC:llä salattuun viestiin kuin äskettäin XOR-salattuun viestiin. Tämä onnistuu silloin, kun IV on satunnainen arvo ja tunnetaan ensimmäisessä lohkossa olevaa dataa riittävän hyvin.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Tähän sitten esimerkin vaatimat tiedot: Avain, IV, lähtöteksti ja haluttu lopputeksti (voivat olla samat kuin tuossa aiemmin)&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;em>&lt;strong>Ohjeistus CyberChefin AES -toiminnon käyttöön&lt;/strong>&lt;/em>&lt;/p></content></item><item><title>Täydellinen salausmenetelmä?</title><link>https://shakinguptech.ouspg.org/harjoitus1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shakinguptech.ouspg.org/harjoitus1/</guid><description>Johdanto Salauksen ensisijainen tavoite on tehdä selkokielisestä informaatiosta käsittämätöntä, niin että sen luottamuksellisuus (eng. confidentiality) voidaan säilyttää. Informaatio voidaan välittää tai tallettaa luottamuksellisesti oikealle henkilölle ilman, että joku muu voi ymmärtää sen tarkoituksen. Toissijaisina tavoitteina on osoittaa informaation alkuperä (eng. authenticity) ja sen eheys (eng. integrity). Alkuperän ja eheyden osoittamisesta käytetään yleensä termiä varmentaminen.
+&lt;h2 id="tehtävä">Tehtävä&lt;/h2>
+&lt;p>Myöskään AES-CBC salausmenetelmä ei yksin kykene varmistamaan datan eheyttä tai alkuperää.
+Tässä harjoituksessa hyödynnämme edellisen tehtävän oppeja ja teemme samanlaisen muokkauksen AES-CBC:llä salattuun viestiin kuin äskettäin XOR-salattuun viestiin.
+Tämä onnistuu silloin, kun IV on satunnainen arvo ja tunnetaan ensimmäisessä lohkossa olevaa dataa riittävän hyvin.
+Onkin täsmennettävä, että IV:tä käytetään purkamisvaiheessa vain yhteen lohkoon, eli tämä huijaus onnistuu vain sille lohkolle.
+Tai koko viestille, jos se kattaa vain yhden lohkon.&lt;/p>
+&lt;p>Esimerkissä käytämme viestiä, joka mahtuu yhdelle lohkolle.&lt;/p>
+&lt;hr>
+&lt;p>Alice yrittää lähettää salattua viestiä pankille, jossa täsmennetään eräs rahasiirto.
+Tiedämme, että viesti on seuraavaa muotoa:&lt;/p>
+&lt;p>&lt;code>Bob saa X euroa&lt;/code>&lt;/p>
+&lt;p>Emme kuitenkaan tiedä rahamäärää.
+Eve kuitenkin onnistuu kaappaamaan viestin käsiinsä, ennen kuin se päätyy oikealle vastaanottajalle.
+Viesti on salattu AES-256-CBC menetelmällä ja viestin alustusvektori (IV) on &lt;code>2ef5501d95015084d5673a686b58ccf7&lt;/code>.
+Alustusvektori on myös kaapattu, koska se on julkista tietoa.&lt;/p>
+&lt;p>Salateksti on seuraava heksadesimaalimuodossa:&lt;/p>
+&lt;p>&lt;code>40cb78f90920b8d21229333b76c3ed99&lt;/code>&lt;/p>
+&lt;p>Eve haluaa muuttaa viestin muotoon &lt;code>Eve saa X euroa&lt;/code>.&lt;/p>
+&lt;p>Kuinka tämä onnistuu?&lt;/p>
+&lt;hr>
+&lt;h5 id="lisätietoa-ja-vinkkejä">Lisätietoa ja vinkkejä&lt;/h5>
+&lt;p>Koska alkuperäinen viesti on 15 merkkiä, tarkoittaa se että yksi merkki puuttuu, ennen kuin lohko täyttyy.
+Täydennysdataa käytetään täyttämään puuttuva merkki, ja näin tuotettu lähtödata on lopulta 128 bittiä pitkä.
+Siihen ei erityisemmin tarvitse kinnittää huomiota, mutta se selittää salatekstin vaihtuvan pituuden; salatekstin pituus on lopulta 128 bittiä, vaika alkuperäinen selkoteksti on vain 120 bittiä (15 merkkiä).&lt;/p>
+&lt;p>Seuraavat kysymykset voivat auttaa ongelman ratkaisemisessa:&lt;/p>
+&lt;ul>
+&lt;li>Kuinka alkuperäinen teksti poikkeaa halutusta tekstistä bittitasolla?&lt;/li>
+&lt;/ul>
+&lt;p>Tehtävän ratkaisuun on käytettävä CyberChef työkalua, mistä voit lukea lisää &lt;a href="https://shakinguptech.ouspg.org/cyberchef">täältä.&lt;/a>&lt;/p>
+&lt;p>XOR operaatio, heksalukumuunnokset ja AES algoritmin käyttö ovat hyödyllisiä tähän tehtävään littyen.&lt;/p>
+&lt;p>Salausavain (256 bittiä) testitarkoituksiin on &lt;code>b6c0140d8cfe2a901fd8b2ac569fac096afc875ddae033e17cdbcbe316cd705f&lt;/code>.&lt;/p></content></item><item><title>Täydellinen salausmenetelmä?</title><link>https://shakinguptech.ouspg.org/harjoitus1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://shakinguptech.ouspg.org/harjoitus1/</guid><description>Johdanto Salauksen ensisijainen tavoite on tehdä selkokielisestä informaatiosta käsittämätöntä, niin että sen luottamuksellisuus (eng. confidentiality) voidaan säilyttää. Informaatio voidaan välittää tai tallettaa luottamuksellisesti oikealle henkilölle ilman, että joku muu voi ymmärtää sen tarkoituksen. Toissijaisina tavoitteina on osoittaa informaation alkuperä (eng. authenticity) ja sen eheys (eng. integrity). Alkuperän ja eheyden osoittamisesta käytetään yleensä termiä varmentaminen.
 Salauksessa keskeisiä termejä ovat salausalgoritmi (eng. cipher), selkoteksti (eng. plaintext), salateksti (eng. ciphertext) ja salausavain (eng. cipher key tai vain key).</description><content>&lt;h2 id="johdanto">Johdanto&lt;/h2>
 &lt;p>Salauksen ensisijainen tavoite on tehdä selkokielisestä informaatiosta käsittämätöntä, niin että sen &lt;em>luottamuksellisuus&lt;/em> (eng. &lt;em>confidentiality&lt;/em>) voidaan säilyttää.
 Informaatio voidaan välittää tai tallettaa luottamuksellisesti oikealle henkilölle ilman, että joku muu voi ymmärtää sen tarkoituksen.
@@ -3577,7 +3610,7 @@ Salauksella on myös muita ongelmia eräissä tilanteissa, joista seuraava viist
 Tässä tilanteessa käytämme kryptoanalyysissa niin kutsuttua &amp;ldquo;tunnetun selkotekstin hyökkäystä&amp;rdquo; (eng. &lt;em>known-plaintext attack (KPA)&lt;/em>), mille OTP on haavoittuvainen.
 Käytännössä osoitamme, että voimme saada avaimen tietoomme, jos tiedämme selkotekstin ja salatekstin.
 Osittain tästä syystä, samaa avainta ei saa käyttää uudestaan.
-Lisäksi voimme tehdä haluamimme salatekstejä pelkästään tietämällä nämä kaksi asiaa, kunhan ne purkautuvat yhtä pitkään selkotekstiin kuin alkuperäinen. Muuten jää kiinni muokkauksesta!&lt;/p>
+Lisäksi voimme tehdä haluamiamme salatekstejä pelkästään tietämällä nämä kaksi asiaa, kunhan ne purkautuvat yhtä pitkään selkotekstiin kuin alkuperäinen. Muuten jää kiinni muokkauksesta!&lt;/p>
 &lt;p>Tiedät, että erään viestin selkoteksti on &lt;code>Hei, Alice!&lt;/code>.
 Viestin XOR salattu (huom. &lt;em>ei ASCII!&lt;/em>) muoto näkyy seuraavasta taulukosta:&lt;/p>
 &lt;!-- raw HTML omitted -->
