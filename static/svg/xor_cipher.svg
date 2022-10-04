@@ -2,11 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   viewBox="-1 -1 218.51573 109.77475"
+   viewBox="-1 -1 218.62912 97.719506"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
    sodipodi:docname="xor_cipher.svg"
+   width="218.62912"
+   height="97.719505"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -22,9 +24,9 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="11.91586"
-     inkscape:cx="69.697026"
-     inkscape:cy="73.977036"
+     inkscape:zoom="5.95793"
+     inkscape:cx="88.45354"
+     inkscape:cy="5.1192276"
      inkscape:window-width="2556"
      inkscape:window-height="1412"
      inkscape:window-x="0"
@@ -92,49 +94,49 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-26.000352,-37.181262)">
+     transform="translate(-25.886966,-37.16498)">
     <g
        id="g1274">
       <path
-         style="image-rendering:auto;stroke-opacity:1;stroke-dashoffset:0;stroke-dasharray:4.31236, 1.78963;stroke-miterlimit:4;stroke-linejoin:miter;stroke-linecap:butt;stroke-width:0.539045;stroke:currentColor;fill:none;"
+         style="fill:none;stroke:currentColor;stroke-width:0.539045;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.31236, 1.78963;stroke-dashoffset:0;stroke-opacity:1;image-rendering:auto"
          d="M 181.80035,100.62228 25.000546,100.73411"
          id="path521" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.26;stroke-dasharray:none"
-         x="24.589525"
-         y="94.512642"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3371px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.253954;stroke-dasharray:none"
+         x="24.948954"
+         y="92.314598"
          id="text1985-3"
-         transform="scale(0.98163701,1.0187065)"><tspan
+         transform="scale(0.95880771,1.042962)"><tspan
            sodipodi:role="line"
            id="tspan1983-6"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code';stroke-width:0.26;stroke-dasharray:none"
-           x="24.589525"
-           y="94.512642">11000010 01101011 10110100</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3371px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.253954;stroke-dasharray:none"
+           x="24.948954"
+           y="92.314598">11000010 01101011 10110100</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.259724"
-         x="24.589525"
-         y="110.34954"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3372px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.253685"
+         x="24.948841"
+         y="107.7836"
          id="text1985-3-7"
-         transform="scale(0.98163701,1.0187065)"><tspan
+         transform="scale(0.95881157,1.0429578)"><tspan
            sodipodi:role="line"
            id="tspan1983-6-5"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code';stroke-width:0.259724"
-           x="24.589525"
-           y="110.34954">10010101 00000100 11000011</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3372px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.253685"
+           x="24.948841"
+           y="107.7836">10010101 00000100 11000011</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.25917"
-         x="24.92305"
-         y="83.032951"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3372px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.253144"
+         x="25.276606"
+         y="81.102219"
          id="text1985"
-         transform="scale(0.97954188,1.0208854)"><tspan
+         transform="scale(0.95676495,1.0451888)"><tspan
            sodipodi:role="line"
            id="tspan1983"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code';stroke-width:0.25917"
-           x="24.92305"
-           y="83.032951">01010111 01101111 01110111</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3372px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.253144"
+           x="25.276606"
+           y="81.102219">01010111 01101111 01110111</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -180,21 +182,21 @@
            x="52.522385"
            y="44.197433">XOR salaus sanalle &quot;Wow&quot;</tspan></text>
       <rect
-         style="paint-order:markers fill stroke;stroke-opacity:1;stroke-dashoffset:0.270527;stroke-dasharray:0.772935, 0.386468;stroke-miterlimit:4;stroke-linejoin:round;stroke-width:0.386468;stroke:currentColor;fill-opacity:0.0104001;fill:#000000;"
+         style="fill:#000000;fill-opacity:0.0104001;stroke:currentColor;stroke-width:0.386468;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.772935, 0.386468;stroke-dashoffset:0.270527;stroke-opacity:1;paint-order:markers fill stroke"
          id="rect14458"
          width="6.3229599"
          height="37.959446"
          x="133.49324"
          y="75.693237" />
       <rect
-         style="paint-order:markers fill stroke;stroke-opacity:1;stroke-dashoffset:0.270527;stroke-dasharray:0.772935, 0.386468;stroke-miterlimit:4;stroke-linejoin:round;stroke-width:0.386468;stroke:currentColor;fill-opacity:0.0104001;fill:#000000;"
+         style="fill:#000000;fill-opacity:0.0104001;stroke:currentColor;stroke-width:0.386468;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.772935, 0.386468;stroke-dashoffset:0.270527;stroke-opacity:1;paint-order:markers fill stroke"
          id="rect14458-3"
          width="6.3229599"
          height="37.959446"
          x="60.693233"
          y="76.064262" />
       <rect
-         style="paint-order:markers fill stroke;stroke-opacity:1;stroke-dashoffset:0.270527;stroke-dasharray:0.772935, 0.386468;stroke-miterlimit:4;stroke-linejoin:round;stroke-width:0.386468;stroke:currentColor;fill-opacity:0.0104001;fill:#000000;"
+         style="fill:#000000;fill-opacity:0.0104001;stroke:currentColor;stroke-width:0.386468;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.772935, 0.386468;stroke-dashoffset:0.270527;stroke-opacity:1;paint-order:markers fill stroke"
          id="rect14458-8"
          width="6.3229599"
          height="37.959446"
@@ -233,7 +235,7 @@
          d="m 160.96624,115.8275 6.15404,9.34437 0.24035,-0.20336"
          id="path14525-29-7" />
       <path
-         style="marker:currentColor;marker-start:url(#Arrow4-6-5);stroke-opacity:1;stroke-dasharray:none;stroke-linejoin:miter;stroke-linecap:butt;stroke-width:0.412288;stroke:currentColor;fill:currentColor;"
+         style="fill:currentColor;stroke:currentColor;stroke-width:0.412288;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker:currentColor;marker-start:url(#Arrow4-6-5)"
          d="m 136.38935,115.8275 6.15404,9.34437 0.24035,-0.20336"
          id="path14525-29-5" />
       <text
