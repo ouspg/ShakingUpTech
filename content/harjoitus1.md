@@ -115,7 +115,7 @@ Salauksen yhdestä rajoitteesta otetaan esimerkkitapaus.
 Tässä tilanteessa käytämme kryptoanalyysissa niin kutsuttua "tunnetun selkotekstin hyökkäystä" (eng. *known-plaintext attack (KPA)*), mille OTP on haavoittuvainen.
 Käytännössä osoitamme, että voimme saada avaimen tietoomme, jos tiedämme selkotekstin ja salatekstin.
 Osittain tästä syystä, samaa avainta ei saa käyttää uudestaan.
-Lisäksi voimme tehdä haluamimme salatekstejä pelkästään tietämällä nämä kaksi asiaa, kunhan ne purkautuvat yhtä pitkään selkotekstiin kuin alkuperäinen. Muuten jää kiinni muokkauksesta!
+Lisäksi voimme tehdä haluamiamme salatekstejä pelkästään tietämällä nämä kaksi asiaa, kunhan ne purkautuvat yhtä pitkään selkotekstiin kuin alkuperäinen. Muuten jää kiinni muokkauksesta!
 
 
 Tiedät, että erään viestin selkoteksti on `Hei, Alice!`. 
