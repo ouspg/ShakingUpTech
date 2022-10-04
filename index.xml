@@ -3370,8 +3370,8 @@ inkscape:deskcolor="#505050"
 inkscape:document-units="mm"
 showgrid="false"
 inkscape:zoom="11.91586"
-inkscape:cx="116.23164"
-inkscape:cy="73.893113"
+inkscape:cx="69.697026"
+inkscape:cy="73.977036"
 inkscape:window-width="2556"
 inkscape:window-height="1412"
 inkscape:window-x="0"
@@ -3440,6 +3440,8 @@ inkscape:label="Layer 1"
 inkscape:groupmode="layer"
 id="layer1"
 transform="translate(-26.000352,-37.181262)">
+&lt;g
+id="g1274">
 &lt;path
 style="image-rendering:auto;stroke-opacity:1;stroke-dashoffset:0;stroke-dasharray:4.31236, 1.78963;stroke-miterlimit:4;stroke-linejoin:miter;stroke-linecap:butt;stroke-width:0.539045;stroke:currentColor;fill:none;"
 d="M 181.80035,100.62228 25.000546,100.73411"
@@ -3614,6 +3616,7 @@ style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:nor
 x="61.397202"
 y="63.377544"
 id="tspan14880">avaimella.&lt;/tspan>&lt;/text>
+&lt;/g>
 &lt;/g>
 &lt;/svg>
 &lt;/div>
