@@ -3370,8 +3370,8 @@ inkscape:deskcolor="#505050"
 inkscape:document-units="mm"
 showgrid="false"
 inkscape:zoom="5.95793"
-inkscape:cx="88.621384"
-inkscape:cy="25.260451"
+inkscape:cx="88.789227"
+inkscape:cy="25.596138"
 inkscape:window-width="2556"
 inkscape:window-height="1412"
 inkscape:window-x="0"
@@ -3442,46 +3442,46 @@ id="layer1"
 transform="translate(-25.667589,-37.16498)">
 &lt;g
 id="g1274">
+&lt;text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.7169px;line-height:13.3964px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.251174;stroke-dasharray:none"
+x="25.382793"
+y="91.303429"
+id="text1985-3"
+transform="scale(0.94830553,1.0545125)">&lt;tspan
+sodipodi:role="line"
+id="tspan1983-6"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.7169px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.251174;stroke-dasharray:none"
+x="25.382793"
+y="91.303429">11000010 01101011 10110100&lt;/tspan>&lt;/text>
+&lt;text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.7169px;line-height:13.3964px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.250906"
+x="25.382675"
+y="106.60295"
+id="text1985-3-7"
+transform="scale(0.9483093,1.0545083)">&lt;tspan
+sodipodi:role="line"
+id="tspan1983-6-5"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.7169px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.250906"
+x="25.382675"
+y="106.60295">10010101 00000100 11000011&lt;/tspan>&lt;/text>
+&lt;text
+xml:space="preserve"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.7169px;line-height:13.3964px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.250368"
+x="25.708363"
+y="80.213867"
+id="text1985"
+transform="scale(0.94628515,1.0567639)">&lt;tspan
+sodipodi:role="line"
+id="tspan1983"
+style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.7169px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';stroke-width:0.250368"
+x="25.708363"
+y="80.213867">01010111 01101111 01110111&lt;/tspan>&lt;/text>
 &lt;path
 style="fill:none;stroke:currentColor;stroke-width:0.539045;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.31236, 1.78963;stroke-dashoffset:0;stroke-opacity:1;image-rendering:auto"
 d="M 181.80035,100.62228 25.000546,100.73411"
 id="path521" />
-&lt;text
-xml:space="preserve"
-style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6319px;line-height:1.25;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.253133;stroke-dasharray:none"
-x="25.04254"
-y="92.015976"
-id="text1985-3"
-transform="scale(0.95570616,1.0463467)">&lt;tspan
-sodipodi:role="line"
-id="tspan1983-6"
-style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6319px;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';stroke-width:0.253133;stroke-dasharray:none"
-x="25.04254"
-y="92.015976">11000010 01101011 10110100&lt;/tspan>&lt;/text>
-&lt;text
-xml:space="preserve"
-style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6319px;line-height:1.25;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.252863"
-x="25.042429"
-y="107.43492"
-id="text1985-3-7"
-transform="scale(0.9557099,1.0463426)">&lt;tspan
-sodipodi:role="line"
-id="tspan1983-6-5"
-style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6319px;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';stroke-width:0.252863"
-x="25.042429"
-y="107.43492">10010101 00000100 11000011&lt;/tspan>&lt;/text>
-&lt;text
-xml:space="preserve"
-style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6319px;line-height:1.25;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.252326"
-x="25.369503"
-y="80.839874"
-id="text1985"
-transform="scale(0.95367001,1.0485807)">&lt;tspan
-sodipodi:role="line"
-id="tspan1983"
-style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6319px;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';stroke-width:0.252326"
-x="25.369503"
-y="80.839874">01010111 01101111 01110111&lt;/tspan>&lt;/text>
 &lt;text
 xml:space="preserve"
 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold';letter-spacing:0px;word-spacing:0px;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.264583"
