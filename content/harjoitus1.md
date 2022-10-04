@@ -95,14 +95,15 @@ Monet operaatioista voi laskea ihan käsin paperilla, mutta on olemassa työkalu
 
 Allaolevalla laatikolla voit hieman kokeilla XOR laskentaa ja binäärimuunnoksia JavaScript ohjelmointikielellä.
 
-Saatko saman salatekstin jos muunnat kuvan jokaisen salausavainlohkon desimaaliluvuiksi ja käytät XOR operaatiota jokaiseen `Wow` sanan vastaavaan kirjaimeen?
+Saatko saman salatekstin jos käytät XOR operaatiota jokaiseen `Wow` sanan vastaavaan kirjaimeen ja salausavaimen osaan, niin että käytät binäärilukuja?
+Laatikko sisältää esimerkin ensimmäisen kirjaimen `W ` operaatiosta.
 
 {{< iframe "../iframe/xor.html" >}}
 
-{{< details "Lisätietoa koodauksesta">}}
+<!-- {{< details "Lisätietoa koodauksesta">}}
 
 Collapsed text
-{{< /details >}}
+{{< /details >}} -->
 
 ## Tehtävä
 

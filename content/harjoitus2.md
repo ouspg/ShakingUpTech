@@ -61,7 +61,7 @@ Kuinka tämä onnistuu?
 
 Koska alkuperäinen viesti on 15 merkkiä, tarkoittaa se sitä, että yksi merkki puuttuu ennen kuin yksi lohko täyttyy.
 Täydennysdataa käytetään täyttämään puuttuva merkki, ja näin tuotettu lähtödata on lopulta 128 bittiä pitkä.
-Se selittää salatekstin vaihtuvan pituuden; salatekstin pituus on lopulta 128 bittiä, vaika alkuperäinen selkoteksti on vain 120 bittiä (15 merkkiä). 
+Se selittää salatekstin vaihtuvan pituuden; salatekstin pituus on lopulta 128 bittiä, vaikka alkuperäinen selkoteksti on vain 120 bittiä (15 merkkiä). 
 
 Seuraavat kysymykset voivat auttaa ongelman ratkaisemisessa:
 
@@ -75,7 +75,9 @@ Tehtävän ratkaisuun on käytettävä CyberChef työkalua, mistä voit lukea li
 
 XOR operaatio, heksalukumuunnokset ja AES algoritmin käyttö ovat hyödyllisiä tähän tehtävään littyen.
 
-Salausavain (256 bittiä) tarkimistamista varten on `b6c0140d8cfe2a901fd8b2ac569fac096afc875ddae033e17cdbcbe316cd705f`.
+Salausavain (256 bittiä) tarkimistamista varten on 
+
+`b6c0140d8cfe2a901fd8b2ac569fac096afc875ddae033e17cdbcbe316cd705f`
 
 >  Käytettäessä XOR operaatiota CyberChef:issä, on tärkeää että merkkijonot ovat yhtä pitkiä!
 

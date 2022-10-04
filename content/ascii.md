@@ -16,10 +16,10 @@ Merkintä `hex` tarkoittaa `hexadecimal` eli kuusitoistajärjestelmän esitystä
 
 Merkintä `binary` tarkoittaa binäärijärjestelmän esitystä.
 
-Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan binääristä numeroa eli *bittiä* (eng. bit) arvon esittämiseksi, ja tässä taulukossa arvot esitetään seitsemällä bitillä.
+Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan binääristä numeroa eli *bittiä* (engl. bit) arvon esittämiseksi, ja tässä taulukossa arvot esitetään seitsemällä bitillä.
 Alkuperäinen ASCII sisältää 128 eri merkkiä, mitkä voidaan esittää seitsemällä bitillä (2⁷).
 
-Kahdeksan bitin esitys tunnetaan paremmin yhtenä *tavuna* (eng. byte).
+Kahdeksan bitin esitys tunnetaan paremmin yhtenä *tavuna* (engl. byte).
 ASCII merkistö saavuttaa kahdeksannen bitin ns. pariteettibitin kanssa, mitä yleensä käytetään virheellisen arvon tunnistamisessa.
 Tätä ei tarvitse huomioida tässä työpajassa.
 
