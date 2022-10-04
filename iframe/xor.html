@@ -14,17 +14,19 @@
   </head>
 
   <body>
-    <section id="static"><pre><code id="static-js" data-height="shorter">a = 6; // 110
-tulosta(binaariksi(a));
-b = 3; // 11
-tulosta(binaariksi(b));
+    <section id="static"><pre><code id="static-js" data-height="shorter">a = 6;
+tulosta(binaariksi(a)); // 110
+tulosta(binToDec("110")); // 6
+
+b = 3; 
+tulosta(binaariksi(b)); // 11
 tulosta(a ^ b); // XOR operaatio merkitään täällä '^' merkillä
 // Odotetaan tulokseksi 5
-tulosta(binaariksi(a ^ b));
-// tai 101
+tulosta(binaariksi(a ^ b)); // tai 101
 
-tulosta(binaariksi("Wow"));
-// 01010111 01101111 01110111
+tulosta(binaariksi("Wow")); // 01010111 01101111 01110111
+tulosta(binaariksi(binToDec("01010111") ^ binToDec("11000010"))) // W XOR 11000010
+// Odotetaan tulokseksi 10010101
 
 function tulosta(data) {
   console.log(data);
@@ -32,6 +34,10 @@ function tulosta(data) {
 
 function hexBinaariksi(data){
   return (parseInt(data, 16).toString(2)).padStart(8, '0');
+}
+
+function binToDec(data){
+  return parseInt(data, 2);
 }
 
 function binaariksi(data) {

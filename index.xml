@@ -20,9 +20,9 @@ Numeerinen arvo on käännetty johonkin tiettyyn merkkiin, jolla on tietty merki
 &lt;p>Merkintä &lt;code>dec&lt;/code> tarkoittaa &lt;code>decimal&lt;/code> eli kymmenjärjestelmän esitystä.&lt;/p>
 &lt;p>Merkintä &lt;code>hex&lt;/code> tarkoittaa &lt;code>hexadecimal&lt;/code> eli kuusitoistajärjestelmän esitystä.&lt;/p>
 &lt;p>Merkintä &lt;code>binary&lt;/code> tarkoittaa binäärijärjestelmän esitystä.&lt;/p>
-&lt;p>Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan binääristä numeroa eli &lt;em>bittiä&lt;/em> (eng. bit) arvon esittämiseksi, ja tässä taulukossa arvot esitetään seitsemällä bitillä.
+&lt;p>Digitaalisessa maailmassa tyypillinen pituus on seitsemän tai kahdeksan binääristä numeroa eli &lt;em>bittiä&lt;/em> (engl. bit) arvon esittämiseksi, ja tässä taulukossa arvot esitetään seitsemällä bitillä.
 Alkuperäinen ASCII sisältää 128 eri merkkiä, mitkä voidaan esittää seitsemällä bitillä (2⁷).&lt;/p>
-&lt;p>Kahdeksan bitin esitys tunnetaan paremmin yhtenä &lt;em>tavuna&lt;/em> (eng. byte).
+&lt;p>Kahdeksan bitin esitys tunnetaan paremmin yhtenä &lt;em>tavuna&lt;/em> (engl. byte).
 ASCII merkistö saavuttaa kahdeksannen bitin ns. pariteettibitin kanssa, mitä yleensä käytetään virheellisen arvon tunnistamisessa.
 Tätä ei tarvitse huomioida tässä työpajassa.&lt;/p>
 &lt;p>&lt;code>Character&lt;/code> kuvastaa merkkiä, mitä arvo vastaa ASCII merkistössä.&lt;/p>
@@ -3270,7 +3270,7 @@ Alustusvektori on myös kaapattu, koska se on julkista tietoa.&lt;/p>
 &lt;h3 id="lisätietoa-ja-vinkkejä">Lisätietoa ja vinkkejä&lt;/h3>
 &lt;p>Koska alkuperäinen viesti on 15 merkkiä, tarkoittaa se sitä, että yksi merkki puuttuu ennen kuin yksi lohko täyttyy.
 Täydennysdataa käytetään täyttämään puuttuva merkki, ja näin tuotettu lähtödata on lopulta 128 bittiä pitkä.
-Se selittää salatekstin vaihtuvan pituuden; salatekstin pituus on lopulta 128 bittiä, vaika alkuperäinen selkoteksti on vain 120 bittiä (15 merkkiä).&lt;/p>
+Se selittää salatekstin vaihtuvan pituuden; salatekstin pituus on lopulta 128 bittiä, vaikka alkuperäinen selkoteksti on vain 120 bittiä (15 merkkiä).&lt;/p>
 &lt;p>Seuraavat kysymykset voivat auttaa ongelman ratkaisemisessa:&lt;/p>
 &lt;ul>
 &lt;li>Kuinka alkuperäinen teksti poikkeaa halutusta tekstistä bittitasolla?&lt;/li>
@@ -3279,7 +3279,8 @@ Se selittää salatekstin vaihtuvan pituuden; salatekstin pituus on lopulta 128 
 &lt;/ul>
 &lt;p>Tehtävän ratkaisuun on käytettävä CyberChef työkalua, mistä voit lukea lisää &lt;a href="https://shakinguptech.ouspg.org/cyberchef">täältä.&lt;/a>&lt;/p>
 &lt;p>XOR operaatio, heksalukumuunnokset ja AES algoritmin käyttö ovat hyödyllisiä tähän tehtävään littyen.&lt;/p>
-&lt;p>Salausavain (256 bittiä) tarkimistamista varten on &lt;code>b6c0140d8cfe2a901fd8b2ac569fac096afc875ddae033e17cdbcbe316cd705f&lt;/code>.&lt;/p>
+&lt;p>Salausavain (256 bittiä) tarkimistamista varten on&lt;/p>
+&lt;p>&lt;code>b6c0140d8cfe2a901fd8b2ac569fac096afc875ddae033e17cdbcbe316cd705f&lt;/code>&lt;/p>
 &lt;blockquote>
 &lt;p>Käytettäessä XOR operaatiota CyberChef:issä, on tärkeää että merkkijonot ovat yhtä pitkiä!&lt;/p>
 &lt;/blockquote>
@@ -3619,13 +3620,10 @@ id="tspan14880">avaimella.&lt;/tspan>&lt;/text>
 &lt;h3 id="testaa-itse">Testaa itse!&lt;/h3>
 &lt;p>Monet operaatioista voi laskea ihan käsin paperilla, mutta on olemassa työkaluja jotka voivat huomattavasti helpottaa asiaa.&lt;/p>
 &lt;p>Allaolevalla laatikolla voit hieman kokeilla XOR laskentaa ja binäärimuunnoksia JavaScript ohjelmointikielellä.&lt;/p>
-&lt;p>Saatko saman salatekstin jos muunnat kuvan jokaisen salausavainlohkon desimaaliluvuiksi ja käytät XOR operaatiota jokaiseen &lt;code>Wow&lt;/code> sanan vastaavaan kirjaimeen?&lt;/p>
+&lt;p>Saatko saman salatekstin jos käytät XOR operaatiota jokaiseen &lt;code>Wow&lt;/code> sanan vastaavaan kirjaimeen ja salausavaimen osaan, niin että käytät binäärilukuja?
+Laatikko sisältää esimerkin ensimmäisen kirjaimen &lt;code>W &lt;/code> operaatiosta.&lt;/p>
 &lt;iframe src="../iframe/xor.html" class="coding">&lt;/iframe>
-&lt;details>
-&lt;summary>Lisätietoa koodauksesta&lt;/summary>
-&lt;br>
-Collapsed text
-&lt;/details>
+&lt;!-- raw HTML omitted -->
 &lt;h2 id="tehtävä">Tehtävä&lt;/h2>
 &lt;p>OTP salauksessa oli ehtoja, ennen kuin täydellinen salaus saavutetaan.
 Lisäksi salaus ei pystynyt varmentamaan tiedon eheyttä tai alkuperää.
