@@ -1016,7 +1016,7 @@ AES:in etu aiemmin esitettyyn one-time pad -salaukseen on se, että siinä voida
 AES-CBC käyttää aina 128 bitin lohkokokoa avaimen koosta riippumatta.
 Käytännössä tämä tarkoittaa sitä, että yhteen lohkoon mahtuu viesti tai määrä dataa, jonka pituus on maksimissaan 16 tavua, eli yleensä 16 eri merkkiä.
 Aina tämä ei toteudu, niin joudutaan käyttämään ns. täydennysdataa (engl. &lt;em>padding&lt;/em>) täyttämään viimeinen vajaa lohko &lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>.
-Täydennyslohkon menetelmiin ei perehdytä tässä sen tarkemmin.&lt;/p>
+Täydennysdatan menetelmiin ei perehdytä tässä sen tarkemmin.&lt;/p>
 &lt;p>Kuitenkaan niin AES kuin muutkaan lohkosalausmenetelmät eivät ole immuuneja heikkouksille. Lohkosalaajia käytetään erilaisissa &lt;em>moodeissa&lt;/em>, jotka kertovat miten viestin lohkoja syötetään itse lohkosalaajaan. Tässä esimerkissä tarkastelemme AES-CBC -moodia. Seuraavassa kuvassa näemme CBC moodin lohkosalauksen logiikan:&lt;/p>
 &lt;div class="equation">
 &lt;?xml version="1.0" encoding="UTF-8" standalone="no"?>
