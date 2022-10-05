@@ -12,7 +12,7 @@ Yhtenä erityishuomiona on se, että viestin koko täytyy olla jaollinen AES loh
 AES-CBC käyttää aina 128 bitin lohkokokoa avaimen koosta riippumatta.
 Käytännössä tämä tarkoittaa sitä, että yhteen lohkoon mahtuu viesti tai määrä dataa, jonka pituus on maksimissaan 16 tavua, eli yleensä 16 eri merkkiä. 
 Aina tämä ei toteudu, niin joudutaan käyttämään ns. täydennysdataa (engl. *padding*) täyttämään viimeinen vajaa lohko [^2]. 
-Täydennyslohkon menetelmiin ei perehdytä tässä sen tarkemmin.
+Täydennysdatan menetelmiin ei perehdytä tässä sen tarkemmin.
 
 Kuitenkaan niin AES kuin muutkaan lohkosalausmenetelmät eivät ole immuuneja heikkouksille. Lohkosalaajia käytetään erilaisissa *moodeissa*, jotka kertovat miten viestin lohkoja syötetään itse lohkosalaajaan. Tässä esimerkissä tarkastelemme AES-CBC -moodia. Seuraavassa kuvassa näemme CBC moodin lohkosalauksen logiikan:
 
