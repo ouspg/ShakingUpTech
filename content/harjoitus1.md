@@ -47,8 +47,8 @@ $$`
 
 > OTP on murtumaton, jos seuraavat ehdot täyttyvät [^3]:
 >
->  * Avain täytyy olla vähintään yhtä pitkä kuin selkoteksti
->  * Avain täytyy olla satunnainen
+>  * Avaimen täytyy olla vähintään yhtä pitkä kuin selkoteksti
+>  * Avaimen täytyy olla satunnainen
 >  * Avainta ei saa uudelleenkäyttää
 >  * Avain täytyy pitää salassa
 
