@@ -26,7 +26,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 
   # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
   # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
-  favicon = "images/favicon.png"
+  defaultCover = "/images/hacking-g7dfc0ba97_1920.png"
   centerTheme = true 
 
   # Another "title" :-). This one is used as the site_name on the Hugo's internal
@@ -34,13 +34,13 @@ ignoreErrors = ["error-disable-taxonomy"]
   # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
 
 [params.logo]
-      logoHomeLink = "/ShakingUpTech"
+      logoHomeLink = "/"
 
 [languages]
   [languages.fi]
     languageName = "Suomi"
-    title = "Shaking Up Tech 2022"
-    subtitle = "Kryptoteemainen työpaja"
+    title = "Shaking Up Tech 2022 - Kryptoteemainen työpaja"
+    subtitle = "Tervetuloa Shaking up Tech tapahtumaan, ja erityisesti salausten maailmaan!\n Työpajassa otetaan katsaus kyberturvallisuuteen ja erityisesti salakirjoitustekniikoihin, eli kryptografisiin menetelmiin. Ne ovat vastuussa monenlaisen tiedon salaamisesta modernissa viestinnässä, ja muussa tiedon välittämisessä ja säilyttämisessä."
     owner = ""
     keywords = ""
     copyright = "Oulu University Secure Programming Group (OUSPG)"
