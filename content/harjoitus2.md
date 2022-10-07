@@ -75,7 +75,7 @@ Tehtävän ratkaisuun on käytettävä CyberChef työkalua, mistä voit lukea li
 
 XOR operaatio, heksalukumuunnokset ja AES algoritmin käyttö ovat hyödyllisiä tähän tehtävään littyen.
 
-Salausavain (256 bittiä) tarkimistamista varten on 
+Salausavain (256 bittiä) tarkistamista varten on 
 
 `b6c0140d8cfe2a901fd8b2ac569fac096afc875ddae033e17cdbcbe316cd705f`
 
