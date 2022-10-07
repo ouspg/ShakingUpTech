@@ -3321,8 +3321,8 @@ Selkoteksti ja avain saavat siis lopulta aina numeerisen muodon.&lt;/p>
 &lt;blockquote>
 &lt;p>OTP on murtumaton, jos seuraavat ehdot täyttyvät &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>:&lt;/p>
 &lt;ul>
-&lt;li>Avain täytyy olla vähintään yhtä pitkä kuin selkoteksti&lt;/li>
-&lt;li>Avain täytyy olla satunnainen&lt;/li>
+&lt;li>Avaimen täytyy olla vähintään yhtä pitkä kuin selkoteksti&lt;/li>
+&lt;li>Avaimen täytyy olla satunnainen&lt;/li>
 &lt;li>Avainta ei saa uudelleenkäyttää&lt;/li>
 &lt;li>Avain täytyy pitää salassa&lt;/li>
 &lt;/ul>
