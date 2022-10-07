@@ -1,6 +1,11 @@
 +++
-framed = true
+framed = false
+
 +++
+
+{{< image src="/images/hacking-g7dfc0ba97_1920.png" alt="Cryptography" position="center" style="border-radius: 10px; border: 1px solid var(--accent);" >}}
+
+<!-- {{< image src="/images/dark-web-gee7132602_1920.jpg" alt="Cryptography" position="center" style="border-radius: 10px; border: 1px solid var(--accent);" >}} -->
 
 # Kryptografiaa - salauksia ja heikkouksia
 

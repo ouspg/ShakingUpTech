@@ -37,3 +37,21 @@ Jos valitset CyberChef:istä raahamalla "From Hex" metodin reseptiksi, konversio
 Painamalla 🚫 kieltomerkkiä, operaatiota ei sisällytetä reseptiin, ja kokonaisuutta voi helposti hallita, vaikka valmiiksi laittaisikin useamman operaation jonoon.
 
 Käyttämällä &#9208; taukomerkkiä, voi katsoa reseptin tuottamaa lähtötuloa siinä vaiheessa.
+
+**Huomaa, että UTF-8 merkistö sisältää myös ASCII merkistön!**
+
+Voit siis antaa XOR operaatiolle tekstiä parametrina, ja se kääntyy automaattisesti oikeaan binääriesitykseen.
+
+### Linkkejä valmiisiin resepteihin
+{{< rawhtml >}}
+
+ <ul>
+  <li><a href="https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')XOR(%7B'option':'Hex','string':''%7D,'Standard',false)" target="_blank">'From Hex' ja 'XOR' operaatio valmiina.</a></li>
+  <li>
+<a href="https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')XOR(%7B'option':'Hex','string':''%7D,'Standard',false/disabled)AES_Decrypt(%7B'option':'Hex','string':''%7D,%7B'option':'Hex','string':''%7D,'CBC','Hex','Raw',%7B'option':'Hex','string':''%7D,%7B'option':'Hex','string':''%7D)" target="_blank">'From Hex', 'XOR' (ei käytössä) ja AES purkuoperaatio valmiina</a>
+</ul> 
+</li>
+
+
+{{< /rawhtml >}}
+
