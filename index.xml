@@ -3279,7 +3279,7 @@ Se selittää salatekstin vaihtuvan pituuden; salatekstin pituus on lopulta 128 
 &lt;/ul>
 &lt;p>Tehtävän ratkaisuun on käytettävä CyberChef työkalua, mistä voit lukea lisää &lt;a href="https://shakinguptech.ouspg.org/cyberchef">täältä.&lt;/a>&lt;/p>
 &lt;p>XOR operaatio, heksalukumuunnokset ja AES algoritmin käyttö ovat hyödyllisiä tähän tehtävään littyen.&lt;/p>
-&lt;p>Salausavain (256 bittiä) tarkimistamista varten on&lt;/p>
+&lt;p>Salausavain (256 bittiä) tarkistamista varten on&lt;/p>
 &lt;p>&lt;code>b6c0140d8cfe2a901fd8b2ac569fac096afc875ddae033e17cdbcbe316cd705f&lt;/code>&lt;/p>
 &lt;blockquote>
 &lt;p>Käytettäessä XOR operaatiota CyberChef:issä, on tärkeää että merkkijonot ovat yhtä pitkiä!&lt;/p>
