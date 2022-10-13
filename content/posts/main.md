@@ -10,6 +10,8 @@ date = "2022-09-09"
 * Salauksesta (mitä se on, missä sitä käytetään)
 * Harjoitusten tausta, tekeminen ja läpikäyminen
 
+Kalvot löytyvät [täältä.](/Shaking_up_Tech_2022.pdf)
+
 ## Harjoitukset
 
 Ensimmäisenä otetaan katsaus yhteen vahvaan, jopa "täydelliseksi" kutsuttuun menetelmään, joka toimii perustana moniin monimutkaisempiin menetelmiin.
