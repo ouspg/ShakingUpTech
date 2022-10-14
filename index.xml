@@ -3295,6 +3295,18 @@ Se selittää salatekstin vaihtuvan pituuden; salatekstin pituus on lopulta 128 
 &lt;blockquote>
 &lt;p>Käytettäessä XOR operaatiota CyberChef:issä, on tärkeää että merkkijonot ovat yhtä pitkiä!&lt;/p>
 &lt;/blockquote>
+&lt;details>
+&lt;summary>Ratkaisuja&lt;/summary>
+&lt;br>
+&lt;p>Ohessa on esimerkkiratkaisu alustusvektorin luomiseksi ja varmistamiseksi CyberChef työkalulla.&lt;/p>
+&lt;p>Huomioitavaa on, että UTF-8 merkistö jakaa 128:lle ensimmäiselle merkille samat lukuarvot kuin ASCII, ja sen takia tekstiä on voitu suoraan syöttää XOR operaation.&lt;/p>
+&lt;p>Lisäksi selkotekstien pitää olla yhtäpitkiä kuin alustusvektori; tässä tilanteessa on käytetty risuaitaa täyttämään puuttuva yksi merkki.
+Mikä tahansa ASCII merkki käy, sillä se menee lopulta nollaksi.
+Vaihtoehtoisesti alustusvektorin pituutta voisi vähentää loppupäästä.&lt;/p>
+&lt;p>&lt;a href="https://gchq.github.io/CyberChef/#recipe=XOR(%7B'option':'UTF8','string':'Eve%20saa%20X%20euroa%23'%7D,'Standard',false)XOR(%7B'option':'Hex','string':'2ef5501d95015084d5673a686b58ccf7'%7D,'Standard',false)To_Hex('Space',0)&amp;amp;input=Qm9iIHNhYSBYIGV1cm9hIw">Esimerkki muunnetun alustusvektorin saamiseksi.&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://gchq.github.io/CyberChef/#recipe=AES_Decrypt(%7B'option':'Hex','string':'b6c0140d8cfe2a901fd8b2ac569fac096afc875ddae033e17cdbcbe316cd705f'%7D,%7B'option':'Hex','string':'29%20ec%2057%201d%2095%2001%2050%2084%20d5%2067%203a%2068%206b%2058%20cc%20f7'%7D,'CBC','Hex','Raw',%7B'option':'Hex','string':''%7D,%7B'option':'Hex','string':''%7D)&amp;amp;input=NDBjYjc4ZjkwOTIwYjhkMjEyMjkzMzNiNzZjM2VkOTk">Esimerkki muunnoksen varmistamiseksi. &lt;/a>&lt;/p>
+&lt;p>Huomaa, että salateksti ja avain ovat samoja, IV on vain muuttunut.&lt;/p>
+&lt;/details>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
@@ -3637,7 +3649,6 @@ id="tspan14880">avaimella.&lt;/tspan>&lt;/text>
 &lt;p>Saatko saman salatekstin jos käytät XOR operaatiota jokaiseen &lt;code>Wow&lt;/code> sanan vastaavaan kirjaimeen ja salausavaimen osaan, niin että käytät binäärilukuja?
 Laatikko sisältää esimerkin ensimmäisen kirjaimen &lt;code>W &lt;/code> operaatiosta.&lt;/p>
 &lt;iframe src="../iframe/xor.html" class="coding">&lt;/iframe>
-&lt;!-- raw HTML omitted -->
 &lt;h2 id="tehtävä">Tehtävä&lt;/h2>
 &lt;p>OTP salauksessa oli ehtoja, ennen kuin täydellinen salaus saavutetaan.
 Lisäksi salaus ei pystynyt varmentamaan tiedon eheyttä tai alkuperää.
@@ -3724,6 +3735,14 @@ Se, että miksi tämä on mahdollista, voidaan päätellä XOR salauksen periaat
 &lt;p>Entä mikä on salausavain?&lt;/p>
 &lt;p>Tämän tehtävän voi tehdä joko ylläolevalla JavaScript laatikolla, tai ns. &lt;strong>CyberChef&lt;/strong> ohjelmalla, mistä voi lukea lisää &lt;a href="https://shakinguptech.ouspg.org/cyberchef">täältä.&lt;/a>&lt;/p>
 &lt;p>Tehtävän voi tehdä myös kynällä ja paperilla, käyttäen annettua &lt;a href="https://shakinguptech.ouspg.org/ascii">ASCII taulukkoa hyväksi.&lt;/a>&lt;/p>
+&lt;details>
+&lt;summary>Ratkaisuja&lt;/summary>
+&lt;br>
+&lt;p>Ohessa on esimerkkiratkaisu salatekstin ja salausavaimen saamiseksi CyberChef työkalulla.&lt;/p>
+&lt;p>Huomioitavaa on, että UTF-8 merkistö jakaa 128:lle ensimmäiselle merkille samat lukuarvot kuin ASCII, ja sen takia tekstiä on voitu suoraan syöttää XOR operaation.&lt;/p>
+&lt;p>&lt;a href="https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')XOR(%7B'option':'UTF8','string':'Hei,%20ALice!'%7D,'Standard',false)XOR(%7B'option':'UTF8','string':'Hei,%20Eve...'%7D,'Standard',false)To_Hex('Space',0)&amp;amp;input=YmIwMjkzYjBlMTVhYTA3ZDc4MWRiYg">Esimerkki muunnetun salatekstin saamiseksi.&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')XOR(%7B'option':'UTF8','string':'Hei,%20ALice!'%7D,'Standard',false)XOR(%7B'option':'UTF8','string':'Hei,%20Eve...'%7D,'Standard',false/disabled)To_Hex('Space',0)&amp;amp;input=YmIwMjkzYjBlMTVhYTA3ZDc4MWRiYg">Esimerkki pelkän salausavaimen saamikseksi.&lt;/a>&lt;/p>
+&lt;/details>
 &lt;blockquote>
 &lt;p>Englanninkielinen Wikipedia kuvaa keskeiset asiat kryptografiasta hyvin, vaikka suorana viittauksena sitä ei olisikaan suositeltavaa käyttää.&lt;/p>
 &lt;/blockquote>
