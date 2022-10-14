@@ -100,10 +100,6 @@ Laatikko sisältää esimerkin ensimmäisen kirjaimen `W ` operaatiosta.
 
 {{< iframe "../iframe/xor.html" >}}
 
-<!-- {{< details "Lisätietoa koodauksesta">}}
-
-Collapsed text
-{{< /details >}} -->
 
 ## Tehtävä
 
@@ -155,6 +151,18 @@ Tämän tehtävän voi tehdä joko ylläolevalla JavaScript laatikolla, tai ns. 
 
 Tehtävän voi tehdä myös kynällä ja paperilla, käyttäen annettua [ASCII taulukkoa hyväksi.](/ascii)
 
+{{< details "Ratkaisuja">}}
+
+Ohessa on esimerkkiratkaisu salatekstin ja salausavaimen saamiseksi CyberChef työkalulla.
+
+Huomioitavaa on, että UTF-8 merkistö jakaa 128:lle ensimmäiselle merkille samat lukuarvot kuin ASCII, ja sen takia tekstiä on voitu suoraan syöttää XOR operaation.
+
+[Esimerkki muunnetun salatekstin saamiseksi.](https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')XOR(%7B'option':'UTF8','string':'Hei,%20ALice!'%7D,'Standard',false)XOR(%7B'option':'UTF8','string':'Hei,%20Eve...'%7D,'Standard',false)To_Hex('Space',0)&input=YmIwMjkzYjBlMTVhYTA3ZDc4MWRiYg)
+
+
+[Esimerkki pelkän salausavaimen saamikseksi.](https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')XOR(%7B'option':'UTF8','string':'Hei,%20ALice!'%7D,'Standard',false)XOR(%7B'option':'UTF8','string':'Hei,%20Eve...'%7D,'Standard',false/disabled)To_Hex('Space',0)&input=YmIwMjkzYjBlMTVhYTA3ZDc4MWRiYg)
+
+{{< /details >}}
 
 > Englanninkielinen Wikipedia kuvaa keskeiset asiat kryptografiasta hyvin, vaikka suorana viittauksena sitä ei olisikaan suositeltavaa käyttää.
 

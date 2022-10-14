@@ -81,6 +81,24 @@ Salausavain (256 bittiä) tarkistamista varten on
 
 >  Käytettäessä XOR operaatiota CyberChef:issä, on tärkeää että merkkijonot ovat yhtä pitkiä!
 
+{{< details "Ratkaisuja">}}
+
+Ohessa on esimerkkiratkaisu alustusvektorin luomiseksi ja varmistamiseksi CyberChef työkalulla.
+
+Huomioitavaa on, että UTF-8 merkistö jakaa 128:lle ensimmäiselle merkille samat lukuarvot kuin ASCII, ja sen takia tekstiä on voitu suoraan syöttää XOR operaation.
+
+Lisäksi selkotekstien pitää olla yhtäpitkiä kuin alustusvektori; tässä tilanteessa on käytetty risuaitaa täyttämään puuttuva yksi merkki.
+Mikä tahansa ASCII merkki käy, sillä se menee lopulta nollaksi.
+Vaihtoehtoisesti alustusvektorin pituutta voisi vähentää loppupäästä.
+
+[Esimerkki muunnetun alustusvektorin saamiseksi.](https://gchq.github.io/CyberChef/#recipe=XOR(%7B'option':'UTF8','string':'Eve%20saa%20X%20euroa%23'%7D,'Standard',false)XOR(%7B'option':'Hex','string':'2ef5501d95015084d5673a686b58ccf7'%7D,'Standard',false)To_Hex('Space',0)&input=Qm9iIHNhYSBYIGV1cm9hIw)
+
+
+[Esimerkki muunnoksen varmistamiseksi. ](https://gchq.github.io/CyberChef/#recipe=AES_Decrypt(%7B'option':'Hex','string':'b6c0140d8cfe2a901fd8b2ac569fac096afc875ddae033e17cdbcbe316cd705f'%7D,%7B'option':'Hex','string':'29%20ec%2057%201d%2095%2001%2050%2084%20d5%2067%203a%2068%206b%2058%20cc%20f7'%7D,'CBC','Hex','Raw',%7B'option':'Hex','string':''%7D,%7B'option':'Hex','string':''%7D)&input=NDBjYjc4ZjkwOTIwYjhkMjEyMjkzMzNiNzZjM2VkOTk)
+
+Huomaa, että salateksti ja avain ovat samoja, IV on vain muuttunut.
+
+{{< /details >}}
 
 [^1]: [AES in Wikipedia](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) 
 
