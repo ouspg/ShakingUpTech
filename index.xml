@@ -3299,7 +3299,7 @@ Se selittää salatekstin vaihtuvan pituuden; salatekstin pituus on lopulta 128 
 &lt;summary>Ratkaisuja&lt;/summary>
 &lt;br>
 &lt;p>Ohessa on esimerkkiratkaisu alustusvektorin luomiseksi ja varmistamiseksi CyberChef työkalulla.&lt;/p>
-&lt;p>Huomioitavaa on, että UTF-8 merkistö jakaa 128:lle ensimmäiselle merkille samat lukuarvot kuin ASCII, ja sen takia tekstiä on voitu suoraan syöttää XOR operaation.&lt;/p>
+&lt;p>Huomioitavaa on, että UTF-8 merkistö jakaa 128:lle ensimmäiselle merkille samat lukuarvot kuin ASCII, ja sen takia tekstiä on voitu suoraan syöttää XOR operaatioon.&lt;/p>
 &lt;p>Lisäksi selkotekstien pitää olla yhtäpitkiä kuin alustusvektori; tässä tilanteessa on käytetty risuaitaa täyttämään puuttuva yksi merkki.
 Mikä tahansa ASCII merkki käy, sillä se menee lopulta nollaksi.
 Vaihtoehtoisesti alustusvektorin pituutta voisi vähentää loppupäästä.&lt;/p>
@@ -3741,7 +3741,7 @@ Se, että miksi tämä on mahdollista, voidaan päätellä XOR salauksen periaat
 &lt;p>Ohessa on esimerkkiratkaisu salatekstin ja salausavaimen saamiseksi CyberChef työkalulla.&lt;/p>
 &lt;p>Huomioitavaa on, että UTF-8 merkistö jakaa 128:lle ensimmäiselle merkille samat lukuarvot kuin ASCII, ja sen takia tekstiä on voitu suoraan syöttää XOR operaation.&lt;/p>
 &lt;p>&lt;a href="https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')XOR(%7B'option':'UTF8','string':'Hei,%20ALice!'%7D,'Standard',false)XOR(%7B'option':'UTF8','string':'Hei,%20Eve...'%7D,'Standard',false)To_Hex('Space',0)&amp;amp;input=YmIwMjkzYjBlMTVhYTA3ZDc4MWRiYg">Esimerkki muunnetun salatekstin saamiseksi.&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')XOR(%7B'option':'UTF8','string':'Hei,%20ALice!'%7D,'Standard',false)XOR(%7B'option':'UTF8','string':'Hei,%20Eve...'%7D,'Standard',false/disabled)To_Hex('Space',0)&amp;amp;input=YmIwMjkzYjBlMTVhYTA3ZDc4MWRiYg">Esimerkki pelkän salausavaimen saamikseksi.&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')XOR(%7B'option':'UTF8','string':'Hei,%20ALice!'%7D,'Standard',false)XOR(%7B'option':'UTF8','string':'Hei,%20Eve...'%7D,'Standard',false/disabled)To_Hex('Space',0)&amp;amp;input=YmIwMjkzYjBlMTVhYTA3ZDc4MWRiYg">Esimerkki pelkän salausavaimen saamiseksi.&lt;/a>&lt;/p>
 &lt;/details>
 &lt;blockquote>
 &lt;p>Englanninkielinen Wikipedia kuvaa keskeiset asiat kryptografiasta hyvin, vaikka suorana viittauksena sitä ei olisikaan suositeltavaa käyttää.&lt;/p>
