@@ -85,7 +85,7 @@ Salausavain (256 bittiä) tarkistamista varten on
 
 Ohessa on esimerkkiratkaisu alustusvektorin luomiseksi ja varmistamiseksi CyberChef työkalulla.
 
-Huomioitavaa on, että UTF-8 merkistö jakaa 128:lle ensimmäiselle merkille samat lukuarvot kuin ASCII, ja sen takia tekstiä on voitu suoraan syöttää XOR operaation.
+Huomioitavaa on, että UTF-8 merkistö jakaa 128:lle ensimmäiselle merkille samat lukuarvot kuin ASCII, ja sen takia tekstiä on voitu suoraan syöttää XOR operaatioon.
 
 Lisäksi selkotekstien pitää olla yhtäpitkiä kuin alustusvektori; tässä tilanteessa on käytetty risuaitaa täyttämään puuttuva yksi merkki.
 Mikä tahansa ASCII merkki käy, sillä se menee lopulta nollaksi.

@@ -160,7 +160,7 @@ Huomioitavaa on, että UTF-8 merkistö jakaa 128:lle ensimmäiselle merkille sam
 [Esimerkki muunnetun salatekstin saamiseksi.](https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')XOR(%7B'option':'UTF8','string':'Hei,%20ALice!'%7D,'Standard',false)XOR(%7B'option':'UTF8','string':'Hei,%20Eve...'%7D,'Standard',false)To_Hex('Space',0)&input=YmIwMjkzYjBlMTVhYTA3ZDc4MWRiYg)
 
 
-[Esimerkki pelkän salausavaimen saamikseksi.](https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')XOR(%7B'option':'UTF8','string':'Hei,%20ALice!'%7D,'Standard',false)XOR(%7B'option':'UTF8','string':'Hei,%20Eve...'%7D,'Standard',false/disabled)To_Hex('Space',0)&input=YmIwMjkzYjBlMTVhYTA3ZDc4MWRiYg)
+[Esimerkki pelkän salausavaimen saamiseksi.](https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')XOR(%7B'option':'UTF8','string':'Hei,%20ALice!'%7D,'Standard',false)XOR(%7B'option':'UTF8','string':'Hei,%20Eve...'%7D,'Standard',false/disabled)To_Hex('Space',0)&input=YmIwMjkzYjBlMTVhYTA3ZDc4MWRiYg)
 
 {{< /details >}}
 
