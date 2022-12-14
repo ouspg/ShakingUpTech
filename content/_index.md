@@ -14,5 +14,10 @@ Erilaiset salakirjoitustekniikat, eli *kryptografiset* menetelmät, ovat vastuus
 Oli kyseessä sitten WhatsApp tai Signal viestintäsovellus, tai verkkosivuston käyttö selaimella, sisältö on salattu jollain tasolla tietyssä vaiheessa.
 Tässä työpajassa tutustumme hieman, että kuinka tämä oikein tapahtuu ja mitä riskejä on olemassa.
 
+**HOX!!!** 
+
+Aalto-yliopiston järjestämä uusi kurssi `Johdatus kryptografiaan` löytyy nyt [Fitech palvelusta.](https://fitech.io/fi/opinnot/johdatus-kryptografiaan/)
+Kurssi on suunnattu lukiolaisille, mutta myös yliopisto-opiskelijat sekä tietoturvan parissa työskentelevät voivat hyötyä siitä.
+
 
 
