@@ -12,6 +12,9 @@ date = "2022-09-09"
 
 Kalvot löytyvät [täältä.](/Shaking_up_Tech_2022.pdf)
 
+**HOX!!!** Aalto-yliopiston järjestämä uusi kurssi `Johdatus kryptografiaan` löytyy nyt [Fitech palvelusta.](https://fitech.io/fi/opinnot/johdatus-kryptografiaan/)
+Kurssi on suunnattu lukiolaisille, mutta myös yliopisto-opiskelijat sekä tietoturvan parissa työskentelevät voivat hyötyä siitä.
+
 ## Harjoitukset
 
 Ensimmäisenä otetaan katsaus yhteen vahvaan, jopa "täydelliseksi" kutsuttuun menetelmään, joka toimii perustana moniin monimutkaisempiin menetelmiin.
